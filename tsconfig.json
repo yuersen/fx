@@ -2,10 +2,9 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
-    "module": "es6",
+    "module": "CommonJS",
     "noImplicitAny": true,
-    "outDir": "./dist",
-    "target": "es5"
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

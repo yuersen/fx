@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Javascript functions tools",
   "main": "./dist/fx.js",
-  "module": "./dist/fx.es.js",
+  "es": "./dist/fx.es.js",
+  "umd": "./dist/fx.umd.js",
   "scripts": {
     "build": "npm run lint && npm run clean && rollup --config",
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "clean": "rimraf ./dist && mkdir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register test/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,16 @@
   },
   "homepage": "https://github.com/pxy0809/fx#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.19.0",
+    "ts-node": "^7.0.1",
     "tslint": "^5.12.1",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.4"
   }
 }

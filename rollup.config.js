@@ -9,8 +9,13 @@ export default {
       format: 'cjs'
     },
     {
-      file: pkg.module,
+      file: pkg.es,
       format: 'es'
+    },
+    {
+      file: pkg.umd,
+      format: 'umd',
+      name: 'Fx'
     }
   ],
   external: [
