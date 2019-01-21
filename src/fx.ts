@@ -35,21 +35,48 @@ Fx.type = (o: any): string => {
 };
 
 /**
- * 判断当前对象是否是 Arguments
- * @param {any} o - 待检测的 object
- * @returns {boolean}
- */
-Fx.isArguments = (o: any): boolean => {
-  return {}.hasOwnProperty.call(o, 'callee');
-};
-
-/**
  * 判断当前参数是否为 Boolean
  * @param {any} o 任意类型的数据
  * @returns {boolean}
  */
 Fx.isBoolean = (o: any): boolean => {
   return o === true || o === false || Fx.type(o) === 'boolean';
+};
+
+/**
+ * 判断当前参数是否为 string
+ * @param {any} o 任意类型的数据
+ * @returns {boolean}  如果 param 是 string，返回 true
+ */
+Fx.isString = (o: any): boolean => {
+  return typeof o === 'string';
+};
+
+/**
+ * 判断当前参数是否为 undefined
+ * @param {any} o 任意类型的数据
+ * @returns {boolean}
+ */
+Fx.isUndefined = (o: any): boolean => {
+  return o === void 0;
+};
+
+/**
+ * 判断当前参数是否为 number
+ * @param {any} o  任意类型的数据
+ * @returns {boolean}  如果 param 是 number，返回 true
+ */
+Fx.isNumber = (o: any): boolean => {
+  return typeof o === 'number';
+};
+
+/**
+ * 判断当前参数是否为 NaN
+ * @param {any} o 任意类型的数据
+ * @returns {boolean}
+ */
+Fx.isNaN = (o: any): boolean => {
+  return Fx.isNumber(o) && o !== +o;
 };
 
 /**
@@ -77,24 +104,6 @@ Fx.isElement = (o: any): boolean => {
  */
 Fx.isFunction = (o: any): boolean => {
   return Fx.type(o) === 'function';
-};
-
-/**
- * 判断当前参数是否为 number
- * @param {any} o  任意类型的数据
- * @returns {boolean}  如果 param 是 number，返回 true
- */
-Fx.isNumber = (o: any): boolean => {
-  return typeof o === 'number';
-};
-
-/**
- * 判断当前参数是否为 NaN
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isNaN = (o: any): boolean => {
-  return Fx.isNumber(o) && o !== +o;
 };
 
 /**
@@ -127,24 +136,6 @@ Fx.isRegExp = (o: any): boolean => {
 };
 
 /**
- * 判断当前参数是否为 string
- * @param {any} o 任意类型的数据
- * @returns {boolean}  如果 param 是 string，返回 true
- */
-Fx.isString = (o: any): boolean => {
-  return typeof o === 'string';
-};
-
-/**
- * 判断当前参数是否为 undefined
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isUndefined = (o: any): boolean => {
-  return o === void 0;
-};
-
-/**
  * 测试对象是否是窗口（有可能是Frame）
  * @param  {any} o 用于测试是否为窗口的对象
  * @returns {boolean}  若是窗口对象，返回true
@@ -155,21 +146,11 @@ Fx.isWindow = (o: any): boolean => {
 
 /**
  * 测试对象是否为数组
- * @param  {any} param - 用于测试是否为数组的对象
+ * @param  {any} o 用于测试是否为数组的对象
  * @return {boolean}  若是数组对象，返回true
  */
 Fx.isArray = (o: any): boolean => {
   return Fx.type(o) === 'array';
-};
-
-/**
- * 判断当前集合是否是伪数组
- * @param {any} o - 待检测对象
- * @returns {boolean}  若是伪数组，返回true
- */
-Fx.isArrayLike = (o: any[]): boolean => {
-  const l = o.length;
-  return typeof l === 'number' && l >= 0 && l <= Math.pow(2, 53) - 1;
 };
 
 /**
