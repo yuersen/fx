@@ -10,7 +10,31 @@
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "clean": "rimraf ./dist && mkdir dist",
-    "test": "mocha --require ts-node/register test/**/*.ts"
+    "test": "mocha --require ts-node/register --reporter mochawesome test/**/*.ts",
+    "test:cover": "nyc mocha"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
   },
   "repository": {
     "type": "git",
@@ -33,9 +57,12 @@
     "@types/mocha": "^5.2.5",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "nyc": "^13.1.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.19.0",
+    "source-map-support": "^0.5.10",
     "ts-node": "^7.0.1",
     "tslint": "^5.12.1",
     "tslint-eslint-rules": "^5.4.0",
