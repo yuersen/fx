@@ -84,7 +84,7 @@ export default class StringUtil {
    * @param {Boolean} position - 搜索开始位置，默认值为 0，也就是真正的字符串开头处
    * @return {Boolean}  若包含子项，返回 true.
    */
-  startsWith(search: string, position: string | undefined): boolean {
+  startsWith(search: string, position?: string): boolean {
     const seaLen = search.length;
     let pos = position ? Number(position) : 0;
     if (pos !== pos) {
@@ -111,8 +111,8 @@ export default class StringUtil {
    * @param {Number|undefined} position - 作为str的长度，默认值为 str.length
    * @return {Boolean}  若包含子项，返回 true.
    */
-  endsWith(search: string, position: number | undefined): boolean {
-    if (position === undefined || position > this.length) {
+  endsWith(search: string, position?: number): boolean {
+    if (position === void 0 || position > this.length) {
       position = this.length;
     }
     return this.str.substring(position - search.length, position) === search;
@@ -134,21 +134,7 @@ export default class StringUtil {
    * @param count 介于0和正无穷大之间的整数 : [0, +∞) 。表示在新构造的字符串中重复了多少遍原字符串。
    */
   repeat(count: number): string {
-    count = +count;
-    if (count !== count) {
-      count = 0;
-    }
-    if (count < 0) {
-      throw new RangeError('repeat count must be non-negative');
-    }
-    if (count === Infinity) {
-      throw new RangeError('repeat count must be less than infinity');
-    }
-    count = Math.floor(count);
-    if (this.length === 0 || count === 0) {
-      return '';
-    }
-    return new Array(count).join(this.str);
+    return new Array(Math.floor(count || 1) + 1).join(this.str);
   }
 
   /**
@@ -158,22 +144,23 @@ export default class StringUtil {
    * @param {String} padString - 填充字符串
    * @return {String}
    */
-  padEnd(targetLength: number, padString: string): string {
+  padEnd(targetLength: number, padString?: string): string {
     // floor if number or convert non-number to 0;
-    padString = padString || ' ';
+    if (!padString) {
+      return this.str;
+    }
 
     if (this.length > targetLength) {
       return this.str;
-    } else {
-      targetLength = targetLength - this.length;
-      if (targetLength > padString.length) {
-        // append to original to ensure we are longer than needed
-        padString += new Array(
-          Math.floor(targetLength / padString.length)
-        ).join(padString);
-      }
-      return this.str + padString.slice(0, targetLength);
     }
+    targetLength = targetLength - this.length;
+    if (targetLength > padString.length) {
+      // append to original to ensure we are longer than needed
+      padString += new Array(Math.floor(targetLength / padString.length)).join(
+        padString
+      );
+    }
+    return this.str + padString.slice(0, targetLength);
   }
 
   /**
@@ -182,22 +169,23 @@ export default class StringUtil {
    * @param {String} padString - 填充字符串
    * @return {String}
    */
-  padStart(targetLength: number, padString: string): string {
+  padStart(targetLength: number, padString?: string): string {
     // floor if number or convert non-number to 0;
-    padString = padString || ' ';
+    if (!padString) {
+      return this.str;
+    }
 
     if (this.length > targetLength) {
       return this.str;
-    } else {
-      targetLength = targetLength - this.length;
-      if (targetLength > padString.length) {
-        // append to original to ensure we are longer than needed
-        padString += new Array(
-          Math.floor(targetLength / padString.length)
-        ).join(padString);
-      }
-      return padString.slice(0, targetLength) + this.str;
     }
+    targetLength = targetLength - this.length;
+    if (targetLength > padString.length) {
+      // append to original to ensure we are longer than needed
+      padString += new Array(Math.floor(targetLength / padString.length)).join(
+        padString
+      );
+    }
+    return padString.slice(0, targetLength) + this.str;
   }
 
   /**
@@ -251,15 +239,6 @@ export default class StringUtil {
       .split('')
       .reverse()
       .join('');
-  }
-
-  /**
-   * 根据换行切割字符串，并转换为数组
-   * @param  {String} str - 包含换行符的字符串
-   * @return {Array}  由分割后的字符串组成的数组
-   */
-  line(): string[] {
-    return this.str.split(/\r\n?|\n/);
   }
 
   /**
@@ -410,17 +389,6 @@ export default class StringUtil {
   }
 
   /**
-   * 判断输入的参数是否是国内合法的邮编地址(不包含国外的邮编)
-   * @link: http://www.youbianku.com/%E9%A6%96%E9%A1%B5
-   * @param {String} str - str为待验证的邮编号码
-   * @return {Boolean} 合法的邮编号码返回 true.
-   */
-  isPostcode(): boolean {
-    // 国内邮编以0-8开头的6为数字
-    return /^[0-8]\d{5}$/.test(this.str);
-  }
-
-  /**
    * 判断输入的参数是否是个合格的手机号码，不能判断号码的有效性，有效性可以通过运营商确定。
    * @param {String} phone - 待判断的手机号码
    * @return {Boolean} 合法的手机号码返回 true.
@@ -461,13 +429,14 @@ export default class StringUtil {
   /**
    * 判断传入的参数的长度是否在给定的有效范围内
    * @param {String} str - 待验证的参数
-   * @param {Number} min - 给定的最小的长度
    * @param {Number} max - 给定的最大的长度
+   * @param {Number} min - 给定的最小的长度
    * @return {Boolean} 验证通过返回 true.
    *
    */
-  isAvaiableLength(min: number, max: number): boolean {
-    return this.str.length >= min && this.str.length <= max;
+  isAvaiableLength(max: number, min: number): boolean {
+    const l = this.str.length;
+    return l >= min && l <= max;
   }
 
   /**
