@@ -10,7 +10,7 @@ export default class StringUtil {
    * @param {(Number | undefined)} fix - 指定字符串与字节的转换位数
    * @return {Number}
    */
-  byte(fix: number): number {
+  byte(fix?: number): number {
     fix = fix ? fix : 2;
     return this.str.replace(/[^\x00-\xff]/g, new Array(fix + 1).join('-'))
       .length;

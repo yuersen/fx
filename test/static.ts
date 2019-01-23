@@ -1,6 +1,7 @@
 import Fx from '../src/fx';
 import 'mocha';
 import { expect } from 'chai';
+import { JSDOM } from 'jsdom';
 
 describe('Fx static methods', () => {
   const dataInJs = [
@@ -145,6 +146,37 @@ describe('Fx static methods', () => {
   describe('Fx.guid(): string', () => {
     it(`Output: ${Fx.guid()}`, () => {
       expect(Fx.guid().length).to.equal(36);
+    });
+  });
+
+  describe('Fx.isElement(o: any): boolean', () => {
+    const { window } = new JSDOM(`<!DOCTYPE html><p id="word">Hello world</p>`);
+    const $word = window.document.getElementById('word');
+
+    for (let i = 0; i < 10; i++) {
+      const type = dataTypes[i];
+      const result = false;
+      it(`Input: ${type}, Output: ${result}`, () => {
+        expect(Fx.isElement(dataInJs[i])).to.equal(result);
+      });
+    }
+    it(`Input: Element, Output: true`, () => {
+      expect(Fx.isElement($word)).to.equal(true);
+    });
+  });
+
+  describe('Fx.isWindow(o: any): boolean', () => {
+    const { window } = new JSDOM(`<!DOCTYPE html><p id="word">Hello world</p>`);
+
+    for (let i = 0; i < 10; i++) {
+      const type = dataTypes[i];
+      const result = false;
+      it(`Input: ${type}, Output: ${result}`, () => {
+        expect(Fx.isWindow(dataInJs[i])).to.equal(result);
+      });
+    }
+    it(`Input: Element, Output: true`, () => {
+      expect(Fx.isWindow(window)).to.equal(true);
     });
   });
 });

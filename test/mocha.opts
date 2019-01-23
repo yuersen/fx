@@ -4,4 +4,5 @@
 --full-trace
 --bail
 --reporter mochawesome
+--reporter-options reportDir=report,reportFilename=fx-report,reportPageTitle=FxTestReport
 test/**/*.ts

@@ -10,8 +10,8 @@
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "clean": "rimraf ./dist && mkdir dist",
-    "test": "mocha --require ts-node/register --reporter mochawesome test/**/*.ts",
-    "test:cover": "nyc mocha"
+    "test:bak": "mocha --require ts-node/register --reporter mochawesome test/**/*.ts",
+    "test": "nyc mocha"
   },
   "nyc": {
     "include": [
@@ -54,8 +54,10 @@
   "homepage": "https://github.com/pxy0809/fx#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
+    "@types/jsdom": "^12.2.1",
     "@types/mocha": "^5.2.5",
     "chai": "^4.2.0",
+    "jsdom": "^13.1.0",
     "mocha": "^5.2.0",
     "mochawesome": "^3.1.1",
     "nyc": "^13.1.0",
