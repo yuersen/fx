@@ -53,7 +53,7 @@ describe('Operate String method', () => {
     });
   });
 
-  describe('Fx(str: string).startsWith(search: string, position?: string): boolean', () => {
+  describe('Fx(str: string).startsWith(search: string, position?: number): boolean', () => {
     const str = 'Fx.startsWith';
 
     it(`Input: ${str}, 'Fx', Output: true`, () => {
@@ -124,6 +124,10 @@ describe('Operate String method', () => {
     it(`Input: ${str}, 4, '0', Output: 'Fx00'`, () => {
       expect(Fx(str).padEnd(4, '0')).to.equal('Fx00');
     });
+
+    it(`Input: 'Fxoop', 4, '0', Output: 'Fx00'`, () => {
+      expect(Fx('Fxoop').padEnd(4, '0')).to.equal('Fxoop');
+    });
   });
 
   describe('Fx(str: string).padStart(targetLength: number, padString: string): string', () => {
@@ -139,6 +143,10 @@ describe('Operate String method', () => {
 
     it(`Input: ${str}, 4, '0', Output: '00Fx'`, () => {
       expect(Fx(str).padStart(4, '0')).to.equal('00Fx');
+    });
+
+    it(`Input: 'Fx000', 4, '0', Output: '00Fx'`, () => {
+      expect(Fx('Fx000').padStart(4, '0')).to.equal('Fx000');
     });
   });
 
@@ -226,7 +234,25 @@ describe('Operate String method', () => {
       expect(Fx('6222600260001072444').verifyBankCardNumber()).to.equal(true);
     });
 
+    // bankNo < 16
+    it(`Input: '622260026000107', Output: false`, () => {
+      expect(Fx('622260026000107').verifyBankCardNumber()).to.equal(false);
+    });
+
+    // bankNo > 19
+    it(`Input: '622260026000107240923', Output: false`, () => {
+      expect(Fx('622260026000107240923').verifyBankCardNumber()).to.equal(false);
+    });
+
     it(`Input: '6228480402564890018', Output: false`, () => {
+      expect(Fx('6228480402564890018').verifyBankCardNumber()).to.equal(false);
+    });
+
+    it(`Input: '62284804025648900', Output: false`, () => {
+      expect(Fx('62284804025648900').verifyBankCardNumber()).to.equal(false);
+    });
+
+    it(`Input: '622848040256489001812', Output: false`, () => {
       expect(Fx('6228480402564890018').verifyBankCardNumber()).to.equal(false);
     });
   });
@@ -282,12 +308,45 @@ describe('Operate String method', () => {
   });
 
   describe('Fx(str: string).isIdCard(): boolean', () => {
-    it(`Input: '320104197710117121', Output: true`, () => {
-      expect(Fx('320104197710117121').isIdCard()).to.equal(true);
+    // 身份证号码 < 15
+    it(`Input: '32010419771011', Output: false`, () => {
+      expect(Fx('32010419771011').isIdCard()).to.equal(false);
     });
 
-    it(`Input: '320104197706115863', Output: false`, () => {
-      expect(Fx('320104197706115863').isIdCard()).to.equal(false);
+    // 身份证号码 > 18
+    it(`Input: '32010419771011712109', Output: false`, () => {
+      expect(Fx('32010419771011712109').isIdCard()).to.equal(false);
+    });
+
+    // 校验省份
+    it(`Input: '190104197710117121', Output: false`, () => {
+      expect(Fx('190104197710117121').isIdCard()).to.equal(false);
+    });
+
+    // 15位 年月日
+    it(`Input: '320311791706001', Output: false`, () => {
+      expect(Fx('320311791706001').isIdCard()).to.equal(false);
+    });
+
+    it(`Input: '522422701104245', Output: true`, () => {
+      expect(Fx('522422701104245').isIdCard()).to.equal(true);
+    });
+
+    // 18位 年月日
+    it(`Input: '320104194710117121', Output: false`, () => {
+      expect(Fx('320104194710117121').isIdCard()).to.equal(false);
+    });
+
+    it(`Input: '220582197517240826', Output: false`, () => {
+      expect(Fx('220582197517240826').isIdCard()).to.equal(false);
+    });
+
+    it(`Input: '220582197507240826', Output: true`, () => {
+      expect(Fx('220582197507240826').isIdCard()).to.equal(true);
+    });
+
+    it(`Input: '64052119940907454X', Output: true`, () => {
+      expect(Fx('64052119940907454X').isIdCard()).to.equal(true);
     });
   });
 });

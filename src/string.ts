@@ -81,28 +81,15 @@ export default class StringUtil {
   /**
    * 判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false
    * @param {String} search - 要搜索的子字符串
-   * @param {Boolean} position - 搜索开始位置，默认值为 0，也就是真正的字符串开头处
+   * @param {number} position - 搜索开始位置，默认值为 0，也就是真正的字符串开头处
    * @return {Boolean}  若包含子项，返回 true.
    */
-  startsWith(search: string, position?: string): boolean {
-    const seaLen = search.length;
-    let pos = position ? Number(position) : 0;
-    if (pos !== pos) {
-      // better `isNaN`
-      pos = 0;
+  startsWith(search: string, position?: number): boolean {
+    if (position === void 0 || position > this.length) {
+      position = 0;
     }
-    const start = Math.min(Math.max(pos, 0), this.length);
-    // Avoid the `indexOf` call if no match is possible
-    if (seaLen + start > this.length) {
-      return false;
-    }
-    let index = -1;
-    while (++index < seaLen) {
-      if (this.str.charCodeAt(start + index) !== search.charCodeAt(index)) {
-        return false;
-      }
-    }
-    return true;
+
+    return this.str.substr(position, search.length) === search;
   }
 
   /**
@@ -483,7 +470,7 @@ export default class StringUtil {
       91: '国外'
     };
     const Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
-    const valideCode = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
+    const parity = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
     const idcard = this.str.toUpperCase();
     const idcards = idcard.split('');
     let year;
@@ -511,16 +498,13 @@ export default class StringUtil {
       day = idcard.substring(10, 12);
       birthday = new Date(year + '/' + month + '/' + day);
 
-      if (
-        birthday.getFullYear() !== parseFloat(year) ||
-        birthday.getMonth() !== parseFloat(month) - 1 ||
-        birthday.getDate() !== parseFloat(day)
-      ) {
-        return false;
-      } else {
-        return true;
-      }
-    } else if (len === 18) {
+      return (
+        (birthday as any).getYear() === parseFloat(year) &&
+        birthday.getMonth() === parseFloat(month) - 1 &&
+        birthday.getDate() === parseFloat(day)
+      );
+    }
+    if (len === 18) {
       year = idcard.substring(6, 10);
       month = idcard.substring(10, 12);
       day = idcard.substring(12, 14);
@@ -532,25 +516,18 @@ export default class StringUtil {
         birthday.getDate() !== parseFloat(day)
       ) {
         return false;
-      } else {
-        // 检验18位身份证的校验码是否正确。
-        // 校验位按照ISO 7064:1983.MOD 11-2的规定生成，X可以认为是数字10。
-        let sum: number = 0;
-
-        if (idcards[17] === 'x') {
-          idcards[17] = '10';
-        }
-
-        for (let i = 0; i < 17; i++) {
-          sum += Wi[i] * parseInt(idcards[i], 10); // 加权求和
-        }
-        if (idcards[17] === valideCode[sum % 11]) {
-          return true;
-        } else {
-          return false;
-        }
       }
+      // 检验18位身份证的校验码是否正确。
+      // 校验位按照ISO 7064:1983.MOD 11-2的规定生成，X可以认为是数字10。
+      let sum: number = 0;
+
+      for (let i = 0; i < 17; i++) {
+        sum += Wi[i] * parseInt(idcards[i], 10); // 加权求和
+      }
+      if (idcards[17] === parity[sum % 11]) {
+        return true;
+      }
+      return false;
     }
-    return false;
   }
 }

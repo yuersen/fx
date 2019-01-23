@@ -4,15 +4,15 @@ import StringUtil from './string';
  * 基类方法
  * @param {any} param - 待处理合法的 javascript 数据类型
  */
-export default function Fx(param: any) {
-  return new Fx.prototype.init(param);
+export default function Fx(param?: any) {
+  return new (Fx.fn as any).init(param);
 }
-Fx.prototype = {
+Fx.fn = Fx.prototype = {
   constructor: Fx,
   version: '1.0.0',
-  init(param: any) {
+  init(param?: any) {
     if (!param) {
-      return this;
+      return Fx.fn;
     }
     switch (Fx.type(param)) {
       case 'string':

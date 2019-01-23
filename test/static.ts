@@ -30,6 +30,13 @@ describe('Fx static methods', () => {
     'function',
     'array'
   ];
+
+  describe('Fx(): F', () => {
+    it('Fx()', () => {
+      expect(!Fx().type).to.equal(true);
+    });
+  });
+
   describe('Fx.type(o: any): string', () => {
     for (let i = 0; i < 10; i++) {
       const type = dataTypes[i];
