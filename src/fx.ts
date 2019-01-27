@@ -1,4 +1,5 @@
 import StringUtil from './string';
+import ArrayUtil from './array';
 
 /**
  * 基类方法
@@ -17,6 +18,10 @@ Fx.fn = Fx.prototype = {
     switch (Fx.type(param)) {
       case 'string':
         return new StringUtil(param);
+      case 'array':
+        return new ArrayUtil(param);
+      default:
+        throw new SyntaxError('The parameter must be a legal data types.');
     }
   }
 };
@@ -160,8 +165,10 @@ Fx.isArray = (o: any): boolean => {
  */
 Fx.guid = (): string => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    // tslint:disable-next-line
     const r = (Math.random() * 16) | 0;
-    const v = c === 'x' ? r : (r & 0x3) | 0x8;
+    // tslint:disable-next-line
+    const v = c === 'x' ? r : (r & 0x3) | 0x8; // tslint:disable-line
     return v.toString(16);
   });
 };

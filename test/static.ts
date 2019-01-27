@@ -35,6 +35,14 @@ describe('Fx static methods', () => {
     it('Fx()', () => {
       expect(!Fx().type).to.equal(true);
     });
+
+    it('Fx()', () => {
+      try {
+        expect(Fx(null)).to.equal(true);
+      } catch(e) {
+        // TODO
+      }
+    });
   });
 
   describe('Fx.type(o: any): string', () => {

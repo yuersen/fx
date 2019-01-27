@@ -1,6 +1,7 @@
 export default class StringUtil {
   length: number;
-  constructor(public str: string) {
+  str: string;
+  constructor(str: string) {
     this.str = '' + str;
     this.length = str.length;
   }

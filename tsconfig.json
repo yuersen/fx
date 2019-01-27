@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
-    "module": "CommonJS",
+    // "module": "CommonJS",
     "noImplicitAny": true,
     "outDir": "./dist"
   },
