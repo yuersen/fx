@@ -5,9 +5,9 @@
     "passes": 252,
     "pending": 0,
     "failures": 0,
-    "start": "2019-01-27T14:25:41.624Z",
-    "end": "2019-01-27T14:25:41.937Z",
-    "duration": 313,
+    "start": "2019-01-28T03:42:52.266Z",
+    "end": "2019-01-28T03:42:52.642Z",
+    "duration": 376,
     "testsRegistered": 252,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "4800dade-68a1-4557-b4fc-7f55723167b6",
+    "uuid": "acf430bd-2375-4d0e-8249-aab223bd469f",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "5ddb98b0-5dbc-4ec6-aeb7-ff9ce5a7fd65",
+        "uuid": "0c21d215-6697-4acd-8d16-8333d86de170",
         "title": "Operate Array method",
         "fullFile": "F:\\github\\fx\\test\\array.ts",
         "file": "\\test\\array.ts",
@@ -37,7 +37,7 @@
         "tests": [],
         "suites": [
           {
-            "uuid": "a2a33c52-0416-47e3-b8a0-4207f7171a78",
+            "uuid": "a40c2de8-4f7b-4ba6-af21-93403adac661",
             "title": "Fx(arr: any[]).every(callback, thisArg): boolean",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -48,7 +48,7 @@
                 "title": "The number of parameters is expected",
                 "fullTitle": "Operate Array method Fx(arr: any[]).every(callback, thisArg): boolean The number of parameters is expected",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 2,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -57,7 +57,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).every(function (item, idx, srcArr) {\n    return (item + idx + srcArr.length) > 2018;\n})).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "be495cea-9bcd-4752-851b-92fdc7720e18",
+                "uuid": "ae33cea9-c0fe-4a9b-9522-781a954f22bc",
                 "isHook": false,
                 "skipped": false
               },
@@ -65,7 +65,7 @@
                 "title": "All item >= 2018",
                 "fullTitle": "Operate Array method Fx(arr: any[]).every(callback, thisArg): boolean All item >= 2018",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -74,7 +74,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).every(function (item) {\n    return item >= 2018;\n})).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "978c37cc-3b94-4c16-84f3-930b90f6fcaa",
+                "uuid": "888eb535-e1e2-4831-884c-624b69be2aa5",
                 "isHook": false,
                 "skipped": false
               },
@@ -91,7 +91,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).every(function (item) {\n    return item >= 2019;\n})).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cc1ea132-ad63-4737-bbe4-081c49f7109b",
+                "uuid": "ad3c1977-2964-4852-bfe4-ec279afcb18c",
                 "isHook": false,
                 "skipped": false
               },
@@ -108,28 +108,28 @@
                 "code": "try {\n    chai_1.expect(fx_1.default(arr).every('not a function')).to.equal(false);\n}\ncatch (e) {\n    // TOOD\n}",
                 "err": {},
                 "isRoot": false,
-                "uuid": "945caded-226c-43ae-908a-96631852ff1f",
+                "uuid": "4d9a299c-a5f0-4a8b-8011-92ebb573d892",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "be495cea-9bcd-4752-851b-92fdc7720e18",
-              "978c37cc-3b94-4c16-84f3-930b90f6fcaa",
-              "cc1ea132-ad63-4737-bbe4-081c49f7109b",
-              "945caded-226c-43ae-908a-96631852ff1f"
+              "ae33cea9-c0fe-4a9b-9522-781a954f22bc",
+              "888eb535-e1e2-4831-884c-624b69be2aa5",
+              "ad3c1977-2964-4852-bfe4-ec279afcb18c",
+              "4d9a299c-a5f0-4a8b-8011-92ebb573d892"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 3,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "07405baf-c3db-4867-825e-188719f0c0fe",
+            "uuid": "af6c740a-1568-4c34-9845-5a993c2f43b8",
             "title": "Fx(arr: any[]).some(callback, thisArg): boolean",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -140,7 +140,7 @@
                 "title": "The number of parameters is expected",
                 "fullTitle": "Operate Array method Fx(arr: any[]).some(callback, thisArg): boolean The number of parameters is expected",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -149,7 +149,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).some(function (item, idx, srcArr) {\n    return (item + idx + srcArr.length) > 2018;\n})).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f3ae8b7f-80df-4d86-afa6-798af0057066",
+                "uuid": "6714f740-7303-4cfa-a285-7619a0146ad8",
                 "isHook": false,
                 "skipped": false
               },
@@ -166,7 +166,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).some(function (item) {\n    return item >= 2019;\n})).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "400afbd2-cb6f-4981-9735-b8fc384cfc37",
+                "uuid": "264a3687-cc5e-4734-a047-49c222901c84",
                 "isHook": false,
                 "skipped": false
               },
@@ -183,27 +183,27 @@
                 "code": "chai_1.expect(fx_1.default(arr).some(function (item) {\n    return item >= 2022;\n})).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ac03f447-d37e-4841-8c89-cf07c796ccb5",
+                "uuid": "64765cbb-f64b-4ad5-9af8-ca6fc46c945f",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f3ae8b7f-80df-4d86-afa6-798af0057066",
-              "400afbd2-cb6f-4981-9735-b8fc384cfc37",
-              "ac03f447-d37e-4841-8c89-cf07c796ccb5"
+              "6714f740-7303-4cfa-a285-7619a0146ad8",
+              "264a3687-cc5e-4734-a047-49c222901c84",
+              "64765cbb-f64b-4ad5-9af8-ca6fc46c945f"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "75febc3c-462a-4375-9941-b71c7e8e8c81",
+            "uuid": "eb2bc35c-ec75-44d5-91c2-b6ee764963f6",
             "title": "Fx(arr: any[]).filter(callback, thisArg): any[]",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -214,7 +214,7 @@
                 "title": "The first parameter is item.",
                 "fullTitle": "Operate Array method Fx(arr: any[]).filter(callback, thisArg): any[] The first parameter is item.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -223,7 +223,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).filter(function (item) {\n    return item > 2019;\n}).length).to.equal(1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "30bc6f2d-e926-4a55-b1b6-a6ac44b01bb8",
+                "uuid": "5e1b470f-e265-41b7-a721-d1ef63237d21",
                 "isHook": false,
                 "skipped": false
               },
@@ -231,7 +231,7 @@
                 "title": "The second parameter is index.",
                 "fullTitle": "Operate Array method Fx(arr: any[]).filter(callback, thisArg): any[] The second parameter is index.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -240,7 +240,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).filter(function (item, idx) {\n    return idx > 1;\n}).length).to.equal(1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "253c5eca-305f-44ed-a5b8-866d5e358e54",
+                "uuid": "cdf47107-b271-4cb6-9210-22a01c46e1a8",
                 "isHook": false,
                 "skipped": false
               },
@@ -257,7 +257,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).filter(function (item, idx, src) {\n    return src.length === arr.length;\n}).length).to.equal(3);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0679fefb-9fcf-471e-be80-db67ff9fc175",
+                "uuid": "c25a040d-7b2d-4780-a553-0d517f193b99",
                 "isHook": false,
                 "skipped": false
               },
@@ -265,7 +265,7 @@
                 "title": "New array is [2019, 2020].",
                 "fullTitle": "Operate Array method Fx(arr: any[]).filter(callback, thisArg): any[] New array is [2019, 2020].",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -274,28 +274,28 @@
                 "code": "chai_1.expect(fx_1.default(arr).filter(function (item) {\n    return item >= 2019;\n}).join()).to.equal('2019,2020');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b5e2e50d-7115-486d-8e5b-a20ca2d8b0b2",
+                "uuid": "9a0fcac7-1325-4c18-95ae-6c2f335e5c7f",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "30bc6f2d-e926-4a55-b1b6-a6ac44b01bb8",
-              "253c5eca-305f-44ed-a5b8-866d5e358e54",
-              "0679fefb-9fcf-471e-be80-db67ff9fc175",
-              "b5e2e50d-7115-486d-8e5b-a20ca2d8b0b2"
+              "5e1b470f-e265-41b7-a721-d1ef63237d21",
+              "cdf47107-b271-4cb6-9210-22a01c46e1a8",
+              "c25a040d-7b2d-4780-a553-0d517f193b99",
+              "9a0fcac7-1325-4c18-95ae-6c2f335e5c7f"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 3,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "a90ca68a-7965-4fb5-8e2b-c67a520533c4",
+            "uuid": "c8c06ad4-18d4-4eab-b38b-394366423d7d",
             "title": "Fx(arr: any[]).forEach(callback, thisArg): void",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -315,7 +315,7 @@
                 "code": "var sum = 0;\nfx_1.default(arr).forEach(function (item) {\n    sum += item;\n});\nchai_1.expect(sum).to.equal(6057);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bc0104e7-5061-4d9b-a4b4-605661ba6f60",
+                "uuid": "2aba26bc-ea1d-429e-9e19-cc6c9d1e646b",
                 "isHook": false,
                 "skipped": false
               },
@@ -332,7 +332,7 @@
                 "code": "var sum = 0;\nfx_1.default(arr).forEach(function (item, index) {\n    sum += index;\n});\nchai_1.expect(sum).to.equal(3);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3b4611fd-6401-459d-83f5-d1ca9eddb6e5",
+                "uuid": "391ca3c4-da63-44f9-ad53-406fd99d6c11",
                 "isHook": false,
                 "skipped": false
               },
@@ -349,7 +349,7 @@
                 "code": "var sum = 0;\nfx_1.default(arr).forEach(function (item, index, src) {\n    if (arr.length === src.length) {\n        sum += index;\n    }\n});\nchai_1.expect(sum).to.equal(3);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f8c54603-4d4b-417c-ab68-6497475d8729",
+                "uuid": "b8ee2df9-edc8-4768-b883-282a5df9af50",
                 "isHook": false,
                 "skipped": false
               },
@@ -366,7 +366,7 @@
                 "code": "var sum = 0;\nfx_1.default(arr).forEach(function (item) {\n    sum += item;\n});\nchai_1.expect(sum).to.equal(6057);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2ad48177-995e-4309-bc0c-5e4795c3be66",
+                "uuid": "41bf85c5-2c8d-42b8-9730-2dd3608b6896",
                 "isHook": false,
                 "skipped": false
               },
@@ -383,18 +383,18 @@
                 "code": "var sum = 0;\nfx_1.default(arr).forEach(function (item) {\n    sum += item;\n    return item > 2019;\n});\nchai_1.expect(sum).to.equal(6057);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6eac2884-82d4-4197-a7c0-81574017bcaf",
+                "uuid": "9b95887b-b05a-4d60-800a-0420fc32c7e4",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "bc0104e7-5061-4d9b-a4b4-605661ba6f60",
-              "3b4611fd-6401-459d-83f5-d1ca9eddb6e5",
-              "f8c54603-4d4b-417c-ab68-6497475d8729",
-              "2ad48177-995e-4309-bc0c-5e4795c3be66",
-              "6eac2884-82d4-4197-a7c0-81574017bcaf"
+              "2aba26bc-ea1d-429e-9e19-cc6c9d1e646b",
+              "391ca3c4-da63-44f9-ad53-406fd99d6c11",
+              "b8ee2df9-edc8-4768-b883-282a5df9af50",
+              "41bf85c5-2c8d-42b8-9730-2dd3608b6896",
+              "9b95887b-b05a-4d60-800a-0420fc32c7e4"
             ],
             "failures": [],
             "pending": [],
@@ -405,7 +405,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "b147af04-e6a9-4ab9-ad97-210d81c90acc",
+            "uuid": "a3d75de9-ab51-48be-a401-fc0070b34928",
             "title": "Fx(arr: any[]).map(callback, thisArg): any[]",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -416,7 +416,7 @@
                 "title": "The first parameter is item.",
                 "fullTitle": "Operate Array method Fx(arr: any[]).map(callback, thisArg): any[] The first parameter is item.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -425,7 +425,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).map(function (item) {\n    return item + 1;\n}).join()).to.equal('2019,2020,2021');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "73b642f6-857a-49fb-a425-d0fb84f648eb",
+                "uuid": "e7703cd0-e767-43f1-82cb-1629bf4815d9",
                 "isHook": false,
                 "skipped": false
               },
@@ -442,7 +442,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).map(function (item, index) {\n    return item + index;\n}).join()).to.equal('2018,2020,2022');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cd08e41e-0548-4777-83ff-6894ed8214dd",
+                "uuid": "4774b5a4-5aa8-4915-ac08-8b9ce1091d35",
                 "isHook": false,
                 "skipped": false
               },
@@ -450,7 +450,7 @@
                 "title": "The third parameter is array.",
                 "fullTitle": "Operate Array method Fx(arr: any[]).map(callback, thisArg): any[] The third parameter is array.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -459,7 +459,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).map(function (item, index, src) {\n    return item + src.length;\n}).join()).to.equal('2021,2022,2023');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0335f493-a8b5-49a0-b2d8-806011e27940",
+                "uuid": "d9e205c9-f7db-48e2-b9fc-85b67a501231",
                 "isHook": false,
                 "skipped": false
               },
@@ -476,28 +476,28 @@
                 "code": "chai_1.expect(fx_1.default(arr).map(function (item, index, src) {\n    return item + 2;\n}).join()).to.equal('2020,2021,2022');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e9e74dd7-ae22-4dcf-8442-792ec1dc740a",
+                "uuid": "0de0f0c3-c93d-439e-bb7e-cd8b63388766",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "73b642f6-857a-49fb-a425-d0fb84f648eb",
-              "cd08e41e-0548-4777-83ff-6894ed8214dd",
-              "0335f493-a8b5-49a0-b2d8-806011e27940",
-              "e9e74dd7-ae22-4dcf-8442-792ec1dc740a"
+              "e7703cd0-e767-43f1-82cb-1629bf4815d9",
+              "4774b5a4-5aa8-4915-ac08-8b9ce1091d35",
+              "d9e205c9-f7db-48e2-b9fc-85b67a501231",
+              "0de0f0c3-c93d-439e-bb7e-cd8b63388766"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 2,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "ea9f7308-76d9-44f3-8c52-467c931a9ff8",
+            "uuid": "45103a07-d48d-49b1-ac4b-c26f22cfd2f0",
             "title": "Fx(arr: any[]).find(callback, thisArg): any",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -508,7 +508,7 @@
                 "title": "The first parameter is item.",
                 "fullTitle": "Operate Array method Fx(arr: any[]).find(callback, thisArg): any The first parameter is item.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -517,7 +517,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).find(function (item) {\n    return item > 2018;\n})).to.equal(2019);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "33afbd45-f16b-4b45-9057-faaedbd2981f",
+                "uuid": "c8552e20-7bb8-45a7-a609-53f2d4288122",
                 "isHook": false,
                 "skipped": false
               },
@@ -534,7 +534,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).find(function (item, index) {\n    return item - index >= 2018;\n})).to.equal(2018);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "be5ec272-5037-49b1-8783-289486c5677f",
+                "uuid": "d9f7501e-8a14-4014-a3a4-17a33b20a3ab",
                 "isHook": false,
                 "skipped": false
               },
@@ -551,7 +551,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).find(function (item, index, src) {\n    return item + src.length > 2021;\n})).to.equal(2019);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c1abaad3-7dcd-465b-98b8-2497216dcd54",
+                "uuid": "3d566a63-ab0b-4773-b5eb-bfc87a21e98d",
                 "isHook": false,
                 "skipped": false
               },
@@ -568,28 +568,28 @@
                 "code": "chai_1.expect(fx_1.default(arr).find(function (item, index, src) {\n    return item > 2028;\n})).to.equal(void 0);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4b10df02-27ee-4b2f-955f-fa85548fe5a4",
+                "uuid": "5fb0b736-30c1-4fa1-b37c-60568244a1af",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "33afbd45-f16b-4b45-9057-faaedbd2981f",
-              "be5ec272-5037-49b1-8783-289486c5677f",
-              "c1abaad3-7dcd-465b-98b8-2497216dcd54",
-              "4b10df02-27ee-4b2f-955f-fa85548fe5a4"
+              "c8552e20-7bb8-45a7-a609-53f2d4288122",
+              "d9f7501e-8a14-4014-a3a4-17a33b20a3ab",
+              "3d566a63-ab0b-4773-b5eb-bfc87a21e98d",
+              "5fb0b736-30c1-4fa1-b37c-60568244a1af"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 2,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "27b277e6-9470-4ab9-8ed0-f5560b989717",
+            "uuid": "ae04facd-3111-4dee-b659-8f0bd41b410f",
             "title": "Fx(arr: any[]).indexOf(search: any, start?: number): number",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -600,7 +600,7 @@
                 "title": "2018 in the 2018,2019,2020,2018",
                 "fullTitle": "Operate Array method Fx(arr: any[]).indexOf(search: any, start?: number): number 2018 in the 2018,2019,2020,2018",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -609,7 +609,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).indexOf(2018)).to.equal(0);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "18c58b9b-3d89-429a-aa1a-35123f852b82",
+                "uuid": "b0ff12de-fdc2-40a7-a12a-b19d441178c5",
                 "isHook": false,
                 "skipped": false
               },
@@ -626,7 +626,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).indexOf(2018, 10)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e259b050-c82d-4be8-aef4-0b3df9d374df",
+                "uuid": "0f6fc6d1-7ddf-4162-bc40-9732268c4276",
                 "isHook": false,
                 "skipped": false
               },
@@ -643,7 +643,7 @@
                 "code": "chai_1.expect(fx_1.default([]).indexOf(2018, 2)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "00248d21-969b-457c-906f-1bfff19c3019",
+                "uuid": "d09e48c8-92ad-4e98-92d3-1017ebce47ab",
                 "isHook": false,
                 "skipped": false
               },
@@ -660,7 +660,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).indexOf(2018, -2)).to.equal(3);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8ae83ef4-6f31-4925-b532-659eea087fa6",
+                "uuid": "e1ee25bb-fdda-45ee-bbcb-aff0953150c9",
                 "isHook": false,
                 "skipped": false
               },
@@ -677,29 +677,29 @@
                 "code": "chai_1.expect(fx_1.default(arr).indexOf(2025)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cf391a81-209b-471d-b89b-fbc49ec7f2ca",
+                "uuid": "65e3de12-1aee-41f2-88bd-e9fac6a174d8",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "18c58b9b-3d89-429a-aa1a-35123f852b82",
-              "e259b050-c82d-4be8-aef4-0b3df9d374df",
-              "00248d21-969b-457c-906f-1bfff19c3019",
-              "8ae83ef4-6f31-4925-b532-659eea087fa6",
-              "cf391a81-209b-471d-b89b-fbc49ec7f2ca"
+              "b0ff12de-fdc2-40a7-a12a-b19d441178c5",
+              "0f6fc6d1-7ddf-4162-bc40-9732268c4276",
+              "d09e48c8-92ad-4e98-92d3-1017ebce47ab",
+              "e1ee25bb-fdda-45ee-bbcb-aff0953150c9",
+              "65e3de12-1aee-41f2-88bd-e9fac6a174d8"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "e4d2906b-c3e6-4dcd-81dd-83fec3619fdb",
+            "uuid": "07d36438-ed2b-4ebb-bf83-5300a8c49a5b",
             "title": "Fx(arr: any[]).lastIndexOf(search: any, start?: number): number",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -710,7 +710,7 @@
                 "title": "2018 in the 2018,2019,2020,2018",
                 "fullTitle": "Operate Array method Fx(arr: any[]).lastIndexOf(search: any, start?: number): number 2018 in the 2018,2019,2020,2018",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -719,7 +719,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).lastIndexOf(2018)).to.equal(3);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f62ec546-8961-40ab-b745-d431838a0612",
+                "uuid": "f0726fd7-a297-439c-b9fd-5a36536b178f",
                 "isHook": false,
                 "skipped": false
               },
@@ -736,7 +736,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).lastIndexOf(2018, 10)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "57860442-07c6-4db8-bd3a-ce7a0b31ecbc",
+                "uuid": "0ee555da-b689-4e8d-b36c-64e54db6171a",
                 "isHook": false,
                 "skipped": false
               },
@@ -753,7 +753,7 @@
                 "code": "chai_1.expect(fx_1.default([]).lastIndexOf(2018, 2)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3ad5bb7d-5e03-4bd2-bfb0-d00d467027c0",
+                "uuid": "3ae7eff5-5282-4794-a24e-8cbbc1ebf926",
                 "isHook": false,
                 "skipped": false
               },
@@ -770,7 +770,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).lastIndexOf(2018, -2)).to.equal(0);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "dce6db29-f33d-46a6-ac84-3467445352a4",
+                "uuid": "5127b6cd-b891-49a7-b5eb-75ce875ea278",
                 "isHook": false,
                 "skipped": false
               },
@@ -778,7 +778,7 @@
                 "title": "Return -1",
                 "fullTitle": "Operate Array method Fx(arr: any[]).lastIndexOf(search: any, start?: number): number Return -1",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -787,29 +787,29 @@
                 "code": "chai_1.expect(fx_1.default(arr).lastIndexOf(2025)).to.equal(-1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "03e32548-0ea8-47cc-832d-50b0dfb8ac27",
+                "uuid": "89187706-0f65-4d68-94d0-d6db3251e94b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f62ec546-8961-40ab-b745-d431838a0612",
-              "57860442-07c6-4db8-bd3a-ce7a0b31ecbc",
-              "3ad5bb7d-5e03-4bd2-bfb0-d00d467027c0",
-              "dce6db29-f33d-46a6-ac84-3467445352a4",
-              "03e32548-0ea8-47cc-832d-50b0dfb8ac27"
+              "f0726fd7-a297-439c-b9fd-5a36536b178f",
+              "0ee555da-b689-4e8d-b36c-64e54db6171a",
+              "3ae7eff5-5282-4794-a24e-8cbbc1ebf926",
+              "5127b6cd-b891-49a7-b5eb-75ce875ea278",
+              "89187706-0f65-4d68-94d0-d6db3251e94b"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 2,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "f0b0af2e-723c-47ae-9dce-ebbd6a3bc4cc",
+            "uuid": "cb87fc62-8852-4dab-a885-dbf021e33de1",
             "title": "Fx(arr: any[]).unique(): any[]",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -820,7 +820,7 @@
                 "title": "Unique the array",
                 "fullTitle": "Operate Array method Fx(arr: any[]).unique(): any[] Unique the array",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -829,52 +829,14 @@
                 "code": "chai_1.expect(fx_1.default(arr).unique().join()).to.equal('2018,2019,2019,2020');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4d866f07-72bf-4c44-86b3-4b369b6f7eaa",
+                "uuid": "ef80d4b3-063e-4f26-91ca-21b275ec125b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "4d866f07-72bf-4c44-86b3-4b369b6f7eaa"
-            ],
-            "failures": [],
-            "pending": [],
-            "skipped": [],
-            "duration": 0,
-            "root": false,
-            "rootEmpty": false,
-            "_timeout": 2000
-          },
-          {
-            "uuid": "418c6a3a-fc1b-456b-9c25-2c55258d3edc",
-            "title": "Fx(arr: any[]).shuffle(): any[]",
-            "fullFile": "F:\\github\\fx\\test\\array.ts",
-            "file": "\\test\\array.ts",
-            "beforeHooks": [],
-            "afterHooks": [],
-            "tests": [
-              {
-                "title": "Shuffle",
-                "fullTitle": "Operate Array method Fx(arr: any[]).shuffle(): any[] Shuffle",
-                "timedOut": false,
-                "duration": 1,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "chai_1.expect(fx_1.default(arr).shuffle().join()).not.to.equal(fx_1.default(arr).shuffle().join());",
-                "err": {},
-                "isRoot": false,
-                "uuid": "dc87fa09-867d-4542-a3f5-7932c5e5a8f3",
-                "isHook": false,
-                "skipped": false
-              }
-            ],
-            "suites": [],
-            "passes": [
-              "dc87fa09-867d-4542-a3f5-7932c5e5a8f3"
+              "ef80d4b3-063e-4f26-91ca-21b275ec125b"
             ],
             "failures": [],
             "pending": [],
@@ -885,7 +847,45 @@
             "_timeout": 2000
           },
           {
-            "uuid": "9fd2bc5d-e61b-423d-8924-4b550ba08f61",
+            "uuid": "8ab446e0-3c91-4e8a-9bfb-c3b71d285bdd",
+            "title": "Fx(arr: any[]).shuffle(): any[]",
+            "fullFile": "F:\\github\\fx\\test\\array.ts",
+            "file": "\\test\\array.ts",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Shuffle",
+                "fullTitle": "Operate Array method Fx(arr: any[]).shuffle(): any[] Shuffle",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "chai_1.expect(fx_1.default(arr).shuffle().join()).not.to.equal(fx_1.default(arr).shuffle().join());",
+                "err": {},
+                "isRoot": false,
+                "uuid": "1dc4fb46-aed6-4989-9dd8-84ad73874fc2",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "1dc4fb46-aed6-4989-9dd8-84ad73874fc2"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "69f5520a-e148-467d-b1a4-cd3ab059332b",
             "title": "Fx(arr: any[]).includes(search: any, start?: number): boolean",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -896,7 +896,7 @@
                 "title": "Should be return true",
                 "fullTitle": "Operate Array method Fx(arr: any[]).includes(search: any, start?: number): boolean Should be return true",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -905,7 +905,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).includes(2020)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "70f7fe0a-a56e-48ff-9a2f-ec23f44fe362",
+                "uuid": "d8d8a0e0-d37f-4abf-a799-eaa70df19209",
                 "isHook": false,
                 "skipped": false
               },
@@ -922,7 +922,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).includes(2028)).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b35bb32b-7fb5-4420-8649-bf18f225e17b",
+                "uuid": "32023c54-b077-47ad-8468-b7d9990ac48d",
                 "isHook": false,
                 "skipped": false
               },
@@ -939,7 +939,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).includes(2018, 2)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d20ba876-8ccc-4045-95d1-5c08c7fb03f0",
+                "uuid": "8d87b09c-b849-454b-98b3-cbb0c65cd402",
                 "isHook": false,
                 "skipped": false
               },
@@ -956,7 +956,7 @@
                 "code": "chai_1.expect(fx_1.default(arr).includes(2018, -2)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "46d95ae2-3c22-4ec5-9e1e-c8c854385374",
+                "uuid": "3ddff25a-d648-4181-83e6-8bd40562fb3b",
                 "isHook": false,
                 "skipped": false
               },
@@ -973,29 +973,29 @@
                 "code": "chai_1.expect(fx_1.default([]).includes(2028)).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c3810fe6-9ca7-4869-a71b-65524a0548dd",
+                "uuid": "e0f2a8a0-613d-47de-a5ff-06f259ed729b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "70f7fe0a-a56e-48ff-9a2f-ec23f44fe362",
-              "b35bb32b-7fb5-4420-8649-bf18f225e17b",
-              "d20ba876-8ccc-4045-95d1-5c08c7fb03f0",
-              "46d95ae2-3c22-4ec5-9e1e-c8c854385374",
-              "c3810fe6-9ca7-4869-a71b-65524a0548dd"
+              "d8d8a0e0-d37f-4abf-a799-eaa70df19209",
+              "32023c54-b077-47ad-8468-b7d9990ac48d",
+              "8d87b09c-b849-454b-98b3-cbb0c65cd402",
+              "3ddff25a-d648-4181-83e6-8bd40562fb3b",
+              "e0f2a8a0-613d-47de-a5ff-06f259ed729b"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "89be65fe-3126-44bb-b49b-30d3c96c438c",
+            "uuid": "cf07399c-4d6c-44d7-978e-00241b7cf36b",
             "title": "Fx(arr: any[]).clone(): any[]",
             "fullFile": "F:\\github\\fx\\test\\array.ts",
             "file": "\\test\\array.ts",
@@ -1015,14 +1015,14 @@
                 "code": "chai_1.expect(fx_1.default(arr).clone().join()).to.equal('2020,2021,2022');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3bb66267-6055-4ae2-9e75-806a0e66d021",
+                "uuid": "933632b9-821b-411f-844d-a57b7a4e95c8",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "3bb66267-6055-4ae2-9e75-806a0e66d021"
+              "933632b9-821b-411f-844d-a57b7a4e95c8"
             ],
             "failures": [],
             "pending": [],
@@ -1043,7 +1043,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "ec1aa67a-8763-460f-938b-5dce9b82baed",
+        "uuid": "ab8edf7c-bfb1-4711-870c-d542287613a9",
         "title": "Fx static methods",
         "fullFile": "F:\\github\\fx\\test\\static.ts",
         "file": "\\test\\static.ts",
@@ -1052,7 +1052,7 @@
         "tests": [],
         "suites": [
           {
-            "uuid": "8ea7a7f4-4131-4e36-96bf-43feb5b91c30",
+            "uuid": "10f1ae01-5a62-4ea8-be70-78461a3cac1b",
             "title": "Fx(): F",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1072,7 +1072,7 @@
                 "code": "chai_1.expect(!fx_1.default().type).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "35f8cb7f-2b72-4f43-a999-b41044f08e5f",
+                "uuid": "a2f5dc88-7efa-490f-a267-7fbf025c9a43",
                 "isHook": false,
                 "skipped": false
               },
@@ -1089,15 +1089,15 @@
                 "code": "try {\n    chai_1.expect(fx_1.default(null)).to.equal(true);\n}\ncatch (e) {\n    // TODO\n}",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e68e397c-93cc-4efc-a21f-5c1ba28f85ff",
+                "uuid": "8927187a-aaf9-4cfd-b238-fc9099892ad6",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "35f8cb7f-2b72-4f43-a999-b41044f08e5f",
-              "e68e397c-93cc-4efc-a21f-5c1ba28f85ff"
+              "a2f5dc88-7efa-490f-a267-7fbf025c9a43",
+              "8927187a-aaf9-4cfd-b238-fc9099892ad6"
             ],
             "failures": [],
             "pending": [],
@@ -1108,7 +1108,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "d5261c8c-65fd-47e3-82e2-e877ba470597",
+            "uuid": "76b9afd5-9b6c-417a-b371-27a572626a91",
             "title": "Fx.type(o: any): string",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1128,7 +1128,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c5c928e5-008f-432f-ada2-cfa60fc48d8c",
+                "uuid": "c9bdbfe3-3ab7-479c-8e7c-386bdfd780b0",
                 "isHook": false,
                 "skipped": false
               },
@@ -1145,7 +1145,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9f4190c1-0729-4204-8aa4-0ee5e096467e",
+                "uuid": "86c06a4d-b68f-4172-a292-94e5bc065987",
                 "isHook": false,
                 "skipped": false
               },
@@ -1162,7 +1162,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "363c32c1-960e-4ab3-af6c-27a23cfe30b5",
+                "uuid": "b54b5ac6-a94b-44bd-9e73-f8debf6811be",
                 "isHook": false,
                 "skipped": false
               },
@@ -1170,7 +1170,7 @@
                 "title": "Input: null, Output: null",
                 "fullTitle": "Fx static methods Fx.type(o: any): string Input: null, Output: null",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1179,7 +1179,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f2da5768-0368-4bf3-8eb2-b4007919793e",
+                "uuid": "6e5742b3-19c7-4b9d-b7b8-087d1d5cf2d7",
                 "isHook": false,
                 "skipped": false
               },
@@ -1196,7 +1196,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3554d136-fd04-4c49-b3c5-acd5421553ca",
+                "uuid": "cde55274-e46e-47cf-83e6-89c1dcac0742",
                 "isHook": false,
                 "skipped": false
               },
@@ -1213,7 +1213,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "83f5048b-fad7-4587-8175-f5e0be1e7191",
+                "uuid": "82d95f38-6cd8-4262-a3ff-9f8389efd7f2",
                 "isHook": false,
                 "skipped": false
               },
@@ -1230,7 +1230,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9e571703-90b4-4033-98e3-3ce2efd5ec0a",
+                "uuid": "2b154bc7-d057-4d39-bfb6-3799ae280737",
                 "isHook": false,
                 "skipped": false
               },
@@ -1247,7 +1247,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "92c35701-c226-445e-aaba-50c5069bb849",
+                "uuid": "da319a2c-5afd-4384-9915-8f105bc5f781",
                 "isHook": false,
                 "skipped": false
               },
@@ -1264,7 +1264,7 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "539cd91b-30f5-4637-b7f9-f0a3cb3c85ed",
+                "uuid": "3e7fb0fd-5207-4054-a5bb-b67b32e11389",
                 "isHook": false,
                 "skipped": false
               },
@@ -1281,34 +1281,34 @@
                 "code": "chai_1.expect(fx_1.default.type(dataInJs[i])).to.equal(type);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cf9dc718-6416-4ca6-b68d-ec13914f9e10",
+                "uuid": "e0c89646-1c99-4cc4-8a00-33989e29fb4a",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "c5c928e5-008f-432f-ada2-cfa60fc48d8c",
-              "9f4190c1-0729-4204-8aa4-0ee5e096467e",
-              "363c32c1-960e-4ab3-af6c-27a23cfe30b5",
-              "f2da5768-0368-4bf3-8eb2-b4007919793e",
-              "3554d136-fd04-4c49-b3c5-acd5421553ca",
-              "83f5048b-fad7-4587-8175-f5e0be1e7191",
-              "9e571703-90b4-4033-98e3-3ce2efd5ec0a",
-              "92c35701-c226-445e-aaba-50c5069bb849",
-              "539cd91b-30f5-4637-b7f9-f0a3cb3c85ed",
-              "cf9dc718-6416-4ca6-b68d-ec13914f9e10"
+              "c9bdbfe3-3ab7-479c-8e7c-386bdfd780b0",
+              "86c06a4d-b68f-4172-a292-94e5bc065987",
+              "b54b5ac6-a94b-44bd-9e73-f8debf6811be",
+              "6e5742b3-19c7-4b9d-b7b8-087d1d5cf2d7",
+              "cde55274-e46e-47cf-83e6-89c1dcac0742",
+              "82d95f38-6cd8-4262-a3ff-9f8389efd7f2",
+              "2b154bc7-d057-4d39-bfb6-3799ae280737",
+              "da319a2c-5afd-4384-9915-8f105bc5f781",
+              "3e7fb0fd-5207-4054-a5bb-b67b32e11389",
+              "e0c89646-1c99-4cc4-8a00-33989e29fb4a"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "0291d34e-0aaa-4575-9169-b4084a4f1f1e",
+            "uuid": "d678f5d2-b804-4935-82f1-f4eb1d6f2ce5",
             "title": "Fx.isBoolean(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1328,7 +1328,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "12f1ae84-184c-423b-88a5-f6a0844df729",
+                "uuid": "51ead4ee-1c25-4eca-92ff-9e9257c73fa0",
                 "isHook": false,
                 "skipped": false
               },
@@ -1345,7 +1345,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "eb241daa-7fd1-4b20-bfe9-775e6661d0e2",
+                "uuid": "2215abea-47a1-4b56-908b-bcd8c7ccd5a3",
                 "isHook": false,
                 "skipped": false
               },
@@ -1362,7 +1362,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4440b99b-0194-4cc6-ad66-22dfd5891fee",
+                "uuid": "2f180145-89a1-4800-bf90-fc6dbda58cad",
                 "isHook": false,
                 "skipped": false
               },
@@ -1379,7 +1379,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4f2a4613-0abd-4e7b-942f-1cf62999b2e4",
+                "uuid": "81160591-d4bf-4e22-9109-fffc5cf34204",
                 "isHook": false,
                 "skipped": false
               },
@@ -1396,7 +1396,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "80260f7b-506e-4871-a417-ff3b03d96d62",
+                "uuid": "3189106d-22f4-4287-b2e7-59a6a81d01d6",
                 "isHook": false,
                 "skipped": false
               },
@@ -1413,7 +1413,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9c6a6985-31d4-4666-a879-2133a8bd678e",
+                "uuid": "65ab8906-faa5-43b2-8fda-eb88c676bf74",
                 "isHook": false,
                 "skipped": false
               },
@@ -1430,7 +1430,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d55fedd3-e592-437e-9fd1-916c85ad74ae",
+                "uuid": "7662208c-2dc7-4ce5-a1df-c6ae689423f3",
                 "isHook": false,
                 "skipped": false
               },
@@ -1447,7 +1447,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3d6d0af3-8682-48a5-8dd8-6ab9fbc4bc94",
+                "uuid": "88f900ae-c55c-4fbf-b67c-5dd8ecded681",
                 "isHook": false,
                 "skipped": false
               },
@@ -1464,7 +1464,7 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "66e7ec7a-fe90-48d8-8dab-8859b952004b",
+                "uuid": "71074b09-b0b2-469d-a806-0d4a9c08ce53",
                 "isHook": false,
                 "skipped": false
               },
@@ -1481,23 +1481,23 @@
                 "code": "chai_1.expect(fx_1.default.isBoolean(dataInJs[i])).to.equal(type === 'boolean');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "375895be-f44c-41dd-9312-4c4aebb81a0c",
+                "uuid": "e941685f-bac5-4a37-a6b1-35b6cbf80dde",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "12f1ae84-184c-423b-88a5-f6a0844df729",
-              "eb241daa-7fd1-4b20-bfe9-775e6661d0e2",
-              "4440b99b-0194-4cc6-ad66-22dfd5891fee",
-              "4f2a4613-0abd-4e7b-942f-1cf62999b2e4",
-              "80260f7b-506e-4871-a417-ff3b03d96d62",
-              "9c6a6985-31d4-4666-a879-2133a8bd678e",
-              "d55fedd3-e592-437e-9fd1-916c85ad74ae",
-              "3d6d0af3-8682-48a5-8dd8-6ab9fbc4bc94",
-              "66e7ec7a-fe90-48d8-8dab-8859b952004b",
-              "375895be-f44c-41dd-9312-4c4aebb81a0c"
+              "51ead4ee-1c25-4eca-92ff-9e9257c73fa0",
+              "2215abea-47a1-4b56-908b-bcd8c7ccd5a3",
+              "2f180145-89a1-4800-bf90-fc6dbda58cad",
+              "81160591-d4bf-4e22-9109-fffc5cf34204",
+              "3189106d-22f4-4287-b2e7-59a6a81d01d6",
+              "65ab8906-faa5-43b2-8fda-eb88c676bf74",
+              "7662208c-2dc7-4ce5-a1df-c6ae689423f3",
+              "88f900ae-c55c-4fbf-b67c-5dd8ecded681",
+              "71074b09-b0b2-469d-a806-0d4a9c08ce53",
+              "e941685f-bac5-4a37-a6b1-35b6cbf80dde"
             ],
             "failures": [],
             "pending": [],
@@ -1508,7 +1508,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "5ea4d81f-0365-4299-b116-7cbdd83ea571",
+            "uuid": "fff1f6b7-2296-4b5e-84c4-70a50d24f3fd",
             "title": "Fx.isString(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1528,7 +1528,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f6deb98b-cb9f-4b4a-ae00-7aa144cfa9ff",
+                "uuid": "3efdc1e6-3626-42d7-8554-b0e8a229d86c",
                 "isHook": false,
                 "skipped": false
               },
@@ -1545,7 +1545,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "56ea4e5a-72ff-424d-8908-76fd2734bb57",
+                "uuid": "e4b9c7c6-2a6f-412a-be2f-25a92ac14069",
                 "isHook": false,
                 "skipped": false
               },
@@ -1562,7 +1562,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b3cf4061-6fcc-4a4e-991a-c4935c3e0b7a",
+                "uuid": "9a2e5526-5f29-40b5-b1cd-a60b4d944cfa",
                 "isHook": false,
                 "skipped": false
               },
@@ -1579,7 +1579,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "87235933-8668-4ac1-b1d3-290990387dba",
+                "uuid": "d86f40c2-2a1d-4e7e-b621-08fe3d229fdf",
                 "isHook": false,
                 "skipped": false
               },
@@ -1587,7 +1587,7 @@
                 "title": "Input: undefined, Output: false",
                 "fullTitle": "Fx static methods Fx.isString(o: any): boolean Input: undefined, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1596,7 +1596,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "33bccc9d-21b1-47c8-bee3-97b369d2f298",
+                "uuid": "25411445-127a-4141-9e05-996fd334b904",
                 "isHook": false,
                 "skipped": false
               },
@@ -1604,7 +1604,7 @@
                 "title": "Input: object, Output: false",
                 "fullTitle": "Fx static methods Fx.isString(o: any): boolean Input: object, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1613,7 +1613,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "dc6a901f-5716-41ac-99e8-ced0759036b6",
+                "uuid": "ae98f18a-2d00-4a01-9dda-0d797c8674a8",
                 "isHook": false,
                 "skipped": false
               },
@@ -1630,7 +1630,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3db60d60-712d-437c-b27c-d3200abb5fe6",
+                "uuid": "43785858-6598-475b-8a3d-1ab908ee5917",
                 "isHook": false,
                 "skipped": false
               },
@@ -1647,7 +1647,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "880c8736-7b34-448e-a8fa-0eef41866843",
+                "uuid": "dd467739-2994-4f09-bbc4-8dcdf6449899",
                 "isHook": false,
                 "skipped": false
               },
@@ -1664,7 +1664,7 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7183498a-94dc-474c-a826-f278edb569dd",
+                "uuid": "f06a7361-6979-484f-975c-d8328e6fba5b",
                 "isHook": false,
                 "skipped": false
               },
@@ -1681,34 +1681,34 @@
                 "code": "chai_1.expect(fx_1.default.isString(dataInJs[i])).to.equal(type === 'string');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b48a7f2b-c7bf-4876-9812-1d2a8605be1f",
+                "uuid": "fdcdfc04-9da1-49f3-832f-a4f4ca704db5",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f6deb98b-cb9f-4b4a-ae00-7aa144cfa9ff",
-              "56ea4e5a-72ff-424d-8908-76fd2734bb57",
-              "b3cf4061-6fcc-4a4e-991a-c4935c3e0b7a",
-              "87235933-8668-4ac1-b1d3-290990387dba",
-              "33bccc9d-21b1-47c8-bee3-97b369d2f298",
-              "dc6a901f-5716-41ac-99e8-ced0759036b6",
-              "3db60d60-712d-437c-b27c-d3200abb5fe6",
-              "880c8736-7b34-448e-a8fa-0eef41866843",
-              "7183498a-94dc-474c-a826-f278edb569dd",
-              "b48a7f2b-c7bf-4876-9812-1d2a8605be1f"
+              "3efdc1e6-3626-42d7-8554-b0e8a229d86c",
+              "e4b9c7c6-2a6f-412a-be2f-25a92ac14069",
+              "9a2e5526-5f29-40b5-b1cd-a60b4d944cfa",
+              "d86f40c2-2a1d-4e7e-b621-08fe3d229fdf",
+              "25411445-127a-4141-9e05-996fd334b904",
+              "ae98f18a-2d00-4a01-9dda-0d797c8674a8",
+              "43785858-6598-475b-8a3d-1ab908ee5917",
+              "dd467739-2994-4f09-bbc4-8dcdf6449899",
+              "f06a7361-6979-484f-975c-d8328e6fba5b",
+              "fdcdfc04-9da1-49f3-832f-a4f4ca704db5"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 2,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "514fcf57-0d5e-429f-a4fc-2f9e00e12a1f",
+            "uuid": "1f95990f-cf56-4a14-9b73-73d6b1aa0a52",
             "title": "Fx.isUndefined(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1728,7 +1728,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5444d587-8b3e-4b83-808f-f133a533c314",
+                "uuid": "8a74266d-e9b9-4880-8e75-821c0fb14011",
                 "isHook": false,
                 "skipped": false
               },
@@ -1736,7 +1736,7 @@
                 "title": "Input: number, Output: false",
                 "fullTitle": "Fx static methods Fx.isUndefined(o: any): boolean Input: number, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1745,7 +1745,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bf7ceaa2-71af-410b-b0a9-2d0e6c0a30a5",
+                "uuid": "62d4df34-fd26-4f1e-997e-e39fb8a7df0c",
                 "isHook": false,
                 "skipped": false
               },
@@ -1762,7 +1762,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "31d96351-ebd8-46b5-a5e1-db4c5ce9317f",
+                "uuid": "b6580878-1faa-4894-9b1e-6177f86d1d0e",
                 "isHook": false,
                 "skipped": false
               },
@@ -1779,7 +1779,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2e1c8fd2-0473-4ad4-b3f7-1a589f05cfb0",
+                "uuid": "fa041536-f82b-467c-abf1-d5f446419456",
                 "isHook": false,
                 "skipped": false
               },
@@ -1796,7 +1796,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "75578fbf-580d-4423-b694-0136d7606ead",
+                "uuid": "e220db00-145f-448e-9daf-89f263efaf59",
                 "isHook": false,
                 "skipped": false
               },
@@ -1813,7 +1813,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4b6cfa1b-cd9b-4eee-b757-48edac42815f",
+                "uuid": "d2bb7160-9096-4429-82ae-b6e4a78cbccc",
                 "isHook": false,
                 "skipped": false
               },
@@ -1830,7 +1830,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d3e66a78-cd53-4a2c-8af6-17314943498f",
+                "uuid": "4253a24d-01fc-4eb7-8445-bd0a446e5ea2",
                 "isHook": false,
                 "skipped": false
               },
@@ -1838,7 +1838,7 @@
                 "title": "Input: regexp, Output: false",
                 "fullTitle": "Fx static methods Fx.isUndefined(o: any): boolean Input: regexp, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1847,7 +1847,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b8dffd27-9da6-48cc-9945-c1335388f39c",
+                "uuid": "09f264fd-25c2-47cf-b276-52e9ef44f8c4",
                 "isHook": false,
                 "skipped": false
               },
@@ -1855,7 +1855,7 @@
                 "title": "Input: function, Output: false",
                 "fullTitle": "Fx static methods Fx.isUndefined(o: any): boolean Input: function, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1864,7 +1864,7 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6d1a8a67-7f73-439a-9224-27b765c730bc",
+                "uuid": "913220b2-fae6-4e36-8f5b-84282da34933",
                 "isHook": false,
                 "skipped": false
               },
@@ -1881,34 +1881,34 @@
                 "code": "chai_1.expect(fx_1.default.isUndefined(dataInJs[i])).to.equal(type === 'undefined');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8ea027f2-52cd-4b3b-85d1-ab3b9a03f6d7",
+                "uuid": "7c46fb79-100d-470a-a581-22f4d55595ea",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "5444d587-8b3e-4b83-808f-f133a533c314",
-              "bf7ceaa2-71af-410b-b0a9-2d0e6c0a30a5",
-              "31d96351-ebd8-46b5-a5e1-db4c5ce9317f",
-              "2e1c8fd2-0473-4ad4-b3f7-1a589f05cfb0",
-              "75578fbf-580d-4423-b694-0136d7606ead",
-              "4b6cfa1b-cd9b-4eee-b757-48edac42815f",
-              "d3e66a78-cd53-4a2c-8af6-17314943498f",
-              "b8dffd27-9da6-48cc-9945-c1335388f39c",
-              "6d1a8a67-7f73-439a-9224-27b765c730bc",
-              "8ea027f2-52cd-4b3b-85d1-ab3b9a03f6d7"
+              "8a74266d-e9b9-4880-8e75-821c0fb14011",
+              "62d4df34-fd26-4f1e-997e-e39fb8a7df0c",
+              "b6580878-1faa-4894-9b1e-6177f86d1d0e",
+              "fa041536-f82b-467c-abf1-d5f446419456",
+              "e220db00-145f-448e-9daf-89f263efaf59",
+              "d2bb7160-9096-4429-82ae-b6e4a78cbccc",
+              "4253a24d-01fc-4eb7-8445-bd0a446e5ea2",
+              "09f264fd-25c2-47cf-b276-52e9ef44f8c4",
+              "913220b2-fae6-4e36-8f5b-84282da34933",
+              "7c46fb79-100d-470a-a581-22f4d55595ea"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 3,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "17a45c44-3c79-47c5-8995-0f65e8bbcf35",
+            "uuid": "71412a6f-d4ea-4947-87ce-14c846532536",
             "title": "Fx.isNumber(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -1919,7 +1919,7 @@
                 "title": "Input: string, Output: false",
                 "fullTitle": "Fx static methods Fx.isNumber(o: any): boolean Input: string, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1928,7 +1928,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1a6c6cf2-8813-4bb4-801c-b7869066c11e",
+                "uuid": "37ff1338-110e-4d7c-a50e-e8c992bf996d",
                 "isHook": false,
                 "skipped": false
               },
@@ -1945,7 +1945,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0d61bc62-36c6-4bb8-80f9-9d879048ea11",
+                "uuid": "06ca4777-d5a7-40f9-9474-49c0064d463d",
                 "isHook": false,
                 "skipped": false
               },
@@ -1962,7 +1962,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3c8775ff-14a1-44c6-80ed-59432eb6c628",
+                "uuid": "0b00712e-7d7c-4623-b5a7-046e69bee448",
                 "isHook": false,
                 "skipped": false
               },
@@ -1979,7 +1979,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "36b2b0b7-7699-49f7-9e90-48b9ab919b29",
+                "uuid": "d290fc20-0168-4222-aea9-fdef540a5f61",
                 "isHook": false,
                 "skipped": false
               },
@@ -1987,7 +1987,7 @@
                 "title": "Input: undefined, Output: false",
                 "fullTitle": "Fx static methods Fx.isNumber(o: any): boolean Input: undefined, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -1996,7 +1996,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "00f8bf40-fdb3-45ea-962e-71e561dde945",
+                "uuid": "658976a0-267a-43c4-a5a9-92960ce103a5",
                 "isHook": false,
                 "skipped": false
               },
@@ -2013,7 +2013,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8d497ca1-a166-48ac-98f9-c123b5be569f",
+                "uuid": "372929d8-752f-43f4-812f-3ad3dfd5395f",
                 "isHook": false,
                 "skipped": false
               },
@@ -2030,7 +2030,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7aa01b0e-3db9-492d-a77e-f8ecd6e7ffba",
+                "uuid": "07b4bb63-12cc-4da6-a3e3-8681b81e2547",
                 "isHook": false,
                 "skipped": false
               },
@@ -2047,7 +2047,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d6a592af-5b31-4b80-9319-02d2fe9059dd",
+                "uuid": "531a9f50-49a6-40a8-8654-deb042e75dbf",
                 "isHook": false,
                 "skipped": false
               },
@@ -2064,7 +2064,7 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c395da6c-1d23-493a-a4d1-4660b7a39ba7",
+                "uuid": "03b92022-9325-45d7-bf5a-63c7b4d569ae",
                 "isHook": false,
                 "skipped": false
               },
@@ -2081,23 +2081,23 @@
                 "code": "chai_1.expect(fx_1.default.isNumber(dataInJs[i])).to.equal(type === 'number');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "21687e82-2221-4448-8e3f-0a3258c03309",
+                "uuid": "d3b25ac4-4dfe-45cf-973b-00ce9703dcf1",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "1a6c6cf2-8813-4bb4-801c-b7869066c11e",
-              "0d61bc62-36c6-4bb8-80f9-9d879048ea11",
-              "3c8775ff-14a1-44c6-80ed-59432eb6c628",
-              "36b2b0b7-7699-49f7-9e90-48b9ab919b29",
-              "00f8bf40-fdb3-45ea-962e-71e561dde945",
-              "8d497ca1-a166-48ac-98f9-c123b5be569f",
-              "7aa01b0e-3db9-492d-a77e-f8ecd6e7ffba",
-              "d6a592af-5b31-4b80-9319-02d2fe9059dd",
-              "c395da6c-1d23-493a-a4d1-4660b7a39ba7",
-              "21687e82-2221-4448-8e3f-0a3258c03309"
+              "37ff1338-110e-4d7c-a50e-e8c992bf996d",
+              "06ca4777-d5a7-40f9-9474-49c0064d463d",
+              "0b00712e-7d7c-4623-b5a7-046e69bee448",
+              "d290fc20-0168-4222-aea9-fdef540a5f61",
+              "658976a0-267a-43c4-a5a9-92960ce103a5",
+              "372929d8-752f-43f4-812f-3ad3dfd5395f",
+              "07b4bb63-12cc-4da6-a3e3-8681b81e2547",
+              "531a9f50-49a6-40a8-8654-deb042e75dbf",
+              "03b92022-9325-45d7-bf5a-63c7b4d569ae",
+              "d3b25ac4-4dfe-45cf-973b-00ce9703dcf1"
             ],
             "failures": [],
             "pending": [],
@@ -2108,7 +2108,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "579941e3-fe6b-432b-83bb-8177e5070989",
+            "uuid": "08e8cae9-e0f7-4e70-997e-9efbb7e252e4",
             "title": "Fx.isNaN(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -2128,7 +2128,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e28cfc80-5b21-42dc-954e-a9ec2b8ef781",
+                "uuid": "7006d08f-5138-4228-baba-0dc1724ea890",
                 "isHook": false,
                 "skipped": false
               },
@@ -2145,7 +2145,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e9f570af-a50d-4d6f-b075-ba78bbaaa884",
+                "uuid": "bb9b1d59-37d3-491a-bf9b-debc2f8b0223",
                 "isHook": false,
                 "skipped": false
               },
@@ -2162,7 +2162,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1ab83b92-71fa-4972-86f3-c138db1a2dda",
+                "uuid": "84df2923-ccfd-4d6e-8ae0-909057dc3bf2",
                 "isHook": false,
                 "skipped": false
               },
@@ -2179,7 +2179,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "41d737ca-4440-4a30-ad4b-6d5ed7a21406",
+                "uuid": "8cee83bc-c90f-485b-8eeb-69df6fc0d5c5",
                 "isHook": false,
                 "skipped": false
               },
@@ -2196,7 +2196,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e8a9387c-5b0f-4ac6-a119-a437a3e2d4b6",
+                "uuid": "9290a08e-cfaa-43fc-a4f0-6ef7c8a2d6c1",
                 "isHook": false,
                 "skipped": false
               },
@@ -2213,7 +2213,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "fe18ae3c-2b0f-45d8-9909-aa4730b95a8d",
+                "uuid": "59b08e90-d401-4a75-b587-284a39e68408",
                 "isHook": false,
                 "skipped": false
               },
@@ -2230,7 +2230,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "dc352232-93d7-4e0a-bd57-fee0b0fe6a48",
+                "uuid": "fd2e7df8-db98-4188-9433-b8168b07a6ba",
                 "isHook": false,
                 "skipped": false
               },
@@ -2238,7 +2238,7 @@
                 "title": "Input: regexp, Output: false",
                 "fullTitle": "Fx static methods Fx.isNaN(o: any): boolean Input: regexp, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2247,7 +2247,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e3231d92-ab75-405f-9381-6d5fa02cd138",
+                "uuid": "3a610818-7e88-4aab-9c5b-36cffeacee1c",
                 "isHook": false,
                 "skipped": false
               },
@@ -2264,7 +2264,7 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f400f4b0-d313-4839-85cf-ddc9faf87735",
+                "uuid": "8e63bebb-d5f3-47fe-95af-369791b7633b",
                 "isHook": false,
                 "skipped": false
               },
@@ -2281,34 +2281,34 @@
                 "code": "chai_1.expect(fx_1.default.isNaN(dataInJs[i])).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c05e8bfb-ded3-472d-9f42-fb7768d75477",
+                "uuid": "32c515e6-c242-465e-99ba-78a45eaeb37e",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e28cfc80-5b21-42dc-954e-a9ec2b8ef781",
-              "e9f570af-a50d-4d6f-b075-ba78bbaaa884",
-              "1ab83b92-71fa-4972-86f3-c138db1a2dda",
-              "41d737ca-4440-4a30-ad4b-6d5ed7a21406",
-              "e8a9387c-5b0f-4ac6-a119-a437a3e2d4b6",
-              "fe18ae3c-2b0f-45d8-9909-aa4730b95a8d",
-              "dc352232-93d7-4e0a-bd57-fee0b0fe6a48",
-              "e3231d92-ab75-405f-9381-6d5fa02cd138",
-              "f400f4b0-d313-4839-85cf-ddc9faf87735",
-              "c05e8bfb-ded3-472d-9f42-fb7768d75477"
+              "7006d08f-5138-4228-baba-0dc1724ea890",
+              "bb9b1d59-37d3-491a-bf9b-debc2f8b0223",
+              "84df2923-ccfd-4d6e-8ae0-909057dc3bf2",
+              "8cee83bc-c90f-485b-8eeb-69df6fc0d5c5",
+              "9290a08e-cfaa-43fc-a4f0-6ef7c8a2d6c1",
+              "59b08e90-d401-4a75-b587-284a39e68408",
+              "fd2e7df8-db98-4188-9433-b8168b07a6ba",
+              "3a610818-7e88-4aab-9c5b-36cffeacee1c",
+              "8e63bebb-d5f3-47fe-95af-369791b7633b",
+              "32c515e6-c242-465e-99ba-78a45eaeb37e"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 2,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "4ab893b4-3568-4c7b-bba1-d9ef7620c570",
+            "uuid": "0e2f824b-61fc-4d02-a893-bacd97c67f9b",
             "title": "Fx.isDate(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -2319,7 +2319,7 @@
                 "title": "Input: string, Output: false",
                 "fullTitle": "Fx static methods Fx.isDate(o: any): boolean Input: string, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2328,7 +2328,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f8eec005-7682-44f3-b555-a932732b316b",
+                "uuid": "e6b559c9-72de-4999-b2d0-9973be0fe111",
                 "isHook": false,
                 "skipped": false
               },
@@ -2345,7 +2345,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8bc1af19-1a90-4eda-be87-f2e78a607492",
+                "uuid": "346196e2-844a-4479-b8fe-efe6297f7bc9",
                 "isHook": false,
                 "skipped": false
               },
@@ -2362,7 +2362,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "71a2a4b0-ff3e-4975-b1c1-488be4616e07",
+                "uuid": "0e53b8a3-498b-4829-a0d5-6ae5cb769425",
                 "isHook": false,
                 "skipped": false
               },
@@ -2379,7 +2379,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ba14dcf5-b7d2-43ff-908a-221f5d1e8e76",
+                "uuid": "c40f9516-9cfe-427a-8374-ad52d85d3464",
                 "isHook": false,
                 "skipped": false
               },
@@ -2396,7 +2396,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7dd8cdb9-24da-4bae-99aa-0b14c310bf5f",
+                "uuid": "074a7925-d112-4746-b870-46e9a339de65",
                 "isHook": false,
                 "skipped": false
               },
@@ -2413,7 +2413,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6249913a-248e-47c4-ba0e-266b9aa7b50a",
+                "uuid": "ac077dff-0db6-4dde-b62f-f8f53843b5ec",
                 "isHook": false,
                 "skipped": false
               },
@@ -2430,7 +2430,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "059c8418-85ed-441c-a40a-5ba2fe6330d6",
+                "uuid": "990f75af-c872-43d8-8a82-42be088ce475",
                 "isHook": false,
                 "skipped": false
               },
@@ -2438,7 +2438,7 @@
                 "title": "Input: regexp, Output: false",
                 "fullTitle": "Fx static methods Fx.isDate(o: any): boolean Input: regexp, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2447,7 +2447,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "20a08519-c0b5-4da7-a99e-5d8c8d25420f",
+                "uuid": "75345399-8b89-4041-abd2-c0b6755f602a",
                 "isHook": false,
                 "skipped": false
               },
@@ -2464,7 +2464,7 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cb22f33f-8bf5-4db9-ba17-5fccc633d24e",
+                "uuid": "384f21a3-5bff-496f-80ac-bd312998b94c",
                 "isHook": false,
                 "skipped": false
               },
@@ -2481,23 +2481,23 @@
                 "code": "chai_1.expect(fx_1.default.isDate(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "630e1856-ac66-4ef0-bd8f-0fc28659de0a",
+                "uuid": "fb9adc8b-8cfc-4f08-8931-52d8f44f18c0",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f8eec005-7682-44f3-b555-a932732b316b",
-              "8bc1af19-1a90-4eda-be87-f2e78a607492",
-              "71a2a4b0-ff3e-4975-b1c1-488be4616e07",
-              "ba14dcf5-b7d2-43ff-908a-221f5d1e8e76",
-              "7dd8cdb9-24da-4bae-99aa-0b14c310bf5f",
-              "6249913a-248e-47c4-ba0e-266b9aa7b50a",
-              "059c8418-85ed-441c-a40a-5ba2fe6330d6",
-              "20a08519-c0b5-4da7-a99e-5d8c8d25420f",
-              "cb22f33f-8bf5-4db9-ba17-5fccc633d24e",
-              "630e1856-ac66-4ef0-bd8f-0fc28659de0a"
+              "e6b559c9-72de-4999-b2d0-9973be0fe111",
+              "346196e2-844a-4479-b8fe-efe6297f7bc9",
+              "0e53b8a3-498b-4829-a0d5-6ae5cb769425",
+              "c40f9516-9cfe-427a-8374-ad52d85d3464",
+              "074a7925-d112-4746-b870-46e9a339de65",
+              "ac077dff-0db6-4dde-b62f-f8f53843b5ec",
+              "990f75af-c872-43d8-8a82-42be088ce475",
+              "75345399-8b89-4041-abd2-c0b6755f602a",
+              "384f21a3-5bff-496f-80ac-bd312998b94c",
+              "fb9adc8b-8cfc-4f08-8931-52d8f44f18c0"
             ],
             "failures": [],
             "pending": [],
@@ -2508,7 +2508,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "678a803b-58c2-4656-86f5-90f9928a008e",
+            "uuid": "7e69d6f7-3ef4-494d-8e6b-2cf35c1d872b",
             "title": "Fx.isFunction(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -2528,7 +2528,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "fa9ad31b-efca-4742-a3a5-0c378880f600",
+                "uuid": "1a90d96d-b1f5-4dfb-a4a7-d51142a15481",
                 "isHook": false,
                 "skipped": false
               },
@@ -2545,7 +2545,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6d8c682c-d9ff-40a3-8bab-de3ec370cd40",
+                "uuid": "8e2b7aa9-7cc0-40da-b05d-f3437cc52ef7",
                 "isHook": false,
                 "skipped": false
               },
@@ -2562,7 +2562,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8785eca9-dd11-4237-bfec-3fbf8feea851",
+                "uuid": "f458c0f7-d72c-46c6-ae32-b52d7796739c",
                 "isHook": false,
                 "skipped": false
               },
@@ -2579,7 +2579,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "358a3eb5-1033-4c10-b6fb-dec95df9ff3d",
+                "uuid": "45b8e387-aceb-4db5-8962-417af4a85917",
                 "isHook": false,
                 "skipped": false
               },
@@ -2596,7 +2596,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6decc869-9912-4011-963c-cf1083474837",
+                "uuid": "2984ae92-0355-4c6f-a203-c25637f29c36",
                 "isHook": false,
                 "skipped": false
               },
@@ -2613,7 +2613,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7570183a-b035-4cc2-873b-ffb435425260",
+                "uuid": "5aea190b-a75d-4c23-8946-1a0f6e548b82",
                 "isHook": false,
                 "skipped": false
               },
@@ -2630,7 +2630,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1f17d55d-4258-4dff-952a-27c078fe0438",
+                "uuid": "063f7de3-7daa-4f66-a0de-0a4a14cea2a6",
                 "isHook": false,
                 "skipped": false
               },
@@ -2647,7 +2647,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6a23e683-d254-4d5f-900a-0774c7f196ad",
+                "uuid": "7fb88691-79e8-4385-8f89-b5df0f5de20e",
                 "isHook": false,
                 "skipped": false
               },
@@ -2655,7 +2655,7 @@
                 "title": "Input: function, Output: true",
                 "fullTitle": "Fx static methods Fx.isFunction(o: any): boolean Input: function, Output: true",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2664,7 +2664,7 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c33dc303-79bd-4610-932a-88d06d1396a0",
+                "uuid": "71416cd2-4376-4033-8660-c72b77f2ece7",
                 "isHook": false,
                 "skipped": false
               },
@@ -2681,34 +2681,34 @@
                 "code": "chai_1.expect(fx_1.default.isFunction(dataInJs[i])).to.equal(type === 'function');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1ca2543f-6d10-42c7-8283-9c1b8fd28bb4",
+                "uuid": "d8ef8f18-6f93-4321-871a-30640a69ca14",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "fa9ad31b-efca-4742-a3a5-0c378880f600",
-              "6d8c682c-d9ff-40a3-8bab-de3ec370cd40",
-              "8785eca9-dd11-4237-bfec-3fbf8feea851",
-              "358a3eb5-1033-4c10-b6fb-dec95df9ff3d",
-              "6decc869-9912-4011-963c-cf1083474837",
-              "7570183a-b035-4cc2-873b-ffb435425260",
-              "1f17d55d-4258-4dff-952a-27c078fe0438",
-              "6a23e683-d254-4d5f-900a-0774c7f196ad",
-              "c33dc303-79bd-4610-932a-88d06d1396a0",
-              "1ca2543f-6d10-42c7-8283-9c1b8fd28bb4"
+              "1a90d96d-b1f5-4dfb-a4a7-d51142a15481",
+              "8e2b7aa9-7cc0-40da-b05d-f3437cc52ef7",
+              "f458c0f7-d72c-46c6-ae32-b52d7796739c",
+              "45b8e387-aceb-4db5-8962-417af4a85917",
+              "2984ae92-0355-4c6f-a203-c25637f29c36",
+              "5aea190b-a75d-4c23-8946-1a0f6e548b82",
+              "063f7de3-7daa-4f66-a0de-0a4a14cea2a6",
+              "7fb88691-79e8-4385-8f89-b5df0f5de20e",
+              "71416cd2-4376-4033-8660-c72b77f2ece7",
+              "d8ef8f18-6f93-4321-871a-30640a69ca14"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "19c43dc2-aa17-4677-82bc-b0e34d65d05c",
+            "uuid": "46897b83-a2bb-4ade-aff9-0fce536c386c",
             "title": "Fx.isNull(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -2728,7 +2728,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "26704dd5-ea77-4ca6-aa3a-75800f38e3d3",
+                "uuid": "87191de3-9c59-417d-a6cc-4c7f7c5f8ca2",
                 "isHook": false,
                 "skipped": false
               },
@@ -2745,7 +2745,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d59f976e-652a-458b-aa49-b3cadfc91694",
+                "uuid": "f4b678b0-ee60-4a6c-b418-f1bb01b34f8b",
                 "isHook": false,
                 "skipped": false
               },
@@ -2762,7 +2762,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4fd0448d-df07-4c75-861e-9b8df7a8da33",
+                "uuid": "20b2b3b7-b2c4-4ede-825c-34295aadaf2d",
                 "isHook": false,
                 "skipped": false
               },
@@ -2779,7 +2779,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e33e8c12-c4a3-48aa-86d0-596c72d4a650",
+                "uuid": "5c99bba3-eef3-4b70-92cb-0354c87bd26b",
                 "isHook": false,
                 "skipped": false
               },
@@ -2796,7 +2796,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ff390531-130d-4956-a714-981d030fa7d5",
+                "uuid": "88b4ddad-47e8-403e-8168-71568de586a6",
                 "isHook": false,
                 "skipped": false
               },
@@ -2813,7 +2813,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e1ed9636-c90e-4a2f-96ad-c9929b731301",
+                "uuid": "f661730e-330d-492b-92b4-f0d308833542",
                 "isHook": false,
                 "skipped": false
               },
@@ -2830,7 +2830,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a40a79f1-040f-4949-9040-439222467269",
+                "uuid": "cd447dc8-bc70-45ce-8ec6-1b87239f2475",
                 "isHook": false,
                 "skipped": false
               },
@@ -2847,7 +2847,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c6bf0089-23a9-4bda-ac1f-e7c6b45bf426",
+                "uuid": "9a06bad8-b5bb-44da-8d85-ad1b9b467014",
                 "isHook": false,
                 "skipped": false
               },
@@ -2864,7 +2864,7 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "862f655d-b843-4f73-8a2e-34dca077e458",
+                "uuid": "c1b3484d-a3d0-4cfa-91bf-1fe3f5c4ca53",
                 "isHook": false,
                 "skipped": false
               },
@@ -2872,7 +2872,7 @@
                 "title": "Input: array, Output: false",
                 "fullTitle": "Fx static methods Fx.isNull(o: any): boolean Input: array, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2881,34 +2881,34 @@
                 "code": "chai_1.expect(fx_1.default.isNull(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a55d8053-428f-4e8d-badf-a442c66e251d",
+                "uuid": "4d0ef7ee-44b3-48a1-b2df-0c45c6632068",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "26704dd5-ea77-4ca6-aa3a-75800f38e3d3",
-              "d59f976e-652a-458b-aa49-b3cadfc91694",
-              "4fd0448d-df07-4c75-861e-9b8df7a8da33",
-              "e33e8c12-c4a3-48aa-86d0-596c72d4a650",
-              "ff390531-130d-4956-a714-981d030fa7d5",
-              "e1ed9636-c90e-4a2f-96ad-c9929b731301",
-              "a40a79f1-040f-4949-9040-439222467269",
-              "c6bf0089-23a9-4bda-ac1f-e7c6b45bf426",
-              "862f655d-b843-4f73-8a2e-34dca077e458",
-              "a55d8053-428f-4e8d-badf-a442c66e251d"
+              "87191de3-9c59-417d-a6cc-4c7f7c5f8ca2",
+              "f4b678b0-ee60-4a6c-b418-f1bb01b34f8b",
+              "20b2b3b7-b2c4-4ede-825c-34295aadaf2d",
+              "5c99bba3-eef3-4b70-92cb-0354c87bd26b",
+              "88b4ddad-47e8-403e-8168-71568de586a6",
+              "f661730e-330d-492b-92b4-f0d308833542",
+              "cd447dc8-bc70-45ce-8ec6-1b87239f2475",
+              "9a06bad8-b5bb-44da-8d85-ad1b9b467014",
+              "c1b3484d-a3d0-4cfa-91bf-1fe3f5c4ca53",
+              "4d0ef7ee-44b3-48a1-b2df-0c45c6632068"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "4cce2828-7026-40f5-a80b-58108fbceae8",
+            "uuid": "3a8de672-86f0-4648-b0c8-4badb93d3f8c",
             "title": "Fx.isObject(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -2928,7 +2928,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2d7e12a7-f70f-46b6-b45e-8b5a35503b53",
+                "uuid": "fc92b509-1c37-4d89-bdc0-5938436bcee8",
                 "isHook": false,
                 "skipped": false
               },
@@ -2945,7 +2945,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ad8b1287-989a-460b-a9e7-2a9cd795a7e7",
+                "uuid": "0f478a08-8eee-424f-9d0d-927c70761c9c",
                 "isHook": false,
                 "skipped": false
               },
@@ -2962,7 +2962,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f255fc9e-7654-4e20-b530-2e5f6056d320",
+                "uuid": "3c62d15d-8391-4135-9ee9-e2eee155ce93",
                 "isHook": false,
                 "skipped": false
               },
@@ -2970,7 +2970,7 @@
                 "title": "Input: null, Output: false",
                 "fullTitle": "Fx static methods Fx.isObject(o: any): boolean Input: null, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2979,7 +2979,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "082d2ec9-02b4-4ceb-9a55-d9e0e4e5d269",
+                "uuid": "da4e1291-3d23-49f4-a66f-730e7acb2cbd",
                 "isHook": false,
                 "skipped": false
               },
@@ -2996,7 +2996,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7e1c3609-0d1d-4a5a-ac8d-db430860920e",
+                "uuid": "47a57186-be8b-44e9-88b4-ec3b3f387730",
                 "isHook": false,
                 "skipped": false
               },
@@ -3013,7 +3013,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6c2684a1-a31e-4870-83ca-9c38e9085b8d",
+                "uuid": "930a815e-6d63-4e8a-a78c-ce7e92773271",
                 "isHook": false,
                 "skipped": false
               },
@@ -3021,7 +3021,7 @@
                 "title": "Input: date, Output: true",
                 "fullTitle": "Fx static methods Fx.isObject(o: any): boolean Input: date, Output: true",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3030,7 +3030,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7e0127cb-8618-49cf-b69a-9129b1b59916",
+                "uuid": "d632e850-2e9c-4f22-8c7b-1c9f36448e68",
                 "isHook": false,
                 "skipped": false
               },
@@ -3047,7 +3047,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "20668ef1-67f0-44cd-a199-d13c884d4171",
+                "uuid": "66355511-f9a1-455d-8a72-090d8c26f57f",
                 "isHook": false,
                 "skipped": false
               },
@@ -3064,7 +3064,7 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9f2acb33-9391-4db7-a491-629d66e56096",
+                "uuid": "85ba4bed-195f-4ecf-baa4-ecdf0838fd4d",
                 "isHook": false,
                 "skipped": false
               },
@@ -3081,34 +3081,34 @@
                 "code": "chai_1.expect(fx_1.default.isObject(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "066637f9-e826-4cb9-a86e-6a00e57c35d8",
+                "uuid": "c3b58542-0a7b-4cef-bad4-73d77c00bbb6",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "2d7e12a7-f70f-46b6-b45e-8b5a35503b53",
-              "ad8b1287-989a-460b-a9e7-2a9cd795a7e7",
-              "f255fc9e-7654-4e20-b530-2e5f6056d320",
-              "082d2ec9-02b4-4ceb-9a55-d9e0e4e5d269",
-              "7e1c3609-0d1d-4a5a-ac8d-db430860920e",
-              "6c2684a1-a31e-4870-83ca-9c38e9085b8d",
-              "7e0127cb-8618-49cf-b69a-9129b1b59916",
-              "20668ef1-67f0-44cd-a199-d13c884d4171",
-              "9f2acb33-9391-4db7-a491-629d66e56096",
-              "066637f9-e826-4cb9-a86e-6a00e57c35d8"
+              "fc92b509-1c37-4d89-bdc0-5938436bcee8",
+              "0f478a08-8eee-424f-9d0d-927c70761c9c",
+              "3c62d15d-8391-4135-9ee9-e2eee155ce93",
+              "da4e1291-3d23-49f4-a66f-730e7acb2cbd",
+              "47a57186-be8b-44e9-88b4-ec3b3f387730",
+              "930a815e-6d63-4e8a-a78c-ce7e92773271",
+              "d632e850-2e9c-4f22-8c7b-1c9f36448e68",
+              "66355511-f9a1-455d-8a72-090d8c26f57f",
+              "85ba4bed-195f-4ecf-baa4-ecdf0838fd4d",
+              "c3b58542-0a7b-4cef-bad4-73d77c00bbb6"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 2,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "7e861753-d9d9-4510-adb0-8002028ba2a8",
+            "uuid": "f497613a-a6de-481f-8007-a1cdd24508d4",
             "title": "Fx.isRegExp(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -3128,7 +3128,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f4104d02-6b73-4cab-b5f5-f3e04c08c8cd",
+                "uuid": "1911599b-cd68-43ec-a7c0-d95af93e07e6",
                 "isHook": false,
                 "skipped": false
               },
@@ -3145,7 +3145,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4d6f8823-eab2-4124-8d33-a0637de134d1",
+                "uuid": "a588b75a-c5fb-4f71-a331-877c5781454c",
                 "isHook": false,
                 "skipped": false
               },
@@ -3162,7 +3162,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5036fca9-df78-4d5a-bd1f-112053377587",
+                "uuid": "0f42b816-23b4-47d8-9ee9-97d95f16514f",
                 "isHook": false,
                 "skipped": false
               },
@@ -3179,7 +3179,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cb85cd7b-ca79-4e02-b01d-e947cd6fe6a4",
+                "uuid": "bd5a5fda-d498-4f4e-8b35-a9dbd61ad259",
                 "isHook": false,
                 "skipped": false
               },
@@ -3196,7 +3196,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4c74fcca-3209-4694-9f07-15cd65e88094",
+                "uuid": "b3a3fbc9-95b5-4f44-b4a6-28f23a739ba6",
                 "isHook": false,
                 "skipped": false
               },
@@ -3213,7 +3213,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "76be796f-7d17-4c54-bb8f-68b890516f8a",
+                "uuid": "581aea37-c12c-48e3-935b-b30128274f57",
                 "isHook": false,
                 "skipped": false
               },
@@ -3230,7 +3230,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cc9783f4-1e1e-4304-a885-d6447338d78f",
+                "uuid": "3ad75cb6-9fc5-425d-bb8a-9e0c543bb571",
                 "isHook": false,
                 "skipped": false
               },
@@ -3247,7 +3247,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5d324054-6c8a-46b1-a9f5-57b8e9db2ff7",
+                "uuid": "a4c16b80-2c74-4e3e-9f62-b3f919484e26",
                 "isHook": false,
                 "skipped": false
               },
@@ -3264,7 +3264,7 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b4a2f96d-d35a-45da-8b7c-697051e8d07e",
+                "uuid": "59eaf875-7bdf-47f4-88fe-2cf1d4724f06",
                 "isHook": false,
                 "skipped": false
               },
@@ -3281,23 +3281,23 @@
                 "code": "chai_1.expect(fx_1.default.isRegExp(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a4ffa5cc-bdad-4f6f-9ac5-06ab8a7b93ae",
+                "uuid": "8c598316-4fe4-47f0-b7f2-602a892453d5",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f4104d02-6b73-4cab-b5f5-f3e04c08c8cd",
-              "4d6f8823-eab2-4124-8d33-a0637de134d1",
-              "5036fca9-df78-4d5a-bd1f-112053377587",
-              "cb85cd7b-ca79-4e02-b01d-e947cd6fe6a4",
-              "4c74fcca-3209-4694-9f07-15cd65e88094",
-              "76be796f-7d17-4c54-bb8f-68b890516f8a",
-              "cc9783f4-1e1e-4304-a885-d6447338d78f",
-              "5d324054-6c8a-46b1-a9f5-57b8e9db2ff7",
-              "b4a2f96d-d35a-45da-8b7c-697051e8d07e",
-              "a4ffa5cc-bdad-4f6f-9ac5-06ab8a7b93ae"
+              "1911599b-cd68-43ec-a7c0-d95af93e07e6",
+              "a588b75a-c5fb-4f71-a331-877c5781454c",
+              "0f42b816-23b4-47d8-9ee9-97d95f16514f",
+              "bd5a5fda-d498-4f4e-8b35-a9dbd61ad259",
+              "b3a3fbc9-95b5-4f44-b4a6-28f23a739ba6",
+              "581aea37-c12c-48e3-935b-b30128274f57",
+              "3ad75cb6-9fc5-425d-bb8a-9e0c543bb571",
+              "a4c16b80-2c74-4e3e-9f62-b3f919484e26",
+              "59eaf875-7bdf-47f4-88fe-2cf1d4724f06",
+              "8c598316-4fe4-47f0-b7f2-602a892453d5"
             ],
             "failures": [],
             "pending": [],
@@ -3308,7 +3308,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "4c44bd58-d7fa-40fa-9291-d3ed40743812",
+            "uuid": "0ec15678-368d-415a-8639-36191869ac31",
             "title": "Fx.isArray(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -3319,7 +3319,7 @@
                 "title": "Input: string, Output: false",
                 "fullTitle": "Fx static methods Fx.isArray(o: any): boolean Input: string, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3328,7 +3328,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bd850d15-6069-49b0-a2ce-def38cb67eb2",
+                "uuid": "231c26f4-bfd8-4575-97ab-2afbb3827684",
                 "isHook": false,
                 "skipped": false
               },
@@ -3345,7 +3345,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "68c26713-aec8-4b50-97b4-668340c21a1d",
+                "uuid": "b655dacf-6ed6-499a-aecc-332e5384bc03",
                 "isHook": false,
                 "skipped": false
               },
@@ -3362,7 +3362,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6c70e8f3-1d3c-4ee4-bee8-29a3085e0ebb",
+                "uuid": "af3a76db-f2f1-47f7-aad8-7fc15c2862bb",
                 "isHook": false,
                 "skipped": false
               },
@@ -3379,7 +3379,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c194bb6c-48d6-42e2-abc7-1e5bcb607dea",
+                "uuid": "c72fd951-d384-4b61-bc3b-4a0b57a68a61",
                 "isHook": false,
                 "skipped": false
               },
@@ -3396,7 +3396,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7dcf00ad-e012-4dee-b024-ecd2997ef3a5",
+                "uuid": "3e67cc87-041c-4e01-8e78-8e35183a4a3a",
                 "isHook": false,
                 "skipped": false
               },
@@ -3413,7 +3413,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1fd23a07-12b8-43b6-a783-e06e0234f7b7",
+                "uuid": "c8701b91-735a-4edf-953c-108685035f93",
                 "isHook": false,
                 "skipped": false
               },
@@ -3430,7 +3430,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2a56311f-21cd-47af-b5ad-ab070bbc65c6",
+                "uuid": "775373ed-1529-4c49-a3ac-732fae75490c",
                 "isHook": false,
                 "skipped": false
               },
@@ -3447,7 +3447,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2ecc4ef7-b981-4103-91d3-3222e3da5233",
+                "uuid": "534c9705-ca0a-428a-856e-fe5a89303bef",
                 "isHook": false,
                 "skipped": false
               },
@@ -3464,7 +3464,7 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "986fce36-bf25-4df4-bb0d-7a09e666dcc5",
+                "uuid": "0ebb217e-c9c7-4be9-83fe-485d1bd41065",
                 "isHook": false,
                 "skipped": false
               },
@@ -3481,34 +3481,34 @@
                 "code": "chai_1.expect(fx_1.default.isArray(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "935fbc7a-4ff7-4000-8c09-9e52f1dcc911",
+                "uuid": "0f6486bc-8c02-4f4c-ae69-397b39eda956",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "bd850d15-6069-49b0-a2ce-def38cb67eb2",
-              "68c26713-aec8-4b50-97b4-668340c21a1d",
-              "6c70e8f3-1d3c-4ee4-bee8-29a3085e0ebb",
-              "c194bb6c-48d6-42e2-abc7-1e5bcb607dea",
-              "7dcf00ad-e012-4dee-b024-ecd2997ef3a5",
-              "1fd23a07-12b8-43b6-a783-e06e0234f7b7",
-              "2a56311f-21cd-47af-b5ad-ab070bbc65c6",
-              "2ecc4ef7-b981-4103-91d3-3222e3da5233",
-              "986fce36-bf25-4df4-bb0d-7a09e666dcc5",
-              "935fbc7a-4ff7-4000-8c09-9e52f1dcc911"
+              "231c26f4-bfd8-4575-97ab-2afbb3827684",
+              "b655dacf-6ed6-499a-aecc-332e5384bc03",
+              "af3a76db-f2f1-47f7-aad8-7fc15c2862bb",
+              "c72fd951-d384-4b61-bc3b-4a0b57a68a61",
+              "3e67cc87-041c-4e01-8e78-8e35183a4a3a",
+              "c8701b91-735a-4edf-953c-108685035f93",
+              "775373ed-1529-4c49-a3ac-732fae75490c",
+              "534c9705-ca0a-428a-856e-fe5a89303bef",
+              "0ebb217e-c9c7-4be9-83fe-485d1bd41065",
+              "0f6486bc-8c02-4f4c-ae69-397b39eda956"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "b8ec2c41-f51f-49ae-8bc1-7d33ed3badc1",
+            "uuid": "fbee4c4d-41c6-4055-a9d0-f4486e1fc623",
             "title": "Fx.guid(): string",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -3516,8 +3516,8 @@
             "afterHooks": [],
             "tests": [
               {
-                "title": "Output: 7288f878-ee1d-40da-b8c9-b34a58736eab",
-                "fullTitle": "Fx static methods Fx.guid(): string Output: 7288f878-ee1d-40da-b8c9-b34a58736eab",
+                "title": "Output: eaf238f8-105e-42ad-9cf4-3cf9c1858a9b",
+                "fullTitle": "Fx static methods Fx.guid(): string Output: eaf238f8-105e-42ad-9cf4-3cf9c1858a9b",
                 "timedOut": false,
                 "duration": 0,
                 "state": "passed",
@@ -3528,14 +3528,14 @@
                 "code": "chai_1.expect(fx_1.default.guid().length).to.equal(36);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6919a8a0-35da-41fa-9c1c-3fb399ca25ca",
+                "uuid": "3dba0e16-5c6e-441c-b461-0d858f9b52e4",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "6919a8a0-35da-41fa-9c1c-3fb399ca25ca"
+              "3dba0e16-5c6e-441c-b461-0d858f9b52e4"
             ],
             "failures": [],
             "pending": [],
@@ -3546,7 +3546,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "97894110-9df9-48bb-819e-1249cac84350",
+            "uuid": "4f63c030-6389-45f7-9297-bb709344340f",
             "title": "Fx.isElement(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -3566,7 +3566,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "08a70ab5-d37e-45e0-92d4-f53d1360a940",
+                "uuid": "de3a7a83-9ba8-4086-9494-68d062d5afcc",
                 "isHook": false,
                 "skipped": false
               },
@@ -3583,7 +3583,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1fc6dbca-77b2-4d00-98a7-584c4481f851",
+                "uuid": "1b376ad2-f0d5-49b3-b0ac-43f6606a8aff",
                 "isHook": false,
                 "skipped": false
               },
@@ -3600,7 +3600,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b7547b62-6b5c-49db-aa19-270c41dd03be",
+                "uuid": "b811bd22-a817-44a8-ae53-d89959f5bb7e",
                 "isHook": false,
                 "skipped": false
               },
@@ -3608,7 +3608,7 @@
                 "title": "Input: null, Output: false",
                 "fullTitle": "Fx static methods Fx.isElement(o: any): boolean Input: null, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3617,7 +3617,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "995ed64d-cfcb-49d9-88d8-68210dadd0bc",
+                "uuid": "602daf3b-149e-4d93-9542-2ed9ea531a04",
                 "isHook": false,
                 "skipped": false
               },
@@ -3634,7 +3634,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ff1d98cc-b92d-4e72-a5f3-98a90dfb28f2",
+                "uuid": "cdd6bb55-80dc-4828-8a87-0a04d3ff93cb",
                 "isHook": false,
                 "skipped": false
               },
@@ -3651,7 +3651,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a09fd36e-2c95-49ee-b189-4d4235f65641",
+                "uuid": "fb007ebb-9069-41d6-b216-1ce83f823071",
                 "isHook": false,
                 "skipped": false
               },
@@ -3659,7 +3659,7 @@
                 "title": "Input: date, Output: false",
                 "fullTitle": "Fx static methods Fx.isElement(o: any): boolean Input: date, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3668,7 +3668,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2b64a61a-4eda-4a61-8350-fff64619df17",
+                "uuid": "94502b80-36e3-4773-9b48-42b8790db238",
                 "isHook": false,
                 "skipped": false
               },
@@ -3685,7 +3685,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0b719b3d-704d-4d99-82c9-3bbb4749d170",
+                "uuid": "763b7753-d971-4e08-ab97-2292847ca2f4",
                 "isHook": false,
                 "skipped": false
               },
@@ -3702,7 +3702,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "345d4295-c31f-4dfb-8f21-a0b05e0d9c3f",
+                "uuid": "d5c27919-6717-4ede-b01c-e6cbab411d8a",
                 "isHook": false,
                 "skipped": false
               },
@@ -3719,7 +3719,7 @@
                 "code": "chai_1.expect(fx_1.default.isElement(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9e02a819-e6c4-4520-ba2b-d1e714ce2404",
+                "uuid": "c59d30eb-1893-432c-998f-9b7bbaaebcc6",
                 "isHook": false,
                 "skipped": false
               },
@@ -3727,7 +3727,7 @@
                 "title": "Input: Element, Output: true",
                 "fullTitle": "Fx static methods Fx.isElement(o: any): boolean Input: Element, Output: true",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3736,35 +3736,35 @@
                 "code": "chai_1.expect(fx_1.default.isElement($word)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7ced3d53-a668-47a5-be78-57d6904c26c9",
+                "uuid": "c3c97d4e-e93e-44c6-b603-9bfcd706a345",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "08a70ab5-d37e-45e0-92d4-f53d1360a940",
-              "1fc6dbca-77b2-4d00-98a7-584c4481f851",
-              "b7547b62-6b5c-49db-aa19-270c41dd03be",
-              "995ed64d-cfcb-49d9-88d8-68210dadd0bc",
-              "ff1d98cc-b92d-4e72-a5f3-98a90dfb28f2",
-              "a09fd36e-2c95-49ee-b189-4d4235f65641",
-              "2b64a61a-4eda-4a61-8350-fff64619df17",
-              "0b719b3d-704d-4d99-82c9-3bbb4749d170",
-              "345d4295-c31f-4dfb-8f21-a0b05e0d9c3f",
-              "9e02a819-e6c4-4520-ba2b-d1e714ce2404",
-              "7ced3d53-a668-47a5-be78-57d6904c26c9"
+              "de3a7a83-9ba8-4086-9494-68d062d5afcc",
+              "1b376ad2-f0d5-49b3-b0ac-43f6606a8aff",
+              "b811bd22-a817-44a8-ae53-d89959f5bb7e",
+              "602daf3b-149e-4d93-9542-2ed9ea531a04",
+              "cdd6bb55-80dc-4828-8a87-0a04d3ff93cb",
+              "fb007ebb-9069-41d6-b216-1ce83f823071",
+              "94502b80-36e3-4773-9b48-42b8790db238",
+              "763b7753-d971-4e08-ab97-2292847ca2f4",
+              "d5c27919-6717-4ede-b01c-e6cbab411d8a",
+              "c59d30eb-1893-432c-998f-9b7bbaaebcc6",
+              "c3c97d4e-e93e-44c6-b603-9bfcd706a345"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 4,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "56e0c4c5-5cba-4c7e-864d-4b935fc2f747",
+            "uuid": "0bfac4df-fc86-497e-9205-f4dbb6926369",
             "title": "Fx.isWindow(o: any): boolean",
             "fullFile": "F:\\github\\fx\\test\\static.ts",
             "file": "\\test\\static.ts",
@@ -3775,7 +3775,7 @@
                 "title": "Input: string, Output: false",
                 "fullTitle": "Fx static methods Fx.isWindow(o: any): boolean Input: string, Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3784,7 +3784,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5a8eae5c-0a02-41eb-b65d-539bed880bbb",
+                "uuid": "4ae34784-ea73-4363-a9e1-96f62df924dd",
                 "isHook": false,
                 "skipped": false
               },
@@ -3801,7 +3801,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "fc043ba1-5249-41f9-b560-438990e0585f",
+                "uuid": "2d318587-4c49-4f7e-befc-9a3f3baf2722",
                 "isHook": false,
                 "skipped": false
               },
@@ -3818,7 +3818,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "67ec4e9a-dc53-4af4-ac11-d8a9c2035e86",
+                "uuid": "86afd515-5870-4a55-ba23-dba71820b7e9",
                 "isHook": false,
                 "skipped": false
               },
@@ -3835,7 +3835,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c3c6280a-5168-4e3a-9305-ad0ad0d6cc41",
+                "uuid": "5816a83e-d3d8-49bb-b810-3d28dbf38199",
                 "isHook": false,
                 "skipped": false
               },
@@ -3852,7 +3852,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c019b8ef-d58f-46f8-a637-207e37950787",
+                "uuid": "6c90b656-6f75-45fc-8b0f-8e19f957f891",
                 "isHook": false,
                 "skipped": false
               },
@@ -3869,7 +3869,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6d8892dd-ec6d-4d0c-8354-c4bf0cba3659",
+                "uuid": "dd059705-5a4d-4c85-b13e-1a5c83be9bf6",
                 "isHook": false,
                 "skipped": false
               },
@@ -3886,7 +3886,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ea74e255-f445-46b2-b682-3eb67cf15b6c",
+                "uuid": "04958b95-c0eb-47ab-a564-c03ee5ee9989",
                 "isHook": false,
                 "skipped": false
               },
@@ -3903,7 +3903,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f871b250-a9d2-4dda-8307-03846a53849d",
+                "uuid": "b8fb1f3a-2ca8-47de-a5d1-d53350a1e9a6",
                 "isHook": false,
                 "skipped": false
               },
@@ -3911,7 +3911,7 @@
                 "title": "Input: function, Output: false",
                 "fullTitle": "Fx static methods Fx.isWindow(o: any): boolean Input: function, Output: false",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -3920,7 +3920,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "16291b90-383a-45c5-879a-8e814399d9b0",
+                "uuid": "050ab24d-11c6-4aa7-96a1-7b2f9b045377",
                 "isHook": false,
                 "skipped": false
               },
@@ -3937,7 +3937,7 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(dataInJs[i])).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cd17e92f-b427-4fe8-b997-82f3f39b2e1c",
+                "uuid": "94f343dc-ff4c-4414-a24e-5f3df67a30bb",
                 "isHook": false,
                 "skipped": false
               },
@@ -3954,24 +3954,24 @@
                 "code": "chai_1.expect(fx_1.default.isWindow(window)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a15f3ea1-1afa-4108-a2a2-38cd63b0b724",
+                "uuid": "608c011b-a80b-4409-b529-6155d08ff453",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "5a8eae5c-0a02-41eb-b65d-539bed880bbb",
-              "fc043ba1-5249-41f9-b560-438990e0585f",
-              "67ec4e9a-dc53-4af4-ac11-d8a9c2035e86",
-              "c3c6280a-5168-4e3a-9305-ad0ad0d6cc41",
-              "c019b8ef-d58f-46f8-a637-207e37950787",
-              "6d8892dd-ec6d-4d0c-8354-c4bf0cba3659",
-              "ea74e255-f445-46b2-b682-3eb67cf15b6c",
-              "f871b250-a9d2-4dda-8307-03846a53849d",
-              "16291b90-383a-45c5-879a-8e814399d9b0",
-              "cd17e92f-b427-4fe8-b997-82f3f39b2e1c",
-              "a15f3ea1-1afa-4108-a2a2-38cd63b0b724"
+              "4ae34784-ea73-4363-a9e1-96f62df924dd",
+              "2d318587-4c49-4f7e-befc-9a3f3baf2722",
+              "86afd515-5870-4a55-ba23-dba71820b7e9",
+              "5816a83e-d3d8-49bb-b810-3d28dbf38199",
+              "6c90b656-6f75-45fc-8b0f-8e19f957f891",
+              "dd059705-5a4d-4c85-b13e-1a5c83be9bf6",
+              "04958b95-c0eb-47ab-a564-c03ee5ee9989",
+              "b8fb1f3a-2ca8-47de-a5d1-d53350a1e9a6",
+              "050ab24d-11c6-4aa7-96a1-7b2f9b045377",
+              "94f343dc-ff4c-4414-a24e-5f3df67a30bb",
+              "608c011b-a80b-4409-b529-6155d08ff453"
             ],
             "failures": [],
             "pending": [],
@@ -3992,7 +3992,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "c5098a9e-2771-4a17-ac84-4055884ad0b5",
+        "uuid": "3fa93211-c7e0-496a-9e2b-bb24474ae67c",
         "title": "Operate String method",
         "fullFile": "F:\\github\\fx\\test\\string.ts",
         "file": "\\test\\string.ts",
@@ -4001,7 +4001,7 @@
         "tests": [],
         "suites": [
           {
-            "uuid": "3cf976a5-3a70-4dbe-8520-89522c5c7c84",
+            "uuid": "1c0007cb-c7c7-4666-a4d7-120fb3adb3d3",
             "title": "Fx(str: string).byte(fix: number): number",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4021,7 +4021,7 @@
                 "code": "chai_1.expect(fx_1.default(str).byte()).to.equal(11);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0d3fd2d5-83c0-4475-8643-faa20d313ba2",
+                "uuid": "74bbb4f2-45ce-413a-b3de-37041deb7d1f",
                 "isHook": false,
                 "skipped": false
               },
@@ -4038,15 +4038,15 @@
                 "code": "chai_1.expect(fx_1.default(str).byte(4)).to.equal(15);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "19811586-f7db-45d0-92f7-20b2400d934d",
+                "uuid": "dfeef8d0-fa48-4db6-9c1a-614e02a7d153",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "0d3fd2d5-83c0-4475-8643-faa20d313ba2",
-              "19811586-f7db-45d0-92f7-20b2400d934d"
+              "74bbb4f2-45ce-413a-b3de-37041deb7d1f",
+              "dfeef8d0-fa48-4db6-9c1a-614e02a7d153"
             ],
             "failures": [],
             "pending": [],
@@ -4057,7 +4057,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "fa0bf62a-b4b9-4d9a-8dc1-7b4ce16c37cf",
+            "uuid": "ebcf431e-fbe5-4087-9104-f494876b52bc",
             "title": "Fx(str: string).camelize(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4068,7 +4068,7 @@
                 "title": "Input: fx-utils, Output: fxUtils",
                 "fullTitle": "Operate String method Fx(str: string).camelize(): string Input: fx-utils, Output: fxUtils",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4077,7 +4077,7 @@
                 "code": "chai_1.expect(fx_1.default(strikethrough).camelize()).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e9af9599-d097-4f5e-be97-64d75614fe4a",
+                "uuid": "78c3c874-2c53-4c71-b9c9-8242df1205c3",
                 "isHook": false,
                 "skipped": false
               },
@@ -4094,26 +4094,26 @@
                 "code": "chai_1.expect(fx_1.default(underline).camelize()).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "80acc9db-4a74-4d64-8af8-aad2a3435fd6",
+                "uuid": "862a6d6b-57f9-4490-93e4-5a6de120ebfc",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e9af9599-d097-4f5e-be97-64d75614fe4a",
-              "80acc9db-4a74-4d64-8af8-aad2a3435fd6"
+              "78c3c874-2c53-4c71-b9c9-8242df1205c3",
+              "862a6d6b-57f9-4490-93e4-5a6de120ebfc"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "5f044003-1ece-456e-8d4a-ef3cf6e769de",
+            "uuid": "f08d502b-e847-4a2f-b3ea-17a4fa6d1aa5",
             "title": "Fx(str: string).capitalize(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4133,14 +4133,14 @@
                 "code": "chai_1.expect(fx_1.default(str).capitalize()).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ff50cc41-cd30-41d7-ad33-7cf3e2914115",
+                "uuid": "9bee1796-f033-4417-bb23-3b407c33b8d4",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "ff50cc41-cd30-41d7-ad33-7cf3e2914115"
+              "9bee1796-f033-4417-bb23-3b407c33b8d4"
             ],
             "failures": [],
             "pending": [],
@@ -4151,7 +4151,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "798512f8-1fbe-4e51-8b50-77f792673c0b",
+            "uuid": "08166873-1ead-477b-b0e1-7b5067c4896b",
             "title": "Fx(str: string).encodeHtml(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4162,7 +4162,7 @@
                 "title": "Input: <div>Fx</div>, Output: &lt;div&gt;Fx&lt;&#x2F;div&gt;",
                 "fullTitle": "Operate String method Fx(str: string).encodeHtml(): string Input: <div>Fx</div>, Output: &lt;div&gt;Fx&lt;&#x2F;div&gt;",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4171,25 +4171,25 @@
                 "code": "chai_1.expect(fx_1.default(str).encodeHtml()).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1dd97643-dfaa-40dc-b5e8-29d9a52d7575",
+                "uuid": "ad91d82c-7115-48e9-8ceb-9be501f3d340",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "1dd97643-dfaa-40dc-b5e8-29d9a52d7575"
+              "ad91d82c-7115-48e9-8ceb-9be501f3d340"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "55d25b93-3077-43c1-b480-976662213fec",
+            "uuid": "43aa8b1a-873b-46af-90d0-fa95401fe500",
             "title": "Fx(str: string).decodeHtml(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4200,7 +4200,7 @@
                 "title": "Input: &lt;div&gt;Fx&lt;&#x2F;div&gt;, Output: <div>Fx</div>",
                 "fullTitle": "Operate String method Fx(str: string).decodeHtml(): string Input: &lt;div&gt;Fx&lt;&#x2F;div&gt;, Output: <div>Fx</div>",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4209,25 +4209,25 @@
                 "code": "chai_1.expect(fx_1.default(str).decodeHtml()).to.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "1257f071-f52d-49dc-9174-1a89ca27b4d5",
+                "uuid": "7f74ea40-521d-43fa-8901-3eab0b28aa3d",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "1257f071-f52d-49dc-9174-1a89ca27b4d5"
+              "7f74ea40-521d-43fa-8901-3eab0b28aa3d"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "eced724c-e844-4209-b83a-91eb1ed9401e",
+            "uuid": "58afb4ad-0cc2-40a2-ab12-94f858ca5764",
             "title": "Fx(str: string).startsWith(search: string, position?: number): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4238,7 +4238,7 @@
                 "title": "Input: Fx.startsWith, 'Fx', Output: true",
                 "fullTitle": "Operate String method Fx(str: string).startsWith(search: string, position?: number): boolean Input: Fx.startsWith, 'Fx', Output: true",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4247,7 +4247,7 @@
                 "code": "chai_1.expect(fx_1.default(str).startsWith('Fx')).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "af31b37f-eeac-4a91-a66a-58ca35c76952",
+                "uuid": "e50812b8-bba2-4593-a610-a73324e8fcdc",
                 "isHook": false,
                 "skipped": false
               },
@@ -4264,7 +4264,7 @@
                 "code": "chai_1.expect(fx_1.default(str).startsWith('start', 3)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b0d6067c-7c7f-49b1-b0e7-22927516db1b",
+                "uuid": "07af038e-5a36-45e0-88dd-b7e4950d805c",
                 "isHook": false,
                 "skipped": false
               },
@@ -4272,7 +4272,7 @@
                 "title": "Input: Fx.startsWith, 'Fx.starsWith.method', Output: false",
                 "fullTitle": "Operate String method Fx(str: string).startsWith(search: string, position?: number): boolean Input: Fx.startsWith, 'Fx.starsWith.method', Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4281,27 +4281,27 @@
                 "code": "chai_1.expect(fx_1.default(str).startsWith('Fx.starsWith.method')).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bd057923-57c1-4e5c-87bb-523253ec5c59",
+                "uuid": "922b58eb-8506-40be-8ae5-eb88433c455d",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "af31b37f-eeac-4a91-a66a-58ca35c76952",
-              "b0d6067c-7c7f-49b1-b0e7-22927516db1b",
-              "bd057923-57c1-4e5c-87bb-523253ec5c59"
+              "e50812b8-bba2-4593-a610-a73324e8fcdc",
+              "07af038e-5a36-45e0-88dd-b7e4950d805c",
+              "922b58eb-8506-40be-8ae5-eb88433c455d"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 2,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "c406933b-c6e9-4f88-a1e3-743836a7be1c",
+            "uuid": "f8c92ddd-b1f2-4daf-ab54-aec748cefbec",
             "title": "Fx(str: string).endsWith(search: string, position?: string): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4321,7 +4321,7 @@
                 "code": "chai_1.expect(fx_1.default(str).endsWith('With')).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2a6d3287-26bf-47d5-aec6-953fd5b1d64d",
+                "uuid": "b7137fd6-76a5-4f7e-994a-77f83c29f920",
                 "isHook": false,
                 "skipped": false
               },
@@ -4338,7 +4338,7 @@
                 "code": "chai_1.expect(fx_1.default(str).endsWith('ends', 4)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d0a98ca4-8e36-47b6-8c74-f043f7287e6d",
+                "uuid": "da7aa9c9-adb3-482a-9560-ff76bb94347a",
                 "isHook": false,
                 "skipped": false
               },
@@ -4355,16 +4355,16 @@
                 "code": "chai_1.expect(fx_1.default(str).endsWith('Fx.endsWith.method')).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "61522877-c447-4e2a-aad0-257b12eec1b9",
+                "uuid": "966cdbd4-37e5-426d-bd63-ce1d4ade21c4",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "2a6d3287-26bf-47d5-aec6-953fd5b1d64d",
-              "d0a98ca4-8e36-47b6-8c74-f043f7287e6d",
-              "61522877-c447-4e2a-aad0-257b12eec1b9"
+              "b7137fd6-76a5-4f7e-994a-77f83c29f920",
+              "da7aa9c9-adb3-482a-9560-ff76bb94347a",
+              "966cdbd4-37e5-426d-bd63-ce1d4ade21c4"
             ],
             "failures": [],
             "pending": [],
@@ -4375,7 +4375,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "2b86fdfd-1669-42a4-abba-92eb648141b5",
+            "uuid": "5c9ec352-3959-479c-8689-a22b512fdbf5",
             "title": "Fx(str: string).hasChinese(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4395,7 +4395,7 @@
                 "code": "chai_1.expect(fx_1.default(str).hasChinese()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "16c22f26-11dc-4994-84c3-9bce828491da",
+                "uuid": "298059cc-109a-4c90-be4a-2852f2b807fd",
                 "isHook": false,
                 "skipped": false
               },
@@ -4403,7 +4403,7 @@
                 "title": "Input: 你好，Fx, Output: true",
                 "fullTitle": "Operate String method Fx(str: string).hasChinese(): boolean Input: 你好，Fx, Output: true",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4412,26 +4412,26 @@
                 "code": "chai_1.expect(fx_1.default(chinese).hasChinese()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "33d163dd-8e26-4042-a891-ce29f29559c7",
+                "uuid": "e2af7eac-0829-4c45-8e77-9d87fa061dab",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "16c22f26-11dc-4994-84c3-9bce828491da",
-              "33d163dd-8e26-4042-a891-ce29f29559c7"
+              "298059cc-109a-4c90-be4a-2852f2b807fd",
+              "e2af7eac-0829-4c45-8e77-9d87fa061dab"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "60e678da-f2aa-46fe-9e05-6912dedd3689",
+            "uuid": "eb011616-bd5a-47f2-91ce-893a308c2fdb",
             "title": "Fx(str: string).repeat(count: number): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4451,7 +4451,7 @@
                 "code": "chai_1.expect(fx_1.default(str).repeat()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f758e9a2-6967-4003-b98c-ada59ef70025",
+                "uuid": "a633b6ab-7048-40cd-978f-101c56420759",
                 "isHook": false,
                 "skipped": false
               },
@@ -4468,15 +4468,15 @@
                 "code": "chai_1.expect(fx_1.default(str).repeat(2)).to.equal('FxFx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "66930a60-aa0a-40e3-ad46-4dda09e0e0d8",
+                "uuid": "1cefe9de-4ce7-4cee-8769-2d8381bbeb75",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f758e9a2-6967-4003-b98c-ada59ef70025",
-              "66930a60-aa0a-40e3-ad46-4dda09e0e0d8"
+              "a633b6ab-7048-40cd-978f-101c56420759",
+              "1cefe9de-4ce7-4cee-8769-2d8381bbeb75"
             ],
             "failures": [],
             "pending": [],
@@ -4487,7 +4487,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "d8ca538b-7c98-479d-840b-fabc969cc464",
+            "uuid": "623c06dc-659b-4afc-a36a-e57d0db105b5",
             "title": "Fx(str: string).padEnd(targetLength: number, padString: string): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4507,7 +4507,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padEnd(10)).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c1e570ba-0c1f-4dcc-88fe-baaaea6ea67c",
+                "uuid": "634a0005-eada-487b-9e3f-ca5b56da3d1a",
                 "isHook": false,
                 "skipped": false
               },
@@ -4524,7 +4524,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padEnd(2, '0')).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "306d5d0c-5b0b-4d6e-b87f-e821ec312528",
+                "uuid": "0230f5a9-cf1b-4bfd-8261-e52289bbef87",
                 "isHook": false,
                 "skipped": false
               },
@@ -4532,7 +4532,7 @@
                 "title": "Input: Fx, 4, '0', Output: 'Fx00'",
                 "fullTitle": "Operate String method Fx(str: string).padEnd(targetLength: number, padString: string): string Input: Fx, 4, '0', Output: 'Fx00'",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4541,7 +4541,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padEnd(4, '0')).to.equal('Fx00');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b275d0c8-4892-422f-896c-029c56a7e2e7",
+                "uuid": "58d8f4e1-39c3-469c-a1a9-24413cb19348",
                 "isHook": false,
                 "skipped": false
               },
@@ -4558,28 +4558,28 @@
                 "code": "chai_1.expect(fx_1.default('Fxoop').padEnd(4, '0')).to.equal('Fxoop');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c6c7ffd5-a081-4992-8da1-8b189a589749",
+                "uuid": "2c20ded7-6318-46f8-ae05-268a349f7458",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "c1e570ba-0c1f-4dcc-88fe-baaaea6ea67c",
-              "306d5d0c-5b0b-4d6e-b87f-e821ec312528",
-              "b275d0c8-4892-422f-896c-029c56a7e2e7",
-              "c6c7ffd5-a081-4992-8da1-8b189a589749"
+              "634a0005-eada-487b-9e3f-ca5b56da3d1a",
+              "0230f5a9-cf1b-4bfd-8261-e52289bbef87",
+              "58d8f4e1-39c3-469c-a1a9-24413cb19348",
+              "2c20ded7-6318-46f8-ae05-268a349f7458"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "2f47a09b-b715-40be-9a89-ed7729e90406",
+            "uuid": "4ad9ee41-11b0-414a-8e6c-acd4edb93b9e",
             "title": "Fx(str: string).padStart(targetLength: number, padString: string): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4590,7 +4590,7 @@
                 "title": "Input: Fx, Output: 'Fx'",
                 "fullTitle": "Operate String method Fx(str: string).padStart(targetLength: number, padString: string): string Input: Fx, Output: 'Fx'",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4599,7 +4599,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padStart(10)).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6014087a-d4ba-461f-985e-0a08d08e1224",
+                "uuid": "ee8fd602-7834-4adc-a2c1-543b30d4ddfb",
                 "isHook": false,
                 "skipped": false
               },
@@ -4616,7 +4616,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padStart(2, '0')).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "99935cfa-f1b3-4fb2-8229-ea65cb01cbfb",
+                "uuid": "69fa057d-57fa-440c-a2ae-275f2cfa8a2e",
                 "isHook": false,
                 "skipped": false
               },
@@ -4633,7 +4633,7 @@
                 "code": "chai_1.expect(fx_1.default(str).padStart(4, '0')).to.equal('00Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9b40bb15-c656-42ce-8b37-17f47361fa44",
+                "uuid": "fb86b118-0522-422b-b78c-7f286ad509e9",
                 "isHook": false,
                 "skipped": false
               },
@@ -4650,28 +4650,28 @@
                 "code": "chai_1.expect(fx_1.default('Fx000').padStart(4, '0')).to.equal('Fx000');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "203f31d6-4323-45e1-803c-40131563a26e",
+                "uuid": "5b6bd89d-f692-486f-8a14-9dcd409dec38",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "6014087a-d4ba-461f-985e-0a08d08e1224",
-              "99935cfa-f1b3-4fb2-8229-ea65cb01cbfb",
-              "9b40bb15-c656-42ce-8b37-17f47361fa44",
-              "203f31d6-4323-45e1-803c-40131563a26e"
+              "ee8fd602-7834-4adc-a2c1-543b30d4ddfb",
+              "69fa057d-57fa-440c-a2ae-275f2cfa8a2e",
+              "fb86b118-0522-422b-b78c-7f286ad509e9",
+              "5b6bd89d-f692-486f-8a14-9dcd409dec38"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "6b5bfcbc-d48b-479e-879e-fec002674adb",
+            "uuid": "e4a7fec3-3ae9-4d76-8e19-7dd6bdd30f4e",
             "title": "Fx(str: string).stripTag(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4691,7 +4691,7 @@
                 "code": "chai_1.expect(fx_1.default(str).stripTag()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f4ddc05b-bb41-4de8-b891-3e34b344cd35",
+                "uuid": "336adcc6-6c9e-4475-bbbe-a1bde95afe1f",
                 "isHook": false,
                 "skipped": false
               },
@@ -4708,15 +4708,15 @@
                 "code": "chai_1.expect(fx_1.default(str).stripTag()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ed3110cc-7b30-4e52-9241-02842f371f8e",
+                "uuid": "f0fb41e0-2308-47d7-8ee0-23feb8b31b22",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f4ddc05b-bb41-4de8-b891-3e34b344cd35",
-              "ed3110cc-7b30-4e52-9241-02842f371f8e"
+              "336adcc6-6c9e-4475-bbbe-a1bde95afe1f",
+              "f0fb41e0-2308-47d7-8ee0-23feb8b31b22"
             ],
             "failures": [],
             "pending": [],
@@ -4727,7 +4727,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "33711f11-b3b1-42d8-a887-8ff05acf29ea",
+            "uuid": "2de8bdd2-b08c-4b70-9c76-bff787e0430d",
             "title": "Fx(str: string).trim(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4738,7 +4738,7 @@
                 "title": "Input: 'Fx ', Output: 'Fx'",
                 "fullTitle": "Operate String method Fx(str: string).trim(): string Input: 'Fx ', Output: 'Fx'",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -4747,7 +4747,7 @@
                 "code": "chai_1.expect(fx_1.default('Fx ').trim()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3bc3758f-b8ef-4830-8746-d2e7a82be569",
+                "uuid": "30a35ddd-220a-4de9-8f3e-1db1f1ecc943",
                 "isHook": false,
                 "skipped": false
               },
@@ -4764,7 +4764,7 @@
                 "code": "chai_1.expect(fx_1.default(' Fx ').trim()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e9a5a4c6-ab1a-47eb-b17d-bdb342cd47b7",
+                "uuid": "fed0e902-b3fe-4135-adb4-9f7cf55b1902",
                 "isHook": false,
                 "skipped": false
               },
@@ -4781,27 +4781,27 @@
                 "code": "chai_1.expect(fx_1.default(' Fx').trim()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4097f254-5f27-4162-8fe7-6d2937923597",
+                "uuid": "17d36018-3da1-40e2-8f9c-2dea8adfca5f",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "3bc3758f-b8ef-4830-8746-d2e7a82be569",
-              "e9a5a4c6-ab1a-47eb-b17d-bdb342cd47b7",
-              "4097f254-5f27-4162-8fe7-6d2937923597"
+              "30a35ddd-220a-4de9-8f3e-1db1f1ecc943",
+              "fed0e902-b3fe-4135-adb4-9f7cf55b1902",
+              "17d36018-3da1-40e2-8f9c-2dea8adfca5f"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "f67a9a22-a846-415f-9ead-082bb47207eb",
+            "uuid": "e22af6dd-22b0-4590-8ec8-e5021614ebab",
             "title": "Fx(str: string).trimLeft(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4821,7 +4821,7 @@
                 "code": "chai_1.expect(fx_1.default('Fx ').trimLeft()).to.equal('Fx ');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "192fd252-d2aa-4231-9046-b241708a9a90",
+                "uuid": "b574bcda-cd00-4068-ae37-0b3b90e6acc1",
                 "isHook": false,
                 "skipped": false
               },
@@ -4838,7 +4838,7 @@
                 "code": "chai_1.expect(fx_1.default(' Fx ').trimLeft()).to.equal('Fx ');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4a582165-8d97-42b9-98b3-889166944fd9",
+                "uuid": "7bd92a10-b824-4dd5-a447-07b3a42bac84",
                 "isHook": false,
                 "skipped": false
               },
@@ -4855,16 +4855,16 @@
                 "code": "chai_1.expect(fx_1.default(' Fx').trimLeft()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4c36c84e-50b6-4f15-b06b-56faccaab5cc",
+                "uuid": "2ed33103-b6bf-4ed7-8bc5-6d0b01c84864",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "192fd252-d2aa-4231-9046-b241708a9a90",
-              "4a582165-8d97-42b9-98b3-889166944fd9",
-              "4c36c84e-50b6-4f15-b06b-56faccaab5cc"
+              "b574bcda-cd00-4068-ae37-0b3b90e6acc1",
+              "7bd92a10-b824-4dd5-a447-07b3a42bac84",
+              "2ed33103-b6bf-4ed7-8bc5-6d0b01c84864"
             ],
             "failures": [],
             "pending": [],
@@ -4875,7 +4875,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "9d42d845-d9ec-494b-8543-d10999fed52f",
+            "uuid": "a35d2811-6db6-4d47-a21e-feeccfd4cd5e",
             "title": "Fx(str: string).trimRight(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4895,7 +4895,7 @@
                 "code": "chai_1.expect(fx_1.default('Fx ').trimRight()).to.equal('Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d9031789-4006-4f7b-b014-b802ef011911",
+                "uuid": "29d5aa57-f57e-4e62-99db-6afc1da51ffd",
                 "isHook": false,
                 "skipped": false
               },
@@ -4912,7 +4912,7 @@
                 "code": "chai_1.expect(fx_1.default(' Fx ').trimRight()).to.equal(' Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7937f11d-e2b3-436f-abcb-e158f098a25a",
+                "uuid": "33a45c60-aa2a-4e0f-9622-981d84ce8378",
                 "isHook": false,
                 "skipped": false
               },
@@ -4929,16 +4929,16 @@
                 "code": "chai_1.expect(fx_1.default(' Fx').trimRight()).to.equal(' Fx');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5872a0f6-f785-48ad-b83d-937d2696ee1f",
+                "uuid": "e1f33ec8-c15d-4904-b05d-d5656507f3c6",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "d9031789-4006-4f7b-b014-b802ef011911",
-              "7937f11d-e2b3-436f-abcb-e158f098a25a",
-              "5872a0f6-f785-48ad-b83d-937d2696ee1f"
+              "29d5aa57-f57e-4e62-99db-6afc1da51ffd",
+              "33a45c60-aa2a-4e0f-9622-981d84ce8378",
+              "e1f33ec8-c15d-4904-b05d-d5656507f3c6"
             ],
             "failures": [],
             "pending": [],
@@ -4949,7 +4949,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "711dab9d-fef1-4fa5-b3e6-6b20aa67e053",
+            "uuid": "b259dc98-383d-42f4-9f1a-eef893c2af0f",
             "title": "Fx(str: string).chars(): string[]",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4969,14 +4969,14 @@
                 "code": "chai_1.expect(fx_1.default('Fx')\n    .chars()\n    .join('-')).to.equal('F-x');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "fcc48fed-59e4-43ae-b5ba-65b2c3c64312",
+                "uuid": "5f87dca3-b4ec-46ef-bca7-5c244e750074",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "fcc48fed-59e4-43ae-b5ba-65b2c3c64312"
+              "5f87dca3-b4ec-46ef-bca7-5c244e750074"
             ],
             "failures": [],
             "pending": [],
@@ -4987,7 +4987,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "66e67758-b5a0-4418-9cd8-2b1bab1fd0fa",
+            "uuid": "f4eb3fed-9470-4d01-9ebc-2995b4cb48dc",
             "title": "Fx(str: string).reverse(): string",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -4998,7 +4998,7 @@
                 "title": "Input: 'Fx', Output: 'xF'",
                 "fullTitle": "Operate String method Fx(str: string).reverse(): string Input: 'Fx', Output: 'xF'",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5007,25 +5007,25 @@
                 "code": "chai_1.expect(fx_1.default('Fx').reverse()).to.equal('xF');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0a39061f-433f-4806-879a-9276c1743c46",
+                "uuid": "4c4750f0-d708-4589-8a45-07d0d1356324",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "0a39061f-433f-4806-879a-9276c1743c46"
+              "4c4750f0-d708-4589-8a45-07d0d1356324"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "d5cf69a8-2480-4878-9f04-2df44081e144",
+            "uuid": "235ef732-ec08-48b5-b2e5-973268d1d38c",
             "title": "Fx(str: string).contains(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5045,7 +5045,7 @@
                 "code": "chai_1.expect(fx_1.default('Fx').contains('Fx')).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e67f07d4-6a2e-46a4-9327-df39bf052e77",
+                "uuid": "b5ff3427-d07c-4eb7-b5ed-13b4546abac1",
                 "isHook": false,
                 "skipped": false
               },
@@ -5062,15 +5062,15 @@
                 "code": "chai_1.expect(fx_1.default('Fx').contains('Fy')).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "4909a819-b53b-4ce0-948c-ab03db23a9ac",
+                "uuid": "a6a61464-5960-42f0-b128-09c9552c0101",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e67f07d4-6a2e-46a4-9327-df39bf052e77",
-              "4909a819-b53b-4ce0-948c-ab03db23a9ac"
+              "b5ff3427-d07c-4eb7-b5ed-13b4546abac1",
+              "a6a61464-5960-42f0-b128-09c9552c0101"
             ],
             "failures": [],
             "pending": [],
@@ -5081,7 +5081,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "efa51fa6-d4ba-4884-b164-82e76847376e",
+            "uuid": "e9d3b6f1-7e94-4216-846d-8a07b154056c",
             "title": "Fx(str: string).verifyBankCardNumber(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5101,7 +5101,7 @@
                 "code": "chai_1.expect(fx_1.default('6222600260001072444').verifyBankCardNumber()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c8d8c28c-10d8-45b7-8fc2-23fdba8ba1ff",
+                "uuid": "42630365-1a47-49bc-aae3-6455189ab5c7",
                 "isHook": false,
                 "skipped": false
               },
@@ -5109,7 +5109,7 @@
                 "title": "Input: '622260026000107', Output: false",
                 "fullTitle": "Operate String method Fx(str: string).verifyBankCardNumber(): boolean Input: '622260026000107', Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5118,7 +5118,7 @@
                 "code": "chai_1.expect(fx_1.default('622260026000107').verifyBankCardNumber()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c7f92f73-5308-47a2-95f8-9a4f8b11d8fc",
+                "uuid": "9769a8d7-9e2b-403d-82b8-75aafa03b3cf",
                 "isHook": false,
                 "skipped": false
               },
@@ -5135,7 +5135,7 @@
                 "code": "chai_1.expect(fx_1.default('622260026000107240923').verifyBankCardNumber()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bc3bb997-8e40-4051-ae75-17eb4c1ac748",
+                "uuid": "d2cfc021-b8dd-4d66-ba61-febf13796062",
                 "isHook": false,
                 "skipped": false
               },
@@ -5152,7 +5152,7 @@
                 "code": "chai_1.expect(fx_1.default('6228480402564890018').verifyBankCardNumber()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "03dba0f9-8477-428f-bcda-209fb3f5d26b",
+                "uuid": "b63f8b58-26b3-4aea-9368-abdad8ffb341",
                 "isHook": false,
                 "skipped": false
               },
@@ -5169,7 +5169,7 @@
                 "code": "chai_1.expect(fx_1.default('62284804025648900').verifyBankCardNumber()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "53ef4ec7-2f5b-4d2d-b19c-8e2b54d0fbd9",
+                "uuid": "3a389ae5-9364-4f4b-9b72-9eb58b9c7cca",
                 "isHook": false,
                 "skipped": false
               },
@@ -5186,30 +5186,30 @@
                 "code": "chai_1.expect(fx_1.default('6228480402564890018').verifyBankCardNumber()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "710bfc13-cc6d-465c-87f6-d74f8e89aaeb",
+                "uuid": "97afd38e-06a0-4efe-bba9-9b832c2cee42",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "c8d8c28c-10d8-45b7-8fc2-23fdba8ba1ff",
-              "c7f92f73-5308-47a2-95f8-9a4f8b11d8fc",
-              "bc3bb997-8e40-4051-ae75-17eb4c1ac748",
-              "03dba0f9-8477-428f-bcda-209fb3f5d26b",
-              "53ef4ec7-2f5b-4d2d-b19c-8e2b54d0fbd9",
-              "710bfc13-cc6d-465c-87f6-d74f8e89aaeb"
+              "42630365-1a47-49bc-aae3-6455189ab5c7",
+              "9769a8d7-9e2b-403d-82b8-75aafa03b3cf",
+              "d2cfc021-b8dd-4d66-ba61-febf13796062",
+              "b63f8b58-26b3-4aea-9368-abdad8ffb341",
+              "3a389ae5-9364-4f4b-9b72-9eb58b9c7cca",
+              "97afd38e-06a0-4efe-bba9-9b832c2cee42"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 4,
+            "duration": 3,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "f827f2a9-ec51-4c32-b914-6d0343b354d9",
+            "uuid": "5c5538c8-fab8-4bab-b453-1722057d2972",
             "title": "Fx(str: string).isIP(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5220,7 +5220,7 @@
                 "title": "Input: '10.5.126.35', Output: true",
                 "fullTitle": "Operate String method Fx(str: string).isIP(): boolean Input: '10.5.126.35', Output: true",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5229,7 +5229,7 @@
                 "code": "chai_1.expect(fx_1.default('10.5.126.35').isIP()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e2fa86fa-5932-4d82-b795-424984597c1a",
+                "uuid": "1de1e733-07dc-476a-a500-cfbd52bfaf77",
                 "isHook": false,
                 "skipped": false
               },
@@ -5246,26 +5246,26 @@
                 "code": "chai_1.expect(fx_1.default('10.265.265.10').isIP()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "257205df-fce0-4128-b965-8656ea978bc9",
+                "uuid": "a62c265c-7eab-4eff-b65a-5d69fd513d3b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e2fa86fa-5932-4d82-b795-424984597c1a",
-              "257205df-fce0-4128-b965-8656ea978bc9"
+              "1de1e733-07dc-476a-a500-cfbd52bfaf77",
+              "a62c265c-7eab-4eff-b65a-5d69fd513d3b"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "c1f64595-d634-4084-878f-f623d104cd2f",
+            "uuid": "b8d49bba-8c85-42d2-aa1a-8847cf5d782d",
             "title": "Fx(str: string).isURL(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5276,7 +5276,7 @@
                 "title": "Input: 'http://fx.com', Output: true",
                 "fullTitle": "Operate String method Fx(str: string).isURL(): boolean Input: 'http://fx.com', Output: true",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5285,7 +5285,7 @@
                 "code": "chai_1.expect(fx_1.default('http://fx.com').isURL()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "606a7a0d-8f1d-4c83-8abf-6ee500a10d0c",
+                "uuid": "4e18d01c-b3ff-46c8-bf6a-7db705639dec",
                 "isHook": false,
                 "skipped": false
               },
@@ -5302,26 +5302,26 @@
                 "code": "chai_1.expect(fx_1.default('htp://fx.com').isURL()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "472ae274-c013-4791-ad09-341de560086b",
+                "uuid": "cb1e5adf-901d-4930-b44f-22f93e92afe9",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "606a7a0d-8f1d-4c83-8abf-6ee500a10d0c",
-              "472ae274-c013-4791-ad09-341de560086b"
+              "4e18d01c-b3ff-46c8-bf6a-7db705639dec",
+              "cb1e5adf-901d-4930-b44f-22f93e92afe9"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "629e4168-e4c0-46ee-a7be-1c8167447404",
+            "uuid": "06728fec-e5ce-4731-bc64-819d44c5dc2d",
             "title": "Fx(str: string).isPhone(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5341,7 +5341,7 @@
                 "code": "chai_1.expect(fx_1.default('15209862528').isPhone()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "42c739c3-cf24-41dc-9fbe-8fca42965459",
+                "uuid": "b786f028-3ae4-429c-9f5f-dd0474ef1dd3",
                 "isHook": false,
                 "skipped": false
               },
@@ -5358,15 +5358,15 @@
                 "code": "chai_1.expect(fx_1.default('12025586569').isPhone()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "85f339c2-db72-41ed-a12b-431b9cc14138",
+                "uuid": "c8571aaa-c7c4-4b13-aa70-73015e4c9c2b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "42c739c3-cf24-41dc-9fbe-8fca42965459",
-              "85f339c2-db72-41ed-a12b-431b9cc14138"
+              "b786f028-3ae4-429c-9f5f-dd0474ef1dd3",
+              "c8571aaa-c7c4-4b13-aa70-73015e4c9c2b"
             ],
             "failures": [],
             "pending": [],
@@ -5377,7 +5377,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "86f0d823-02e0-4123-b9f6-04b643906a5f",
+            "uuid": "64f78943-c9ae-4729-8c33-95ee11bcd369",
             "title": "Fx(str: string).isEmail(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5397,7 +5397,7 @@
                 "code": "chai_1.expect(fx_1.default('pxyamos@163.com').isEmail()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a38e8de0-af24-49a5-bf7f-50ace07829e9",
+                "uuid": "fd4daddb-5fa4-4548-943e-a43dbcd89557",
                 "isHook": false,
                 "skipped": false
               },
@@ -5405,7 +5405,7 @@
                 "title": "Input: 'pxyamos@20190101', Output: false",
                 "fullTitle": "Operate String method Fx(str: string).isEmail(): boolean Input: 'pxyamos@20190101', Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5414,26 +5414,26 @@
                 "code": "chai_1.expect(fx_1.default('pxyamos@20190101').isEmail()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "39445146-fb41-4a30-8d55-2ef2991ffc33",
+                "uuid": "ec2246c3-afc9-4837-83ff-527a6c218e48",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "a38e8de0-af24-49a5-bf7f-50ace07829e9",
-              "39445146-fb41-4a30-8d55-2ef2991ffc33"
+              "fd4daddb-5fa4-4548-943e-a43dbcd89557",
+              "ec2246c3-afc9-4837-83ff-527a6c218e48"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 2,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "17a2c7c3-f2fa-4f94-9895-7ff2577977ca",
+            "uuid": "5fd032a0-a566-40ac-9231-77fac7301118",
             "title": "Fx(str: string).isAvaiableLength(max: number, min: number): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5453,7 +5453,7 @@
                 "code": "chai_1.expect(fx_1.default('Fx').isAvaiableLength(10, 1)).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "45e5902d-82cb-418a-86ea-9ae27f95ed0a",
+                "uuid": "1dc59145-ef00-4686-ade5-fb9bdde1035e",
                 "isHook": false,
                 "skipped": false
               },
@@ -5470,15 +5470,15 @@
                 "code": "chai_1.expect(fx_1.default('Fx').isAvaiableLength(10, 5)).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8b507703-3868-4a8f-ba35-bd6d25b88b46",
+                "uuid": "a3a6f3d4-79eb-4369-a9a7-b51dc17573ba",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "45e5902d-82cb-418a-86ea-9ae27f95ed0a",
-              "8b507703-3868-4a8f-ba35-bd6d25b88b46"
+              "1dc59145-ef00-4686-ade5-fb9bdde1035e",
+              "a3a6f3d4-79eb-4369-a9a7-b51dc17573ba"
             ],
             "failures": [],
             "pending": [],
@@ -5489,7 +5489,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "8aad655d-676e-4f5c-9117-2cc406c89610",
+            "uuid": "e7ca560e-9085-4704-a965-e9f7c62d1beb",
             "title": "Fx(str: string).isIdCard(): boolean",
             "fullFile": "F:\\github\\fx\\test\\string.ts",
             "file": "\\test\\string.ts",
@@ -5509,7 +5509,7 @@
                 "code": "chai_1.expect(fx_1.default('32010419771011').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e9dfa0c8-6ce7-4c4f-95ca-b489a9d49e9b",
+                "uuid": "cd80014d-a4a4-4bf5-a995-90b525af5a67",
                 "isHook": false,
                 "skipped": false
               },
@@ -5517,7 +5517,7 @@
                 "title": "Input: '32010419771011712109', Output: false",
                 "fullTitle": "Operate String method Fx(str: string).isIdCard(): boolean Input: '32010419771011712109', Output: false",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -5526,7 +5526,7 @@
                 "code": "chai_1.expect(fx_1.default('32010419771011712109').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cc6e79b9-d28c-41ac-a98d-99ce17be4a41",
+                "uuid": "37e97585-252d-4ea8-b6b5-ea473afb53a1",
                 "isHook": false,
                 "skipped": false
               },
@@ -5543,7 +5543,7 @@
                 "code": "chai_1.expect(fx_1.default('190104197710117121').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f9246f23-6116-48d1-ba47-172f6abee06c",
+                "uuid": "7a73f4b0-72ae-4201-bbce-1b09fdba23f8",
                 "isHook": false,
                 "skipped": false
               },
@@ -5560,7 +5560,7 @@
                 "code": "chai_1.expect(fx_1.default('320311791706001').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5493126f-145f-4892-a770-cb17581277bd",
+                "uuid": "d4cf74a6-9c01-4abe-ab27-b79babbbcd11",
                 "isHook": false,
                 "skipped": false
               },
@@ -5577,7 +5577,7 @@
                 "code": "chai_1.expect(fx_1.default('522422701104245').isIdCard()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "999caea0-3580-47bb-bb8f-e993941c42ad",
+                "uuid": "3a282287-f7f1-4619-8783-6ca352d7ded3",
                 "isHook": false,
                 "skipped": false
               },
@@ -5594,7 +5594,7 @@
                 "code": "chai_1.expect(fx_1.default('320104194710117121').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c77743fb-b4c9-41f7-862d-a49c99e63d18",
+                "uuid": "7c35e080-fa20-44bc-9221-a4965b033161",
                 "isHook": false,
                 "skipped": false
               },
@@ -5611,7 +5611,7 @@
                 "code": "chai_1.expect(fx_1.default('220582197517240826').isIdCard()).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ec0ade2f-5477-474e-b80f-bc80bed28d15",
+                "uuid": "f6dbf27b-0b35-4e6d-80ee-b7a066a426e5",
                 "isHook": false,
                 "skipped": false
               },
@@ -5628,7 +5628,7 @@
                 "code": "chai_1.expect(fx_1.default('220582197507240826').isIdCard()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "460a39d7-9a7f-4025-97cd-312bd806840f",
+                "uuid": "def93860-e960-488c-9682-0b53335da915",
                 "isHook": false,
                 "skipped": false
               },
@@ -5645,27 +5645,27 @@
                 "code": "chai_1.expect(fx_1.default('64052119940907454X').isIdCard()).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "ee584d78-d449-4e52-97b0-c2d5fc9494b3",
+                "uuid": "858dc8aa-cff7-4273-8324-ec5ed680179c",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e9dfa0c8-6ce7-4c4f-95ca-b489a9d49e9b",
-              "cc6e79b9-d28c-41ac-a98d-99ce17be4a41",
-              "f9246f23-6116-48d1-ba47-172f6abee06c",
-              "5493126f-145f-4892-a770-cb17581277bd",
-              "999caea0-3580-47bb-bb8f-e993941c42ad",
-              "c77743fb-b4c9-41f7-862d-a49c99e63d18",
-              "ec0ade2f-5477-474e-b80f-bc80bed28d15",
-              "460a39d7-9a7f-4025-97cd-312bd806840f",
-              "ee584d78-d449-4e52-97b0-c2d5fc9494b3"
+              "cd80014d-a4a4-4bf5-a995-90b525af5a67",
+              "37e97585-252d-4ea8-b6b5-ea473afb53a1",
+              "7a73f4b0-72ae-4201-bbce-1b09fdba23f8",
+              "d4cf74a6-9c01-4abe-ab27-b79babbbcd11",
+              "3a282287-f7f1-4619-8783-6ca352d7ded3",
+              "7c35e080-fa20-44bc-9221-a4965b033161",
+              "f6dbf27b-0b35-4e6d-80ee-b7a066a426e5",
+              "def93860-e960-488c-9682-0b53335da915",
+              "858dc8aa-cff7-4273-8324-ec5ed680179c"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 2,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000

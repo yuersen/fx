@@ -1,15 +1,19 @@
 export default class StringUtil {
   length: number;
   str: string;
+  /**
+   * constructor
+   * @param  {string} str
+   */
   constructor(str: string) {
     this.str = '' + str;
     this.length = str.length;
   }
+
   /**
    * 获取字符串的字节数
-   * @param {String} str - 待获取字节数的字符串
-   * @param {(Number | undefined)} fix - 指定字符串与字节的转换位数
-   * @return {Number}
+   * @param  {number} fix? 指定字符串与字节的转换位数，默认是2
+   * @returns number
    */
   byte(fix?: number): number {
     fix = fix ? fix : 2;
@@ -19,7 +23,7 @@ export default class StringUtil {
 
   /**
    * 包含'-'或者'_'的字符串,转化为驼峰风格
-   * @return {String} 驼峰风格的字符串
+   * @returns string
    */
   camelize(): string {
     return this.str.replace(/[-_][^-_]/g, match => {
@@ -29,16 +33,17 @@ export default class StringUtil {
 
   /**
    * 首字母大写
-   * @return {String}
+   * @returns string
    */
   capitalize(): string {
+    const str = this.str;
     return this.str.charAt(0).toUpperCase() + this.str.substr(1);
   }
 
   /**
    * HTML片段编码转义
-   * @return {String} 转义后的html片段
    * @see https://github.com/janl/mustache.js/blob/master/mustache.js#L60
+   * @returns string
    */
   encodeHtml(): string {
     const escapeMap = {
@@ -58,7 +63,7 @@ export default class StringUtil {
 
   /**
    * HTML片段编码转义
-   * @return {String} 转义后的html片段
+   * @returns string
    */
   decodeHtml(): string {
     const escapeMap = {
@@ -81,9 +86,9 @@ export default class StringUtil {
 
   /**
    * 判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false
-   * @param {String} search - 要搜索的子字符串
-   * @param {number} position - 搜索开始位置，默认值为 0，也就是真正的字符串开头处
-   * @return {Boolean}  若包含子项，返回 true.
+   * @param  {string} search 要搜索的子字符串
+   * @param  {number} position? 搜索开始位置，默认值为 0
+   * @returns boolean
    */
   startsWith(search: string, position?: number): boolean {
     if (position === void 0 || position > this.length) {
@@ -95,9 +100,9 @@ export default class StringUtil {
 
   /**
    * 判断当前字符串是否是以另外一个给定的子字符串“结尾”的，根据判断结果返回 true 或 false
-   * @param {String} search - 要搜索的子字符串
-   * @param {Number|undefined} position - 作为str的长度，默认值为 str.length
-   * @return {Boolean}  若包含子项，返回 true.
+   * @param  {string} search 要搜索的子字符串
+   * @param  {number} position? 检索开始的位置，默认值为 str.length
+   * @returns boolean
    */
   endsWith(search: string, position?: number): boolean {
     if (position === void 0 || position > this.length) {
@@ -108,8 +113,7 @@ export default class StringUtil {
 
   /**
    * 判断字符串中是否包含汉字
-   * @param {String} str - 待检测的对象
-   * @return {Boolean}
+   * @returns boolean
    */
   hasChinese(): boolean {
     // [\u4E00-\u9FA5]表示汉字，[\uFE30-\uFFA0]表示全角
@@ -119,18 +123,18 @@ export default class StringUtil {
 
   /**
    * 返回一个新字符串，该字符串包含被连接在一起的指定数量的字符串的副本
-   * @param count 介于0和正无穷大之间的整数 : [0, +∞) 。表示在新构造的字符串中重复了多少遍原字符串。
+   * @param  {number} count 介于0和正无穷大之间的整数 : [0, +∞) 。表示在新构造的字符串中重复的次数。
+   * @returns string
    */
   repeat(count: number): string {
     return new Array(Math.floor(count || 1) + 1).join(this.str);
   }
 
   /**
-   * 用一个字符串填充当前字符串（如果需要的话则重复填充），
-   * 返回填充后达到指定长度的字符串。从当前字符串的末尾（右侧）开始填充。
-   * @param {Number} targetLength - 增加长度
-   * @param {String} padString - 填充字符串
-   * @return {String}
+   * 用一个字符串填充当前字符串（如果需要的话则重复填充），返回填充后达到指定长度的字符串。从当前字符串的末尾（右侧）开始填充。
+   * @param  {number} targetLength 增加长度
+   * @param  {string} padString? 填充字符串
+   * @returns string
    */
   padEnd(targetLength: number, padString?: string): string {
     // floor if number or convert non-number to 0;
@@ -153,9 +157,9 @@ export default class StringUtil {
 
   /**
    * 用另一个字符串填充当前字符串(重复，如果需要的话)，以便产生的字符串达到给定的长度。
-   * @param {Number} targetLength - 当前字符串需要填充到的目标长度
-   * @param {String} padString - 填充字符串
-   * @return {String}
+   * @param  {number} targetLength 当前字符串需要填充到的目标长度
+   * @param  {string} padString? 填充字符串
+   * @returns string
    */
   padStart(targetLength: number, padString?: string): string {
     // floor if number or convert non-number to 0;
@@ -177,9 +181,8 @@ export default class StringUtil {
   }
 
   /**
-   * 移除字符串中的html标签
-   * 存在缺陷：如果有script标签，会把这些不该显示的脚本显示出来
-   * @return {String}
+   * 移除字符串中的html标签，存在缺陷：如果有script标签，会把这些不该显示的脚本显示出来
+   * @returns string
    */
   stripTag(): string {
     return this.str.replace(/<[^>]+>/g, '');
@@ -187,8 +190,7 @@ export default class StringUtil {
 
   /**
    * 移除字符串左右的空格
-   * @param {String} str - String对象或者字符串
-   * @return {String}
+   * @returns string
    */
   trim(): string {
     return this.str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
@@ -196,7 +198,7 @@ export default class StringUtil {
 
   /**
    * 移除字符串左侧的空格
-   * @return {String} String对象或者字符串
+   * @returns string
    */
   trimLeft(): string {
     return this.str.replace(/^\s*/, '');
@@ -204,7 +206,7 @@ export default class StringUtil {
 
   /**
    * 移除字符串右侧的空格
-   * @return {String} String对象或者字符串
+   * @returns string
    */
   trimRight(): string {
     return this.str.replace(/\s*$/, '');
@@ -212,7 +214,7 @@ export default class StringUtil {
 
   /**
    * 将字符串进行切割
-   * @return {Array}  包含切割字符串的数组
+   * @returns string
    */
   chars(): string[] {
     return this.str.split('');
@@ -220,7 +222,7 @@ export default class StringUtil {
 
   /**
    * 对当前字符串进行反转操作
-   * @return {String} 反转操作后的字符串
+   * @returns string
    */
   reverse(): string {
     return this.str
@@ -231,8 +233,8 @@ export default class StringUtil {
 
   /**
    * 判断指定字符串中是否包含某子字符串
-   * @param  {String} str - 待检测字符串
-   * @return {Boolean}  若包含子项，返回 true.
+   * @param  {string} substr 待检测字符串
+   * @returns boolean
    */
   contains(substr: string): boolean {
     return this.str.indexOf(substr) !== -1;
@@ -245,10 +247,8 @@ export default class StringUtil {
    *   2.将奇位乘积的个十位全部相加，再加上所有偶数位上的数字。
    *   3.将加法和加上校验位能被 10 整除。
    * bankCardNumber为银行卡号 banknoInfo 为显示提示信息的DIV或其他控件
-   * @param {String} bankno - 银行卡号
-   * @return {Boolean}
+   * @returns boolean
    */
-
   verifyBankCardNumber(): boolean {
     const bankCardNumber: string = this.str;
     const lastNumber: string = bankCardNumber.substr(
@@ -347,8 +347,7 @@ export default class StringUtil {
 
   /**
    * 判断是否是合理的IP地址
-   * @param {String} ip - 待验证的IP地址
-   * @return {Boolean} 若是合理的IP地址， 返回 true.
+   * @returns boolean
    */
   isIP(): boolean {
     return /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(
@@ -358,8 +357,7 @@ export default class StringUtil {
 
   /**
    * 判断输入的参数是否是个合格的URL
-   * @param {String} url - 待判断的url参数
-   * @return {Boolean}
+   * @returns boolean
    */
   isURL(): boolean {
     return new RegExp(
@@ -378,10 +376,8 @@ export default class StringUtil {
 
   /**
    * 判断输入的参数是否是个合格的手机号码，不能判断号码的有效性，有效性可以通过运营商确定。
-   * @param {String} phone - 待判断的手机号码
-   * @return {Boolean} 合法的手机号码返回 true.
+   * @returns boolean
    */
-
   isPhone(): boolean {
     /*
      * 手机号码段规则
@@ -397,8 +393,8 @@ export default class StringUtil {
   }
 
   /**
-   * 判断输入的参数是否是个合格标准的邮箱,并不能判断是否有效，有效只能通过邮箱提供商确定。
-   * @return {Boolena} 合格的邮箱返回 true
+   * 判断输入的参数是否是个合格标准的邮箱,并不能判断是否有效，有效只能通过邮箱提供商确定
+   * @returns boolean
    */
   isEmail(): boolean {
     /*
@@ -416,11 +412,9 @@ export default class StringUtil {
 
   /**
    * 判断传入的参数的长度是否在给定的有效范围内
-   * @param {String} str - 待验证的参数
-   * @param {Number} max - 给定的最大的长度
-   * @param {Number} min - 给定的最小的长度
-   * @return {Boolean} 验证通过返回 true.
-   *
+   * @param  {number} max 给定的最大的长度
+   * @param  {number} min 给定的最小的长度
+   * @returns boolean
    */
   isAvaiableLength(max: number, min: number): boolean {
     const l = this.str.length;
@@ -429,8 +423,7 @@ export default class StringUtil {
 
   /**
    * 参数身份证号码是否合法，其身份证有效性无法判断
-   * @param {String} idcard - 待验证的身份证
-   * @return {Boolean} 若检验通过，返回 true
+   * @returns boolean
    */
   isIdCard(): boolean {
     const cityCode = {
