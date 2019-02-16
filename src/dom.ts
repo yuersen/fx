@@ -117,7 +117,6 @@ export default class DOMUtil {
   /**
    * 获取/设置html片段
    * IE下tbody、tr的innerHTML都是只读的，不允许写入，而在其他浏览器下则没问题
-   * TODO
    */
   html(str?: string) {
     const elem = this.elem;
