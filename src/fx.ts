@@ -1,6 +1,7 @@
 import StringUtil from './string';
 import ArrayUtil from './array';
 import EventEmit from './eventemit';
+import domUtil from './dom';
 
 /**
  * 基类方法
@@ -30,6 +31,8 @@ Fx.fn = Fx.prototype = {
 // 模拟 Node 的 EventEmitter 事件发布处理机制
 Fx.EventEmit = EventEmit;
 
+// Dom 操作
+Fx.DOM = domUtil;
 /**
  * 输出当前参数类型
  * @param {any} o 合法的javascript数据类型
