@@ -11,6 +11,7 @@
 function toArray(arr: any): any[] {
   return [].slice.call(arr, 0);
 }
+
 /**
  * 判断当前是否是 Node 节点
  * @param  {Node} el Node节点
@@ -23,6 +24,49 @@ function isNode(el: Node): boolean {
   );
 }
 
+/**
+ * 删除数组中重复元素。只处理删除DOM元素数组，而不能处理字符串或者数字数组
+ * @param  {Element[]} els
+ * @returns Element
+ */
+function unique(els: Element[]): Element[] {
+  const duplicates = [];
+
+  // 先排序，再进行重复移除
+  els.sort((fel: Element, sel: Element) => {
+    if (fel === sel) {
+      return 0;
+    }
+  });
+
+  // 标记重复元素
+  for (let i = 0, l = els.length; i < l; i++) {
+    if (els[i] === els[i - 1]) {
+      duplicates.push(i);
+    }
+  }
+
+  // 移除重复元素
+  let k = duplicates.length;
+  while (k--) {
+    els.splice(duplicates[k], 1);
+  }
+  return els;
+}
+
+/**
+ * 获取所有的同辈节点，包含自身
+ * @returns Node
+ */
+function sibling(el: Node, elem?: Element): Element[] {
+  const els: Element[] = [];
+  for (; el; el = el.nextSibling) {
+    if (el.nodeType === 1 && el !== elem) {
+      els.push(el as Element);
+    }
+  }
+  return unique(els);
+}
 class DOMUtil {
   el: Element[];
   length: number;
@@ -73,13 +117,11 @@ class DOMUtil {
    * @returns Element[]
    */
   find(selector: string): Element[] {
-    const els: Element[] = [];
-
+    let els: Element[] = [];
     this.forEach(el => {
-      els.concat(toArray(el.querySelectorAll(selector) || []));
+      els = els.concat(toArray(el.querySelectorAll(selector) || []));
     });
-
-    return els;
+    return unique(els);
   }
 
   /**
@@ -89,9 +131,11 @@ class DOMUtil {
   parent(): Element[] {
     const els: Element[] = [];
     this.forEach(el => {
-      els.push(el.parentNode as Element);
+      if (el.parentNode) {
+        els.push(el.parentNode as Element);
+      }
     });
-    return els;
+    return unique(els);
   }
 
   /**
@@ -104,9 +148,12 @@ class DOMUtil {
       do {
         el = el.previousSibling;
       } while (el && el.nodeType !== 1);
-      els.push(el as Element);
+
+      if (el && (el.nodeType === 1 || el.nodeType === 9)) {
+        els.push(el as Element);
+      }
     });
-    return els;
+    return unique(els);
   }
 
   /**
@@ -119,25 +166,22 @@ class DOMUtil {
       do {
         el = el.nextSibling;
       } while (el && el.nodeType !== 1);
-      els.push(el as Element);
-    });
-    return els;
-  }
 
-  /**
-   * 获取所有的兄弟节点
-   * @returns Node
-   */
-  sibling(): Element[] {
-    const els: Element[] = [];
-    this.forEach((el: Node) => {
-      for (; el; el = el.nextSibling) {
-        if (el.nodeType === 1) {
-          els.push(el as Element);
-        }
+      if (el && (el.nodeType === 1 || el.nodeType === 9)) {
+        els.push(el as Element);
       }
     });
-    return els;
+    return unique(els);
+  }
+
+  siblings(): Element[] {
+    let els: Element[] = [];
+    this.forEach(el => {
+      if (el.parentNode) {
+        els = els.concat(sibling(el.parentNode.firstChild, el));
+      }
+    });
+    return unique(els);
   }
 
   /**
@@ -145,17 +189,13 @@ class DOMUtil {
    * @returns Element[]
    */
   children(): Element[] {
-    const els: Element[] = [];
+    let els: Element[] = [];
     this.forEach((el: Node) => {
-      el = el.firstChild;
-
-      for (; el; el = el.nextSibling) {
-        if (el.nodeType === 1) {
-          els.push(el as Element);
-        }
+      if (el.firstChild) {
+        els = els.concat(sibling(el.firstChild));
       }
     });
-    return els;
+    return unique(els);
   }
 
   /**
@@ -211,7 +251,7 @@ class DOMUtil {
     if (!opt) {
       return height;
     }
-    const style = getComputedStyle(el);
+    const style = window.getComputedStyle(el);
     return (
       height + parseInt(style.marginTop, 10) + parseInt(style.marginBottom, 10)
     );
@@ -229,7 +269,7 @@ class DOMUtil {
     if (!opt) {
       return width;
     }
-    const style = getComputedStyle(el);
+    const style = window.getComputedStyle(el);
     return (
       width + parseInt(style.marginLeft, 10) + parseInt(style.marginRight, 10)
     );
@@ -367,17 +407,13 @@ class DOMUtil {
    * @param  {string} val? 属性值
    * @returns DOMUtil | string[]
    */
-  attr(name: string, val?: string): DOMUtil | string[] {
-    const attrs: string[] = [];
-
-    this.forEach(el => {
-      if (val) {
+  attr(name: string, val?: string): DOMUtil | string {
+    if (val) {
+      return this.forEach(el => {
         el.setAttribute(name, val);
-      } else {
-        attrs.push(el.getAttribute(name));
-      }
-    });
-    return attrs.length ? attrs : this;
+      });
+    }
+    return this.first().getAttribute(name);
   }
 
   /**
@@ -396,39 +432,67 @@ class DOMUtil {
    * @param  {string} str? 文本内容
    * @returns DOMUtil | string[]
    */
-  text(value?: string): DOMUtil | string[] {
-    const texts: string[] = [];
-    this.forEach((el: any) => {
-      if (value) {
-        el.innerText = value;
-      } else {
-        texts.push(el.innerText);
-      }
+  text(value?: string): DOMUtil | string {
+    if (!value) {
+      return (this.first() as any).innerText || this.first().textContent;
+    }
+    return this.forEach((el: any) => {
+      el.innerText = value;
     });
-    return texts.length ? texts : this;
   }
 
   /**
    * 获取/设置html片段,IE下tbody、tr的innerHTML都是只读的，不允许写入，而在其他浏览器下则没问题
-   * @param  {string} str?
+   * @param  {string} value? 带插入的 html 片段
    * @returns DOMUtil
    */
-  html(str?: string): DOMUtil | string[] {
-    const htmls: string[] = [];
+  html(value?: string): DOMUtil | string {
+    if (!value) {
+      return this.first().innerHTML;
+    }
+    const wrapMap: {[key: string]: any[]} = {
+      option: [1, "<select multiple='multiple'>", '</select>'],
+      legend: [1, '<fieldset>', '</fieldset>'],
+      area: [1, '<map>', '</map>'],
+      param: [1, '<object>', '</object>'],
+      thead: [1, '<table>', '</table>'],
+      tbody: [1, '<table>', '</table>'],
+      tr: [2, '<table><tbody>', '</tbody></table>'],
+      col: [2, '<table><tbody></tbody><colgroup>', '</colgroup></table>'],
+      td: [3, '<table><tbody><tr>', '</tr></tbody></table>']
+    };
+    return this.forEach(el => {
+      try {
+        el.innerHTML = value;
+      } catch(e) {
+        // IE 6-9 don't support setting innerHTML for
+        // TABLE, TBODY, TFOOT, THEAD, and TR directly
+        // const special = wrapMap[(/<([\w:]+)/.exec(value) || ['', ''])[1].toLowerCase()];
+        const special = wrapMap[el.tagName.toLowerCase()];
+        if (special) {
+          // Create a new element and return the first child
+          let vnode = document.createElement('div');
+          vnode.innerHTML = special[1] + value + special[2];
 
-    this.forEach(el => {
-      if (str === void 0) {
-        htmls.push(el.nodeType === 1 ? el.innerHTML : undefined);
-      } else {
-        try {
-          el.innerHTML = str;
-        } catch (e) {
-          // IE 6-9 don't support setting innerHTML for
-          // TABLE, TBODY, TFOOT, THEAD, and TR directly
+          // 遍历获取当前待插入子节点
+          for (let i = 0; i < special[0]; i++) {
+            vnode = vnode.firstChild as any;
+          }
+
+          // Remove the old elements
+          let l = el.children.length;
+          for (let k = 0; k < l; k++) {
+            el.removeChild(el.children[k]);
+          }
+
+          // Add the new elements
+          l = vnode.children.length;
+          for (let u = 0; u < l; u++) {
+            el.appendChild(vnode.children[u]);
+          }
         }
       }
     });
-    return htmls.length ? htmls : this;
   }
 }
 export default function(selector: Node | string, context?: Node | string) {

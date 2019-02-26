@@ -4,13 +4,31 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Fx</title>
+    <style>
+      html, body {padding: 0; margin: 0; width: 100%; height: 100%;}
+      .container {position: relative; width: 100%; height: 100%;}
+      header, main, footer {position: absolute;}
+      header {position: absolute; top: 0; width: 100%; height: 60px;}
+      header li {position: relative; padding: 0; height: 20px; margin: 5px 0;}
+      main {position: absolute; top: 60px; bottom: 50px; left: 0; right: 0}
+      footer {position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;}
+    </style>
   </head>
 
   <body>
-    <div id="container">
-      <p id="p">Hello</p>
+    <div id="container" class="container">
+      <header id="header">
+        <ul>
+          <li class="home">Home</li>
+          <li class="fx">Fx</li>
+        </ul>
+      </header>
+      <main id="main">Main</main>
+      <footer id="footer">Footer</footer>
+      <table id="table"></table>
     </div>
     <script src="./dist/fx.umd.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
     <script>
     let event = new Fx.EventEmit();
     event.on('EvtA', function(data) {
