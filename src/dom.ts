@@ -3,6 +3,8 @@
  * @author pxyamos
  */
 
+import ClassListUtil from './classlist';
+
 /**
  * 伪数组转换成数组
  * @param  {any[]} arr 伪数组
@@ -67,10 +69,12 @@ function sibling(el: Node, elem?: Element): Element[] {
   }
   return unique(els);
 }
+
 class DOMUtil {
   el: Element[];
   length: number;
-  ctx: any;
+  context: any;
+  classList: ClassListUtil;
   constructor(selector: Node | string, context?: Node | string) {
     const doc = window.document;
     // normalize context
@@ -82,7 +86,7 @@ class DOMUtil {
     } else {
       ctx = doc;
     }
-    this.ctx = ctx;
+    this.context = ctx;
 
     // normalize selector
     let el: Element[];
@@ -91,8 +95,12 @@ class DOMUtil {
     } else if (typeof selector === 'string') {
       el = toArray(ctx.querySelectorAll(selector) || []);
     }
+
     this.el = el;
     this.length = el.length;
+    if (el.length) {
+      this.classList = new ClassListUtil(el);
+    }
     return this;
   }
 

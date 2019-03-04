@@ -10,7 +10,7 @@
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "clean": "rimraf ./dist && mkdir dist",
-    "test": "mocha --require ts-node/register --reporter mochawesome test/dom.ts",
+    "test": "mocha",
     "test:coverage": "nyc mocha"
   },
   "nyc": {

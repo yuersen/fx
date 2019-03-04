@@ -32,11 +32,20 @@ const { window } = new JSDOM(`<!DOCTYPE html>
   </html>
 `);
 // 测试用例之中，DOM环境（即window, document 和 navigator 对象）必须是存在的
-const gl = global as any;
-gl.window = window;
-gl.document = window.document;
-gl.Node = window.Node;
-gl.Element = window.Element;
+declare global {
+  namespace NodeJS {
+    interface  Global {
+      window: any;
+      document: any;
+      Node: any;
+      Element: any;
+    }
+  }
+}
+global.window = window;
+global.document = window.document;
+global.Node = window.Node;
+global.Element = window.Element;
 
 describe('Fx operates DOM', () => {
   describe('Fx.DOM(sctor: Node|string, context?: Node|string)', () => {
@@ -219,11 +228,6 @@ describe('Fx operates DOM', () => {
       const clone = li.clone();
       expect(clone.length).to.equal(2);
       expect(clone[0].textContent === li.el[0].textContent).to.equal(true);
-    });
-
-    it(`Clone a empty element, and the result is 0`, () => {
-      const li = Fx.DOM('li.test').clone();
-      expect(li.length).to.equal(0);
     });
   });
 
