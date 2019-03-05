@@ -23,7 +23,7 @@ const { window } = new JSDOM(`<!DOCTYPE html>
 // 测试用例之中，DOM环境（即window, document 和 navigator 对象）必须是存在的
 declare global {
   namespace NodeJS {
-    interface  Global {
+    interface Global {
       window: any;
       document: any;
       Node: any;
@@ -107,20 +107,16 @@ describe('Fx operates DOM.classList', () => {
       expect(classList.list(1).indexOf('remove2') === -1).to.equal(true);
       expect(classList.list(2).indexOf('remove3') === -1).to.equal(true);
     });
+
+    // add `matching`,`matching-a`,`matching-b` class
+    classList.add('matching', 'matching-test-a', 'matching-test-b');
+    it(`Remove the matched class`, () => {
+      classList.remove(/^\bmatch/);
+      expect(classList.list().indexOf('matching') === -1).to.equal(true);
+      expect(classList.list(1).indexOf('matching-a') === -1).to.equal(true);
+      expect(classList.list(2).indexOf('matching-b') === -1).to.equal(true);
+    });
   });
-
-  // describe('Fx.DOM(*).classList.removeMatched(reg: RegExp): ClassListUtil', () => {
-  //   const classList = Fx.DOM('li').classList;
-
-  //   // add `matching`,`matching-a`,`matching-b` class
-  //   classList.add('matching', 'matching-test-a', 'matching-test-b');
-  //   it(`Remove the matched class`, () => {
-  //     classList.removeMatched(/^\bmatch/);
-  //     expect(classList.list().indexOf('matching') === -1).to.equal(true);
-  //     expect(classList.list(1).indexOf('matching-a') === -1).to.equal(true);
-  //     expect(classList.list(2).indexOf('matching-b') === -1).to.equal(true);
-  //   });
-  // });
 
   describe('Fx.DOM(*).classList.item(i: number): string', () => {
     const classList = Fx.DOM('li').classList;

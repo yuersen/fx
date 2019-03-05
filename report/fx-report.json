@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 10,
-    "tests": 15,
-    "passes": 15,
+    "tests": 16,
+    "passes": 16,
     "pending": 0,
     "failures": 0,
-    "start": "2019-03-04T03:01:44.368Z",
-    "end": "2019-03-04T03:01:44.425Z",
-    "duration": 57,
-    "testsRegistered": 15,
+    "start": "2019-03-05T05:44:24.938Z",
+    "end": "2019-03-05T05:44:24.989Z",
+    "duration": 51,
+    "testsRegistered": 16,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "81210ded-1881-4af7-83cf-08c3f568fa9c",
+    "uuid": "19d06344-c08f-4874-aa44-260af866971e",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "75740a9d-a281-42d2-8aca-cfa5a76dcf0b",
+        "uuid": "f4846e50-16fe-4370-95a7-ec55f651bbfe",
         "title": "Fx operates DOM.classList",
         "fullFile": "F:\\github\\fx\\test\\classlist.ts",
         "file": "\\test\\classlist.ts",
@@ -37,7 +37,7 @@
         "tests": [],
         "suites": [
           {
-            "uuid": "51ffa1c5-6825-4386-ac4f-887c55f64872",
+            "uuid": "e32290c8-79c2-4b02-948d-7e3e982082b8",
             "title": "Fx.DOM(*).classList",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -48,7 +48,7 @@
                 "title": "There is values property in classList",
                 "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList There is values property in classList",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 3,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -57,106 +57,14 @@
                 "code": "var home = fx_1.default.DOM('.home');\nchai_1.expect(home.classList.values.length).to.equal(1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8f44d051-9eed-4ba8-abaf-f00038fc01fe",
+                "uuid": "20ac24f5-373e-44e8-95a9-e508ac4e1893",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "8f44d051-9eed-4ba8-abaf-f00038fc01fe"
-            ],
-            "failures": [],
-            "pending": [],
-            "skipped": [],
-            "duration": 2,
-            "root": false,
-            "rootEmpty": false,
-            "_timeout": 2000
-          },
-          {
-            "uuid": "d9c2b04c-d0f3-4a72-a85e-4b1868fd1b70",
-            "title": "Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil",
-            "fullFile": "F:\\github\\fx\\test\\classlist.ts",
-            "file": "\\test\\classlist.ts",
-            "beforeHooks": [],
-            "afterHooks": [],
-            "tests": [
-              {
-                "title": "Add 'home-select' on li.home",
-                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'home-select' on li.home",
-                "timedOut": false,
-                "duration": 2,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "var classList = fx_1.default.DOM('.home').classList;\nvar cls = 'home-select';\nclassList.add(cls);\nchai_1.expect(classList.list().indexOf(cls) !== -1).to.equal(true);",
-                "err": {},
-                "isRoot": false,
-                "uuid": "b3c2489a-5969-495d-9e55-00f43c3b6177",
-                "isHook": false,
-                "skipped": false
-              },
-              {
-                "title": "Add 'home1' and 'home2' on li.home",
-                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'home1' and 'home2' on li.home",
-                "timedOut": false,
-                "duration": 0,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "var classList = fx_1.default.DOM('.home').classList;\nvar list = classList.add('home1', 'home2').list();\nchai_1.expect(list.indexOf('home1') !== -1).to.equal(true);\nchai_1.expect(list.indexOf('home2') !== -1).to.equal(true);",
-                "err": {},
-                "isRoot": false,
-                "uuid": "e068a46a-0851-4325-bff9-5af884640e59",
-                "isHook": false,
-                "skipped": false
-              },
-              {
-                "title": "Add 'item' on all li element",
-                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'item' on all li element",
-                "timedOut": false,
-                "duration": 1,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "var classList = fx_1.default.DOM('li').classList;\nclassList.add('item');\nchai_1.expect(classList.list().indexOf('item') !== -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('item') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('item') !== -1).to.equal(true);",
-                "err": {},
-                "isRoot": false,
-                "uuid": "682fe960-497d-45a3-b586-3e2de7104c37",
-                "isHook": false,
-                "skipped": false
-              },
-              {
-                "title": "Add 'item1' and 'item2' on all li element",
-                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'item1' and 'item2' on all li element",
-                "timedOut": false,
-                "duration": 0,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "var classList = fx_1.default.DOM('li').classList;\nclassList.add('item1', 'item2');\nchai_1.expect(classList.list().indexOf('item2') !== -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('item2') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('item2') !== -1).to.equal(true);",
-                "err": {},
-                "isRoot": false,
-                "uuid": "ca3eebc0-ab23-4d17-a830-c41fe75a14a8",
-                "isHook": false,
-                "skipped": false
-              }
-            ],
-            "suites": [],
-            "passes": [
-              "b3c2489a-5969-495d-9e55-00f43c3b6177",
-              "e068a46a-0851-4325-bff9-5af884640e59",
-              "682fe960-497d-45a3-b586-3e2de7104c37",
-              "ca3eebc0-ab23-4d17-a830-c41fe75a14a8"
+              "20ac24f5-373e-44e8-95a9-e508ac4e1893"
             ],
             "failures": [],
             "pending": [],
@@ -167,7 +75,99 @@
             "_timeout": 2000
           },
           {
-            "uuid": "d6714912-8dc2-47b4-a23b-35bf235b8823",
+            "uuid": "572b2728-d4ac-4f90-be8f-034f7dd461aa",
+            "title": "Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil",
+            "fullFile": "F:\\github\\fx\\test\\classlist.ts",
+            "file": "\\test\\classlist.ts",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Add 'home-select' on li.home",
+                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'home-select' on li.home",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var classList = fx_1.default.DOM('.home').classList;\nvar cls = 'home-select';\nclassList.add(cls);\nchai_1.expect(classList.list().indexOf(cls) !== -1).to.equal(true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "2807786d-e7a3-4360-9645-5e678da55a9c",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "Add 'home1' and 'home2' on li.home",
+                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'home1' and 'home2' on li.home",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var classList = fx_1.default.DOM('.home').classList;\nvar list = classList.add('home1', 'home2').list();\nchai_1.expect(list.indexOf('home1') !== -1).to.equal(true);\nchai_1.expect(list.indexOf('home2') !== -1).to.equal(true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "4af323fc-82e6-49c0-a294-92bf58726c00",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "Add 'item' on all li element",
+                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'item' on all li element",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var classList = fx_1.default.DOM('li').classList;\nclassList.add('item');\nchai_1.expect(classList.list().indexOf('item') !== -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('item') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('item') !== -1).to.equal(true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "59c2b3b7-bd30-4cfd-a9e6-561ab1e4a3d1",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "Add 'item1' and 'item2' on all li element",
+                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.add(...clns: string[]): ClassListUtil Add 'item1' and 'item2' on all li element",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var classList = fx_1.default.DOM('li').classList;\nclassList.add('item1', 'item2');\nchai_1.expect(classList.list().indexOf('item2') !== -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('item2') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('item2') !== -1).to.equal(true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "e0cc69a8-a4a3-4d47-a9f4-5c06be907359",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "2807786d-e7a3-4360-9645-5e678da55a9c",
+              "4af323fc-82e6-49c0-a294-92bf58726c00",
+              "59c2b3b7-bd30-4cfd-a9e6-561ab1e4a3d1",
+              "e0cc69a8-a4a3-4d47-a9f4-5c06be907359"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "f79a43dd-1fcf-4ff7-88ce-cdc2d4d8e70d",
             "title": "Fx.DOM(*).classList.list(i?: number): string[]",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -187,7 +187,7 @@
                 "code": "chai_1.expect(classList.list().indexOf('home') !== -1).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0a3c0144-8dcb-4377-8b42-159b616ff048",
+                "uuid": "2852bef5-e0fc-4550-b0b0-d0a118978a67",
                 "isHook": false,
                 "skipped": false
               },
@@ -204,15 +204,15 @@
                 "code": "chai_1.expect(classList.list(2).indexOf('api') !== -1).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "b0ef15a4-0db9-4f78-8555-713f40b7be9a",
+                "uuid": "cb27b664-c2ae-449d-92ce-aaccf7b00fa5",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "0a3c0144-8dcb-4377-8b42-159b616ff048",
-              "b0ef15a4-0db9-4f78-8555-713f40b7be9a"
+              "2852bef5-e0fc-4550-b0b0-d0a118978a67",
+              "cb27b664-c2ae-449d-92ce-aaccf7b00fa5"
             ],
             "failures": [],
             "pending": [],
@@ -223,7 +223,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "185b88c5-53a1-4c82-a723-9b8bcadea18d",
+            "uuid": "86b4d0da-9f4f-4ccb-b947-745ace1b19e6",
             "title": "Fx.DOM(*).classList.remove(...clns: string[]): ClassListUtil",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -243,7 +243,7 @@
                 "code": "classList.remove('remove1');\nchai_1.expect(classList.list().indexOf('remove1') === -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('remove1') === -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('remove1') === -1).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9d8d80f1-c321-451f-90af-d2da1adf4d9d",
+                "uuid": "408b8e9a-c56f-4903-b22a-ef5a8f5f5194",
                 "isHook": false,
                 "skipped": false
               },
@@ -260,15 +260,33 @@
                 "code": "classList.remove('remove2', 'remove3');\nchai_1.expect(classList.list().indexOf('remove2') === -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('remove2') === -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('remove3') === -1).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "19803e12-8f79-4888-8798-3a990706699c",
+                "uuid": "72e1b3eb-83e1-4e32-ae27-1af11240c38f",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "Remove the matched class",
+                "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.remove(...clns: string[]): ClassListUtil Remove the matched class",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "classList.remove(/^\\bmatch/);\nchai_1.expect(classList.list().indexOf('matching') === -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('matching-a') === -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('matching-b') === -1).to.equal(true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "81a76028-b802-4ddb-b85e-a0616ce42428",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "9d8d80f1-c321-451f-90af-d2da1adf4d9d",
-              "19803e12-8f79-4888-8798-3a990706699c"
+              "408b8e9a-c56f-4903-b22a-ef5a8f5f5194",
+              "72e1b3eb-83e1-4e32-ae27-1af11240c38f",
+              "81a76028-b802-4ddb-b85e-a0616ce42428"
             ],
             "failures": [],
             "pending": [],
@@ -279,7 +297,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "ab3b2a05-3b47-4f33-8b83-a20f0d1ed1b1",
+            "uuid": "5601cd11-b447-44ed-8e49-700ecb41c650",
             "title": "Fx.DOM(*).classList.item(i: number): string",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -290,7 +308,7 @@
                 "title": "Remove the matched class",
                 "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.item(i: number): string Remove the matched class",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -299,25 +317,25 @@
                 "code": "chai_1.expect(classList.item(0)).to.equal(\"home,document,api\");",
                 "err": {},
                 "isRoot": false,
-                "uuid": "03719e81-8132-469b-a82b-990634df1de5",
+                "uuid": "63d17daf-28e5-4971-a9fa-46cf20a92a2c",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "03719e81-8132-469b-a82b-990634df1de5"
+              "63d17daf-28e5-4971-a9fa-46cf20a92a2c"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "07fcc189-5ba1-414d-bb58-57a1aa49de50",
+            "uuid": "489aedf4-91b9-4e14-a8a9-4567b3d9afec",
             "title": "Fx.DOM(*).classList.contains(cls: string): boolean",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -337,14 +355,14 @@
                 "code": "chai_1.expect(classList.contains('api')).to.equal(true);\nchai_1.expect(classList.contains('FAQ')).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f9b8489a-3d42-46b0-a5f3-da90f7a5a08c",
+                "uuid": "cafe71f9-e08c-4d81-a7e1-83312c8717da",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f9b8489a-3d42-46b0-a5f3-da90f7a5a08c"
+              "cafe71f9-e08c-4d81-a7e1-83312c8717da"
             ],
             "failures": [],
             "pending": [],
@@ -355,7 +373,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "17336977-c383-4161-8c14-79130d4ecb7e",
+            "uuid": "f49a3327-f0e2-4eb0-91f6-9ab4165ff0cd",
             "title": "Fx.DOM(*).classList.toggle(cls: string): ClassListUtil",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -375,7 +393,7 @@
                 "code": "classList.toggle('selected');\nchai_1.expect(classList.contains('selected')).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5a8e2ce1-5525-41ed-bc3e-00101f79982e",
+                "uuid": "8888b8fd-be0a-4283-8d27-6feeb6c2dad5",
                 "isHook": false,
                 "skipped": false
               },
@@ -383,7 +401,7 @@
                 "title": "Toggle selected className second time.",
                 "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.toggle(cls: string): ClassListUtil Toggle selected className second time.",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -392,26 +410,26 @@
                 "code": "classList.toggle('selected');\nchai_1.expect(classList.contains('selected')).to.equal(false);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8be94205-234a-41a5-b6b0-9b4fcbc57ad6",
+                "uuid": "0b4cccbc-57ab-4fe4-a8b8-17cefbd7eb2e",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "5a8e2ce1-5525-41ed-bc3e-00101f79982e",
-              "8be94205-234a-41a5-b6b0-9b4fcbc57ad6"
+              "8888b8fd-be0a-4283-8d27-6feeb6c2dad5",
+              "0b4cccbc-57ab-4fe4-a8b8-17cefbd7eb2e"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "c17cda36-f678-4d48-9598-e012dc4a669c",
+            "uuid": "ccb47dec-9bb6-4d0d-98ec-bfacdfdef7b1",
             "title": "Fx.DOM(*).classList.replace(ocls: string, ncls: string): ClassListUtil",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -422,34 +440,34 @@
                 "title": "Replace all 'replaced' class",
                 "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.replace(ocls: string, ncls: string): ClassListUtil Replace all 'replaced' class",
                 "timedOut": false,
-                "duration": 8,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "classList.replace('replaced', 'xx');\nconsole.log('>>>>>>>>>>>>0', classList.list());\nconsole.log('>>>>>>>>>>>>1', classList.list(1));\nconsole.log('>>>>>>>>>>>>2', classList.list(2));\nchai_1.expect(classList.list().indexOf('replaced') === -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('xx') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('replaced') === -1).to.equal(true);",
+                "code": "classList.replace('replaced', 'xx');\nchai_1.expect(classList.list().indexOf('replaced') === -1).to.equal(true);\nchai_1.expect(classList.list(1).indexOf('xx') !== -1).to.equal(true);\nchai_1.expect(classList.list(2).indexOf('replaced') === -1).to.equal(true);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d5f0f78d-6317-42be-80eb-d5f7f2b7fad2",
+                "uuid": "77f861f2-4adf-4245-b77f-f02279144656",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "d5f0f78d-6317-42be-80eb-d5f7f2b7fad2"
+              "77f861f2-4adf-4245-b77f-f02279144656"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 8,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "739d4b64-aa43-41e6-8b1e-90358e9560c9",
+            "uuid": "166ed96e-d872-47f6-9442-fec1f5c13aa2",
             "title": "Fx.DOM(*).classList.clear(): ClassListUtil",
             "fullFile": "F:\\github\\fx\\test\\classlist.ts",
             "file": "\\test\\classlist.ts",
@@ -460,7 +478,7 @@
                 "title": "Clear All className",
                 "fullTitle": "Fx operates DOM.classList Fx.DOM(*).classList.clear(): ClassListUtil Clear All className",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -469,19 +487,19 @@
                 "code": "classList.clear();\nchai_1.expect(classList.list().length).to.equal(0);\nchai_1.expect(classList.list(1).length).to.equal(0);\nchai_1.expect(classList.list(2).length).to.equal(0);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3409211e-bb80-48ae-a466-60ab2132408f",
+                "uuid": "cc478c8c-b598-424f-9c6d-df06290c18fc",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "3409211e-bb80-48ae-a466-60ab2132408f"
+              "cc478c8c-b598-424f-9c6d-df06290c18fc"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
