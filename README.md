@@ -114,3 +114,13 @@ Mocha（发音"摩卡"）诞生于2011年，是现在最流行的JavaScript测�
   |- rollup.config.js  # Rollup 构建配置
   |_ README.md  # 组件功能、API和更新历史描述信息
 ```
+
+### 安装依赖
+
+在项目根目录执行 `npm install` 命令安装所有依赖关系。
+
+### 构建命令
+
+- `npm run build`: 对当前项目进行构建，并将构建产物输出到 `dist` 文件夹；
+- `npm run test`: 使用 `mocha` 对代码进行单元测试；
+- `npm run test:coverage`: 使用 `Istanbul` 进行代码覆盖率测试。

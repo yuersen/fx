@@ -1,51 +1,8 @@
 import 'mocha';
 import { expect } from 'chai';
-import { JSDOM } from 'jsdom';
-// import JSDOM from './utils/env';
 import Fx from '../src/fx';
-const { window } = new JSDOM(`<!DOCTYPE html>
-  <html>
-    <head>
-      <title>Fx</title>
-      <style>
-        html, body {padding: 0; margin: 0; width: 100%; height: 100%;}
-        .container {position: relative; width: 100%; height: 100%;}
-        header, main, footer {position: absolute;}
-        header {position: absolute; top: 0; width: 100%; height: 60px;}
-        header li {position: relative; display: block; padding: 0; width: 120px; height: 20px; margin: 5px;}
-        main {position: absolute; top: 60px; bottom: 50px; left: 0; right: 0}
-        footer {position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;}
-      </style>
-    </head>
-    <body>
-      <div id="container" class="container">
-        <header id="header">
-          <ul>
-            <li class="home">Home</li>
-            <li class="fx">Fx</li>
-          </ul>
-        </header>
-        <main id="main">Main</main>
-        <footer id="footer">Footer</footer>
-      </div>
-    </body>
-  </html>
-`);
-// 测试用例之中，DOM环境（即window, document 和 navigator 对象）必须是存在的
-declare global {
-  namespace NodeJS {
-    interface  Global {
-      window: any;
-      document: any;
-      Node: any;
-      Element: any;
-    }
-  }
-}
-global.window = window;
-global.document = window.document;
-global.Node = window.Node;
-global.Element = window.Element;
+
+import './client-env';
 
 describe('Fx operates DOM', () => {
   describe('Fx.DOM(sctor: Node|string, context?: Node|string)', () => {
@@ -86,7 +43,7 @@ describe('Fx operates DOM', () => {
       Fx.DOM('#header li').forEach((el, index: number) => {
         sum += index;
       });
-      expect(sum).to.equal(1);
+      expect(sum).to.equal(6);
     });
 
     it(`Return false to stop looping.`, () => {
@@ -102,7 +59,7 @@ describe('Fx operates DOM', () => {
   describe('find(selector: string): Element[]', () => {
     it(`The header contain two li element`, () => {
       const li = Fx.DOM('#header').find('li');
-      expect(li.length).to.equal(2);
+      expect(li.length).to.equal(4);
     });
 
     it(`There are no li element in footer element`, () => {
@@ -180,7 +137,7 @@ describe('Fx operates DOM', () => {
     const li = Fx.DOM('li').offsetParent();
 
     it(`The li is offsetParent is header`, () => {
-      expect(li.length).to.equal(2);
+      expect(li.length).to.equal(4);
     });
 
     it(`The offsetParent of two li is equal`, () => {
@@ -226,7 +183,7 @@ describe('Fx operates DOM', () => {
     it(`Clone the li element, and the result is 2`, () => {
       const li = Fx.DOM('li');
       const clone = li.clone();
-      expect(clone.length).to.equal(2);
+      expect(clone.length).to.equal(4);
       expect(clone[0].textContent === li.el[0].textContent).to.equal(true);
     });
   });

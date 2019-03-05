@@ -1,40 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
-import { JSDOM } from 'jsdom';
 import Fx from '../src/fx';
-const { window } = new JSDOM(`<!DOCTYPE html>
-  <html>
-    <head>
-      <title>classList</title>
-    </head>
-    <body>
-      <div id="container" class="container">
-        <header>
-          <ul>
-            <li class="home">HOME</li>
-            <li class="document">DOCUMENT</li>
-            <li class="api">API</li>
-          </ul>
-        </header>
-      </div>
-    </body>
-  </html>
-`);
-// 测试用例之中，DOM环境（即window, document 和 navigator 对象）必须是存在的
-declare global {
-  namespace NodeJS {
-    interface Global {
-      window: any;
-      document: any;
-      Node: any;
-      Element: any;
-    }
-  }
-}
-global.window = window;
-global.document = window.document;
-global.Node = window.Node;
-global.Element = window.Element;
+import './client-env';
 
 describe('Fx operates DOM.classList', () => {
   describe('Fx.DOM(*).classList', () => {
@@ -122,7 +89,7 @@ describe('Fx operates DOM.classList', () => {
     const classList = Fx.DOM('li').classList;
 
     it(`Remove the matched class`, () => {
-      expect(classList.item(0)).to.equal(`home,document,api`);
+      expect(classList.item(0)).to.equal(`home,document,api,fx`);
     });
   });
 
