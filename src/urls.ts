@@ -6,7 +6,7 @@
  *
  * https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams
  */
-export class URLSearchParamsUtil {
+export default class URLSearchParamsUtil {
   private secret: { [key: string]: string[] } = {};
 
   constructor(query: string | object | string[]) {
@@ -57,7 +57,7 @@ export class URLSearchParamsUtil {
     }
     const vals = typeof values === 'string' ? [values] : values;
     for (const val of vals) {
-      this.secret[name].push(decodeURIComponent(val.replace(/\+/g, '')));
+      this.secret[name].push(decodeURIComponent((val + '').replace(/\+/g, '')));
     }
   }
 
@@ -76,7 +76,7 @@ export class URLSearchParamsUtil {
    * @param  {string} name 待获取值的查询字段名称
    * @returns string
    */
-  get(name: string): string {
+  get(name: string): string | null {
     return name in this.secret ? this.secret[name][0] : null;
   }
 

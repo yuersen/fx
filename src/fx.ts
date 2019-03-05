@@ -2,6 +2,7 @@ import StringUtil from './string';
 import ArrayUtil from './array';
 import EventEmit from './eventemit';
 import domUtil from './dom';
+import URLSearchParamsUtil from './urls';
 
 /**
  * 基类方法
@@ -33,6 +34,10 @@ Fx.EventEmit = EventEmit;
 
 // Dom 操作
 Fx.DOM = domUtil;
+
+// 处理 URL 的查询字符串
+Fx.URLSearchParams = URLSearchParamsUtil;
+
 /**
  * 输出当前参数类型
  * @param {any} o 合法的javascript数据类型
