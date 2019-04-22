@@ -1,186 +1,97 @@
-import StringUtil from './string';
-import ArrayUtil from './array';
-import EventEmit from './eventemit';
-import domUtil from './dom';
-import URLSearchParamsUtil from './urls';
+/* Array */
+export { default as every } from './array/every';
+export { default as some } from './array/some';
+export { default as filter } from './array/filter';
+export { default as forEach } from './array/forEach';
+export { default as map } from './array/map';
+export { default as find } from './array/find';
+export { default as indexOf } from './array/indexOf';
+export { default as lastIndexOf } from './array/lastIndexOf';
+export { default as unique } from './array/unique';
+export { default as shuffle } from './array/shuffle';
+export { default as cloneArray } from './array/cloneArray';
+export { default as includes } from './array/includes';
 
-/**
- * 基类方法
- * @param {any} param - 待处理合法的 javascript 数据类型
- */
-export default function Fx(param?: any) {
-  return new (Fx.fn as any).init(param);
-}
-Fx.fn = Fx.prototype = {
-  constructor: Fx,
-  version: '1.0.0',
-  init(param?: any) {
-    if (!param) {
-      return Fx.fn;
-    }
-    switch (Fx.type(param)) {
-      case 'string':
-        return new StringUtil(param);
-      case 'array':
-        return new ArrayUtil(param);
-      default:
-        throw new SyntaxError('The parameter must be a legal data types.');
-    }
-  }
-};
+/* DOM */
+export { default as isNode } from './dom/isNode';
+export { default as querySelector } from './dom/querySelector';
+export { default as querySelectorAll } from './dom/querySelectorAll';
+export { default as recursivelyCollect } from './dom/recursivelyCollect';
+export { default as ancestors } from './dom/ancestors';
+export { default as previousSiblings } from './dom/previousSiblings';
+export { default as siblings } from './dom/siblings';
+export { default as removeNode } from './dom/removeNode';
+export { default as removeChildNodes } from './dom/removeChildNodes';
+export { default as show } from './dom/show';
+export { default as hide } from './dom/hide';
+export { default as insertNode } from './dom/insertNode';
+export { default as insertBefore } from './dom/insertBefore';
+export { default as insertAfter } from './dom/insertAfter';
+export { default as append } from './dom/append';
+export { default as prepend } from './dom/prepend';
+export { default as text } from './dom/text';
+export { default as html } from './dom/html';
+export { default as hasClassName } from './dom/hasClassName';
+export { default as addClassName } from './dom/addClassName';
+export { default as getClassName } from './dom/getClassName';
+export { default as removeClassName } from './dom/removeClassName';
+export { default as toggleClassName } from './dom/toggleClassName';
+export { default as cleanClassName } from './dom/cleanClassName';
 
-// 模拟 Node 的 EventEmitter 事件发布处理机制
-Fx.EventEmit = EventEmit;
+/* EventEmit */
+export { default as EventEmit } from './EventEmit';
 
-// Dom 操作
-Fx.DOM = domUtil;
+/* object */
+export { default as type } from './object/type';
+export { default as isBoolean } from './object/isBoolean';
+export { default as isString } from './object/isString';
+export { default as isUndefined } from './object/isUndefined';
+export { default as isNumber } from './object/isNumber';
+export { default as isNaN } from './object/isNaN';
+export { default as isDate } from './object/isDate';
+export { default as isElement } from './object/isElement';
+export { default as isFunction } from './object/isFunction';
+export { default as isNull } from './object/isNull';
+export { default as isObject } from './object/isObject';
+export { default as isArray } from './object/isArray';
 
-// 处理 URL 的查询字符串
-Fx.URLSearchParams = URLSearchParamsUtil;
+/* string */
+export { default as guid } from './string/guid';
+export { default as URLSearchParams } from './URLSearchParams';
+export { default as getByte } from './string/getByte';
+export { default as camelize } from './string/camelize';
+export { default as capitalize } from './string/capitalize';
+export { default as encodeHtml } from './string/encodeHtml';
+export { default as decodeHtml } from './string/decodeHtml';
+export { default as startsWith } from './string/startsWith';
+export { default as endsWith } from './string/endsWith';
+export { default as padEnd } from './string/padEnd';
+export { default as padStart } from './string/padStart';
+export { default as hasChinese } from './string/hasChinese';
+export { default as repeat } from './string/repeat';
+export { default as trim } from './string/trim';
+export { default as trimLeft } from './string/trimLeft';
+export { default as trimRight } from './string/trimRight';
+export { default as checkBankCard } from './string/checkBankCard';
+export { default as checkIP } from './string/checkIP';
+export { default as checkURL } from './string/checkURL';
+export { default as checkPhone } from './string/checkPhone';
+export { default as checkIdCard } from './string/checkIdCard';
+export { default as createRandomString } from './string/createRandomString';
 
-/**
- * 输出当前参数类型
- * @param {any} o 合法的javascript数据类型
- * @returns {string}
- */
-Fx.type = (o: any): string => {
-  return {}.toString
-    .call(o)
-    .toLowerCase()
-    .replace(/\[|\]/g, '')
-    .substring(7);
-};
+/* client */
+export { default as client } from './client/client';
 
-/**
- * 判断当前参数是否为 Boolean
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isBoolean = (o: any): boolean => {
-  return o === true || o === false || Fx.type(o) === 'boolean';
-};
+/* color */
+export { default as rgb2hex } from './color/rgb2hex';
+export { default as hex2rgb } from './color/hex2rgb';
+export { default as rgb2hsl } from './color/rgb2hsl';
+export { default as rgb2hsv } from './color/rgb2hsv';
+export { default as hsl2rgb } from './color/hsl2rgb';
+export { default as hsl2hsv } from './color/hsl2hsv';
 
-/**
- * 判断当前参数是否为 string
- * @param {any} o 任意类型的数据
- * @returns {boolean}  如果 param 是 string，返回 true
- */
-Fx.isString = (o: any): boolean => {
-  return typeof o === 'string';
-};
+/* cookie */
+export { default as cookie } from './cookie';
 
-/**
- * 判断当前参数是否为 undefined
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isUndefined = (o: any): boolean => {
-  return o === void 0;
-};
-
-/**
- * 判断当前参数是否为 number
- * @param {any} o  任意类型的数据
- * @returns {boolean}  如果 param 是 number，返回 true
- */
-Fx.isNumber = (o: any): boolean => {
-  return typeof o === 'number';
-};
-
-/**
- * 判断当前参数是否为 NaN
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isNaN = (o: any): boolean => {
-  return Fx.isNumber(o) && o !== +o;
-};
-
-/**
- * 判断当前参数是否为 Date
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isDate = (o: any): boolean => {
-  return Fx.type(o) === 'date';
-};
-
-/**
- * 判断当前参数是否为 Element
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isElement = (o: any): boolean => {
-  return !!(o && o.nodeType === 1);
-};
-
-/**
- * 测试对象是否为函数
- * @param  {any}  o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isFunction = (o: any): boolean => {
-  return Fx.type(o) === 'function';
-};
-
-/**
- * 判断当前参数是否为 null
- * @param {any} o 任意类型的数据
- * @returns {boolean}
- */
-Fx.isNull = (o: any): boolean => {
-  return null === o;
-};
-
-/**
- * 如果 object 是一个对象，返回 true,
- * 需要注意的是 JavaScript 数组和函数是对象，字符串和数字不是.
- * @param {Object} o 待处理对象
- * @returns {boolean}
- */
-Fx.isObject = (o: any): boolean => {
-  const type = typeof o;
-  return type === 'function' || (type === 'object' && !!o);
-};
-
-/**
- * 判断当前参数是否为 RegExp
- * @param {any} o 任意类型的数据
- * @returns {boo}
- */
-Fx.isRegExp = (o: any): boolean => {
-  return Fx.type(o) === 'regexp';
-};
-
-/**
- * 测试对象是否是窗口（有可能是Frame）
- * @param  {any} o 用于测试是否为窗口的对象
- * @returns {boolean}  若是窗口对象，返回true
- */
-Fx.isWindow = (o: any): boolean => {
-  return o != null && o === o.window;
-};
-
-/**
- * 测试对象是否为数组
- * @param  {any} o 用于测试是否为数组的对象
- * @return {boolean}  若是数组对象，返回true
- */
-Fx.isArray = (o: any): boolean => {
-  return Fx.type(o) === 'array';
-};
-
-/**
- * 生成随机的GUID
- * @see https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
- * @return {string}
- */
-Fx.guid = (): string => {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-    // tslint:disable-next-line
-    const r = (Math.random() * 16) | 0;
-    // tslint:disable-next-line
-    const v = c === 'x' ? r : (r & 0x3) | 0x8; // tslint:disable-line
-    return v.toString(16);
-  });
-};
+/* date */
+export { default as formatDate } from './date/formatDate';

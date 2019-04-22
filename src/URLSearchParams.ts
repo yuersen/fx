@@ -6,7 +6,7 @@
  *
  * https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams
  */
-export default class URLSearchParamsUtil {
+export default class URLSearchParams {
   private secret: { [key: string]: string[] } = {};
 
   constructor(query: string | object | string[]) {
@@ -47,7 +47,7 @@ export default class URLSearchParamsUtil {
    * @param  {string|string[]} values 查询字段对应的值
    * @returns URLSearchParamsUtil
    */
-  append(name: string, values: string | string[]): URLSearchParamsUtil {
+  append(name: string, values: string | string[]): URLSearchParams {
     if (!name || !values) {
       return this;
     }
@@ -66,7 +66,7 @@ export default class URLSearchParamsUtil {
    * @param  {string} name 待删除查询字段名称
    * @returns URLSearchParamsUtil
    */
-  delete(name: string): URLSearchParamsUtil {
+  delete(name: string): URLSearchParams {
     delete this.secret[name];
     return this;
   }
@@ -104,7 +104,7 @@ export default class URLSearchParamsUtil {
    * @param {string} value 待设置的新值
    * @returns URLSearchParamsUtil
    */
-  set(name: string, value: string): URLSearchParamsUtil {
+  set(name: string, value: string): URLSearchParams {
     this.secret[name] = ['' + value];
     return this;
   }
