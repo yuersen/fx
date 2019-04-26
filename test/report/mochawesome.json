@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-25T01:43:51.376Z",
+    "end": "2019-04-25T01:43:51.392Z",
+    "duration": 16,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "ca9acdf1-dd0f-4123-b26d-a506b9023413",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "94fcc44f-b6ac-4757-a329-f633a309927f",
+        "title": "cloneArray",
+        "fullFile": "F:\\github\\fx\\test\\specs\\array\\cloneArray.specs.ts",
+        "file": "\\test\\specs\\array\\cloneArray.specs.ts",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Clone a empty array",
+            "fullTitle": "cloneArray Clone a empty array",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "chai_1.expect(cloneArray_1.default([]).join('')).to.equal('');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f97c3dde-5a52-41be-bbcc-0a0a4f6febaa",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Clone a new array",
+            "fullTitle": "cloneArray Clone a new array",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "chai_1.expect(cloneArray_1.default([1, 3]).join('')).to.equal('13');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3ba6b2dd-d493-4534-9ad8-acaa08776281",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "f97c3dde-5a52-41be-bbcc-0a0a4f6febaa",
+          "3ba6b2dd-d493-4534-9ad8-acaa08776281"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "681b0974-eb5e-42ae-a9c6-4521db7beebd",
+        "title": "every",
+        "fullFile": "F:\\github\\fx\\test\\specs\\array\\every.specs.ts",
+        "file": "\\test\\specs\\array\\every.specs.ts",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "returns false",
+            "fullTitle": "every returns false",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "chai_1.expect(every_1.default(list, function (item) { return item > 20; })).to.equal(false);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0ce3f5ce-06d0-4b6e-9b55-f61f72573f3b",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "returns true",
+            "fullTitle": "every returns true",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "chai_1.expect(every_1.default(list, function (item) { return item >= 10; })).to.equal(true);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "6b5157bd-53ed-4254-b526-57faa099cc64",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0ce3f5ce-06d0-4b6e-9b55-f61f72573f3b",
+          "6b5157bd-53ed-4254-b526-57faa099cc64"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

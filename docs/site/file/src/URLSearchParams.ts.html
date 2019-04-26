@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/URLSearchParams.ts | fx</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Javascript functions tools"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="fx"><meta property="twitter:description" content="Javascript functions tools"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <!--
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  -->
+  <a href="javscript:;">Fx</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/pxy0809/fx"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/EventEmit.ts~EventEmit.html">EventEmit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/URLSearchParams.ts~URLSearchParams.html">URLSearchParams</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cookie">cookie</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#array">array</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cloneArray">cloneArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-every">every</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-filter">filter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-find">find</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forEach">forEach</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-includes">includes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indexOf">indexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lastIndexOf">lastIndexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shuffle">shuffle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-some">some</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unique">unique</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client">client</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getClintByUserAgent">getClintByUserAgent</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#date">date</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatDate">formatDate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dom">dom</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addClassName">addClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ancestors">ancestors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-append">append</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearClassName">clearClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getClassName">getClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasClassName">hasClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hide">hide</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-html">html</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertAfter">insertAfter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertBefore">insertBefore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertNode">insertNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNode">isNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nextSiblings">nextSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prepend">prepend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-previousSiblings">previousSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelector">querySelector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelectorAll">querySelectorAll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-recursivelyCollect">recursivelyCollect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeChildNodes">removeChildNodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeClassName">removeClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeNode">removeNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-show">show</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-siblings">siblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-text">text</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toggleClassName">toggleClassName</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#function">function</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-memoize">memoize</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#object">object</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isArray">isArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isBoolean">isBoolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDate">isDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isElement">isElement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFunction">isFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNaN">isNaN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNull">isNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isObject">isObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-type">type</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#string">string</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-camelize">camelize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capitalize">capitalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkBankCard">checkBankCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIP">checkIP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIdCard">checkIdCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPhone">checkPhone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkURL">checkURL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRandomString">createRandomString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decodeHtml">decodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-endsWith">endsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getByte">getByte</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guid">guid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasChinese">hasChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padEnd">padEnd</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padStart">padStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWith">startsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trim">trim</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimLeft">trimLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimRight">trimRight</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/URLSearchParams.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * URLSearchParams &#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5B9E;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406; URL &#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+ * URLSearchParams Polyfill
+ * @see https://github.com/WebReflection/url-search-params/blob/master/src/url-search-params.js
+ * @see https://url.spec.whatwg.org/#dom-url-searchparams
+ *
+ * https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams
+ */
+export default class URLSearchParams {
+  private secret: { [key: string]: string[] } = {};
+
+  constructor(query: string | object | string[]) {
+    if (!query) {
+      throw new Error(&apos;A query param is required&apos;);
+    }
+
+    const type = {}.toString.call(query);
+    if (type === &apos;[object String]&apos;) {
+      // &apos;search=pxy&apos;
+      if ((query as string).charAt(0) === &apos;?&apos;) {
+        (query as string) = (query as string).slice(1);
+      }
+      const pairs = (query as string).split(&apos;&amp;&apos;);
+      for (const pair of pairs) {
+        const split = pair.split(&apos;=&apos;);
+        // decodeURIComponent/encodeURIComponent
+        this.append(split[0], split[1] || &apos;&apos;);
+      }
+    } else if (type === &apos;[object Array]&apos;) {
+      // [[&apos;search&apos;, &apos;pxy&apos;], [&apos;age&apos;, 20]]
+      for (const vals of query as string[]) {
+        this.append(vals[0], vals[1]);
+      }
+    } else if (type === &apos;[object Object]&apos;) {
+      // {search: &apos;pxy&apos;, age: 20}
+      for (const key in query as { [key: string]: string }) {
+        if (query.hasOwnProperty(key)) {
+          this.append(key, (query as any)[key]);
+        }
+      }
+    }
+  }
+
+  /**
+   * &#x5728;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x4E2D;&#xFF0C;&#x8FFD;&#x52A0;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;
+   * @param  {string} name &#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @param  {string|string[]} values &#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x7684;&#x503C;
+   * @returns URLSearchParamsUtil
+   */
+  append(name: string, values: string | string[]): URLSearchParams {
+    if (!name || !values) {
+      return this;
+    }
+
+    if (!this.secret[name]) {
+      this.secret[name] = [];
+    }
+    const vals = typeof values === &apos;string&apos; ? [values] : values;
+    for (const val of vals) {
+      this.secret[name].push(decodeURIComponent((val + &apos;&apos;).replace(/\+/g, &apos;&apos;)));
+    }
+  }
+
+  /**
+   * &#x4ECE;&#x641C;&#x7D22;&#x53C2;&#x6570;&#x91CC;&#x5220;&#x9664;&#x6240;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x641C;&#x7D22;&#x53C2;&#x6570;,&#x540C;&#x65F6;&#x5220;&#x9664;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;
+   * @param  {string} name &#x5F85;&#x5220;&#x9664;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @returns URLSearchParamsUtil
+   */
+  delete(name: string): URLSearchParams {
+    delete this.secret[name];
+    return this;
+  }
+
+  /**
+   * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x641C;&#x7D22;&#x53C2;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;
+   * @param  {string} name &#x5F85;&#x83B7;&#x53D6;&#x503C;&#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @returns string
+   */
+  get(name: string): string | null {
+    return name in this.secret ? this.secret[name][0] : null;
+  }
+
+  /**
+   * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x641C;&#x7D22;&#x53C2;&#x6570;&#x7684;&#x6240;&#x6709;&#x503C;&#xFF0C;&#x8FD4;&#x56DE;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+   * @param  {string} name &#x5F85;&#x83B7;&#x53D6;&#x503C;&#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @returns string
+   */
+  getAll(name: string): string[] {
+    return name in this.secret ? this.secret[name].slice(0) : [];
+  }
+
+  /**
+   * &#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x6B64;&#x641C;&#x7D22;&#x53C2;&#x6570;
+   * @param {string} name &#x5F85;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @returns boolean
+   */
+  has(name: string): boolean {
+    return name in this.secret;
+  }
+
+  /**
+   * &#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x641C;&#x7D22;&#x53C2;&#x6570;&#x7684;&#x65B0;&#x503C;&#xFF0C;&#x5047;&#x5982;&#x539F;&#x6765;&#x6709;&#x591A;&#x4E2A;&#x503C;&#x5C06;&#x5168;&#x90E8;&#x5220;&#x9664;
+   * @param {string} name &#x5F85;&#x8BBE;&#x7F6E;&#x503C;&#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+   * @param {string} value &#x5F85;&#x8BBE;&#x7F6E;&#x7684;&#x65B0;&#x503C;
+   * @returns URLSearchParamsUtil
+   */
+  set(name: string, value: string): URLSearchParams {
+    this.secret[name] = [&apos;&apos; + value];
+    return this;
+  }
+
+  /**
+   * &#x8FD4;&#x56DE;iterator &#x6B64;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x952E;/&#x503C;&#x5BF9;&#x7684;&#x6240;&#x6709;&#x952E;&#x540D;
+   * @returns string[]
+   */
+  keys(): string[] {
+    const names: string[] = [];
+
+    for (const name in this.secret) {
+      if (this.secret.hasOwnProperty(name)) {
+        names.push(name);
+      }
+    }
+    return names;
+  }
+
+  /**
+   * &#x8FD4;&#x56DE;iterator &#x6B64;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x952E;/&#x503C;&#x5BF9;&#x7684;&#x6240;&#x6709;&#x503C;
+   * @returns any[]
+   */
+  values(): any[] {
+    const values: any[] = [];
+
+    for (const name in this.secret) {
+      if (this.secret.hasOwnProperty(name)) {
+        values.push(this.secret[name]);
+      }
+    }
+    return values;
+  }
+
+  /**
+   * &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;iterator&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x6240;&#x6709;&#x952E;/&#x503C;&#x5BF9;&#x7684;&#x5BF9;&#x8C61;
+   * @returns string
+   */
+  entries(): { [key: string]: string[] } {
+    return this.secret;
+  }
+
+  /**
+   * &#x8FD4;&#x56DE;&#x641C;&#x7D22;&#x53C2;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5728;URL&#x4E0A;
+   * @returns string
+   */
+  toString(): string {
+    const query: string[] = [];
+
+    for (const name in this.secret) {
+      if (this.secret.hasOwnProperty(name)) {
+        const values = this.secret[name];
+        for (const val of values) {
+          query.push(this.encodeURI(name) + &apos;=&apos; + this.encodeURI(val));
+        }
+      }
+    }
+    return query.join(&apos;&amp;&apos;);
+  }
+
+  /**
+   * &#x5BF9;&#x53C2;&#x6570;&#x89E3;&#x7801;
+   * @private
+   * @param {string} str - &#x5F85;&#x89E3;&#x7801;&#x53C2;&#x6570;
+   */
+  private encodeURI(str: string) {
+    const replacePairs: { [key: string]: string } = {
+      &apos;!&apos;: &apos;%21&apos;,
+      &quot;&apos;&quot;: &apos;%27&apos;,
+      &apos;(&apos;: &apos;%28&apos;,
+      &apos;)&apos;: &apos;%29&apos;,
+      &apos;~&apos;: &apos;%7E&apos;,
+      &apos;%20&apos;: &apos;+&apos;,
+      &apos;%00&apos;: &apos;\x00&apos;
+    };
+    return encodeURIComponent(str).replace(/[!&apos;\(\)~]|%20|%00/g, match =&gt; {
+      return replacePairs[match];
+    });
+  }
+}
+</code></pre>
+
+</div>
+<!--
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion"></span><img src="./image/esdoc-logo-mini-black.png"/></a>
+</footer>
+-->
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

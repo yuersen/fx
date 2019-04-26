@@ -2,10 +2,16 @@
  * 递归地收集与属性指定的元素关系的元素
  *
  * @function
+ * @memberof Fx
  * @param {Element} element 待递归地收集与属性指定的元素
  * @param {String} property 属性名称
  * @param {Number} maximumLength 最大的递归次数
- * @param {Node[]}
+ * @returns {Node[]}
+ * @example
+ * 
+ * const container = document.querySelector('#container');
+ * Fx.recursivelyCollect(container, 'nextSibling');
+ * Fx.recursivelyCollect(container, 'previousSibling');
  */
 const recursivelyCollect = (
   element: Element,

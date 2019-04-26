@@ -1,0 +1,2963 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 702,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 21,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 702,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 21,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "Identifier",
+        "start": 109,
+        "end": 674,
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": 2
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 115,
+            "end": 673,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 6
+              },
+              "end": {
+                "line": 19,
+                "column": 1
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 115,
+              "end": 123,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 6
+                },
+                "end": {
+                  "line": 8,
+                  "column": 14
+                },
+                "identifierName": "checkURL"
+              },
+              "name": "checkURL",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "start": 126,
+              "end": 673,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 17
+                },
+                "end": {
+                  "line": 19,
+                  "column": 1
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 127,
+                  "end": 130,
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 21
+                    },
+                    "identifierName": "str"
+                  },
+                  "name": "str"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 135,
+                "end": 673,
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 1
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "start": 142,
+                    "end": 670,
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 59
+                      }
+                    },
+                    "argument": {
+                      "type": "CallExpression",
+                      "start": 149,
+                      "end": 669,
+                      "loc": {
+                        "start": {
+                          "line": 9,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 58
+                        }
+                      },
+                      "callee": {
+                        "type": "MemberExpression",
+                        "start": 149,
+                        "end": 664,
+                        "loc": {
+                          "start": {
+                            "line": 9,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 53
+                          }
+                        },
+                        "object": {
+                          "type": "NewExpression",
+                          "start": 149,
+                          "end": 659,
+                          "loc": {
+                            "start": {
+                              "line": 9,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 48
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 153,
+                            "end": 159,
+                            "loc": {
+                              "start": {
+                                "line": 9,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 9,
+                                "column": 21
+                              },
+                              "identifierName": "RegExp"
+                            },
+                            "name": "RegExp"
+                          },
+                          "arguments": [
+                            {
+                              "type": "BinaryExpression",
+                              "start": 160,
+                              "end": 658,
+                              "loc": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 18,
+                                  "column": 47
+                                }
+                              },
+                              "left": {
+                                "type": "BinaryExpression",
+                                "start": 160,
+                                "end": 607,
+                                "loc": {
+                                  "start": {
+                                    "line": 9,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "line": 17,
+                                    "column": 16
+                                  }
+                                },
+                                "left": {
+                                  "type": "BinaryExpression",
+                                  "start": 160,
+                                  "end": 576,
+                                  "loc": {
+                                    "start": {
+                                      "line": 9,
+                                      "column": 22
+                                    },
+                                    "end": {
+                                      "line": 16,
+                                      "column": 24
+                                    }
+                                  },
+                                  "left": {
+                                    "type": "BinaryExpression",
+                                    "start": 160,
+                                    "end": 509,
+                                    "loc": {
+                                      "start": {
+                                        "line": 9,
+                                        "column": 22
+                                      },
+                                      "end": {
+                                        "line": 15,
+                                        "column": 21
+                                      }
+                                    },
+                                    "left": {
+                                      "type": "BinaryExpression",
+                                      "start": 160,
+                                      "end": 476,
+                                      "loc": {
+                                        "start": {
+                                          "line": 9,
+                                          "column": 22
+                                        },
+                                        "end": {
+                                          "line": 14,
+                                          "column": 45
+                                        }
+                                      },
+                                      "left": {
+                                        "type": "BinaryExpression",
+                                        "start": 160,
+                                        "end": 415,
+                                        "loc": {
+                                          "start": {
+                                            "line": 9,
+                                            "column": 22
+                                          },
+                                          "end": {
+                                            "line": 13,
+                                            "column": 31
+                                          }
+                                        },
+                                        "left": {
+                                          "type": "BinaryExpression",
+                                          "start": 160,
+                                          "end": 361,
+                                          "loc": {
+                                            "start": {
+                                              "line": 9,
+                                              "column": 22
+                                            },
+                                            "end": {
+                                              "line": 12,
+                                              "column": 11
+                                            }
+                                          },
+                                          "left": {
+                                            "type": "BinaryExpression",
+                                            "start": 160,
+                                            "end": 318,
+                                            "loc": {
+                                              "start": {
+                                                "line": 9,
+                                                "column": 22
+                                              },
+                                              "end": {
+                                                "line": 11,
+                                                "column": 37
+                                              }
+                                            },
+                                            "left": {
+                                              "type": "BinaryExpression",
+                                              "start": 160,
+                                              "end": 264,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 9,
+                                                  "column": 22
+                                                },
+                                                "end": {
+                                                  "line": 10,
+                                                  "column": 66
+                                                }
+                                              },
+                                              "left": {
+                                                "type": "StringLiteral",
+                                                "start": 160,
+                                                "end": 194,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 9,
+                                                    "column": 22
+                                                  },
+                                                  "end": {
+                                                    "line": 9,
+                                                    "column": 56
+                                                  }
+                                                },
+                                                "extra": {
+                                                  "rawValue": "^((https|http|ftp|rtsp|mms)?://)",
+                                                  "raw": "'^((https|http|ftp|rtsp|mms)?://)'"
+                                                },
+                                                "value": "^((https|http|ftp|rtsp|mms)?://)"
+                                              },
+                                              "operator": "+",
+                                              "right": {
+                                                "type": "StringLiteral",
+                                                "start": 206,
+                                                "end": 264,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 10,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 10,
+                                                    "column": 66
+                                                  }
+                                                },
+                                                "extra": {
+                                                  "rawValue": "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?",
+                                                  "raw": "\"?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?\""
+                                                },
+                                                "value": "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?"
+                                              }
+                                            },
+                                            "operator": "+",
+                                            "right": {
+                                              "type": "StringLiteral",
+                                              "start": 289,
+                                              "end": 318,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 11,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 11,
+                                                  "column": 37
+                                                }
+                                              },
+                                              "extra": {
+                                                "rawValue": "(([0-9]{1,3}.){3}[0-9]{1,3}",
+                                                "raw": "'(([0-9]{1,3}.){3}[0-9]{1,3}'"
+                                              },
+                                              "value": "(([0-9]{1,3}.){3}[0-9]{1,3}",
+                                              "leadingComments": [
+                                                {
+                                                  "type": "CommentLine",
+                                                  "value": " ftp的user@",
+                                                  "start": 267,
+                                                  "end": 279,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 10,
+                                                      "column": 69
+                                                    },
+                                                    "end": {
+                                                      "line": 10,
+                                                      "column": 81
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "operator": "+",
+                                          "right": {
+                                            "type": "StringLiteral",
+                                            "start": 358,
+                                            "end": 361,
+                                            "loc": {
+                                              "start": {
+                                                "line": 12,
+                                                "column": 8
+                                              },
+                                              "end": {
+                                                "line": 12,
+                                                "column": 11
+                                              }
+                                            },
+                                            "extra": {
+                                              "rawValue": "|",
+                                              "raw": "'|'"
+                                            },
+                                            "value": "|",
+                                            "leadingComments": [
+                                              {
+                                                "type": "CommentLine",
+                                                "value": " IP形式的URL- 199.194.52.184",
+                                                "start": 321,
+                                                "end": 348,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 11,
+                                                    "column": 40
+                                                  },
+                                                  "end": {
+                                                    "line": 11,
+                                                    "column": 67
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "operator": "+",
+                                        "right": {
+                                          "type": "StringLiteral",
+                                          "start": 392,
+                                          "end": 415,
+                                          "loc": {
+                                            "start": {
+                                              "line": 13,
+                                              "column": 8
+                                            },
+                                            "end": {
+                                              "line": 13,
+                                              "column": 31
+                                            }
+                                          },
+                                          "extra": {
+                                            "rawValue": "([0-9a-z_!~*'()-]+.)*",
+                                            "raw": "\"([0-9a-z_!~*'()-]+.)*\""
+                                          },
+                                          "value": "([0-9a-z_!~*'()-]+.)*",
+                                          "leadingComments": [
+                                            {
+                                              "type": "CommentLine",
+                                              "value": " 允许IP和DOMAIN（域名）",
+                                              "start": 364,
+                                              "end": 382,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 12,
+                                                  "column": 14
+                                                },
+                                                "end": {
+                                                  "line": 12,
+                                                  "column": 32
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "operator": "+",
+                                      "right": {
+                                        "type": "StringLiteral",
+                                        "start": 439,
+                                        "end": 476,
+                                        "loc": {
+                                          "start": {
+                                            "line": 14,
+                                            "column": 8
+                                          },
+                                          "end": {
+                                            "line": 14,
+                                            "column": 45
+                                          }
+                                        },
+                                        "extra": {
+                                          "rawValue": "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].",
+                                          "raw": "'([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].'"
+                                        },
+                                        "value": "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].",
+                                        "leadingComments": [
+                                          {
+                                            "type": "CommentLine",
+                                            "value": " 域名- www.",
+                                            "start": 418,
+                                            "end": 429,
+                                            "loc": {
+                                              "start": {
+                                                "line": 13,
+                                                "column": 34
+                                              },
+                                              "end": {
+                                                "line": 13,
+                                                "column": 45
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                      "type": "StringLiteral",
+                                      "start": 496,
+                                      "end": 509,
+                                      "loc": {
+                                        "start": {
+                                          "line": 15,
+                                          "column": 8
+                                        },
+                                        "end": {
+                                          "line": 15,
+                                          "column": 21
+                                        }
+                                      },
+                                      "extra": {
+                                        "rawValue": "[a-z]{2,6})",
+                                        "raw": "'[a-z]{2,6})'"
+                                      },
+                                      "value": "[a-z]{2,6})",
+                                      "leadingComments": [
+                                        {
+                                          "type": "CommentLine",
+                                          "value": " 二级域名",
+                                          "start": 479,
+                                          "end": 486,
+                                          "loc": {
+                                            "start": {
+                                              "line": 14,
+                                              "column": 48
+                                            },
+                                            "end": {
+                                              "line": 14,
+                                              "column": 55
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "operator": "+",
+                                  "right": {
+                                    "type": "StringLiteral",
+                                    "start": 560,
+                                    "end": 576,
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 8
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 24
+                                      }
+                                    },
+                                    "extra": {
+                                      "rawValue": "(:[0-9]{1,4})?",
+                                      "raw": "'(:[0-9]{1,4})?'"
+                                    },
+                                    "value": "(:[0-9]{1,4})?",
+                                    "leadingComments": [
+                                      {
+                                        "type": "CommentLine",
+                                        "value": " first level domain- .com or .museum",
+                                        "start": 512,
+                                        "end": 550,
+                                        "loc": {
+                                          "start": {
+                                            "line": 15,
+                                            "column": 24
+                                          },
+                                          "end": {
+                                            "line": 15,
+                                            "column": 62
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "operator": "+",
+                                "right": {
+                                  "type": "StringLiteral",
+                                  "start": 599,
+                                  "end": 607,
+                                  "loc": {
+                                    "start": {
+                                      "line": 17,
+                                      "column": 8
+                                    },
+                                    "end": {
+                                      "line": 17,
+                                      "column": 16
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "((/?)|",
+                                    "raw": "'((/?)|'"
+                                  },
+                                  "value": "((/?)|",
+                                  "leadingComments": [
+                                    {
+                                      "type": "CommentLine",
+                                      "value": " 端口- :80",
+                                      "start": 579,
+                                      "end": 589,
+                                      "loc": {
+                                        "start": {
+                                          "line": 16,
+                                          "column": 27
+                                        },
+                                        "end": {
+                                          "line": 16,
+                                          "column": 37
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "operator": "+",
+                              "right": {
+                                "type": "StringLiteral",
+                                "start": 619,
+                                "end": 658,
+                                "loc": {
+                                  "start": {
+                                    "line": 18,
+                                    "column": 8
+                                  },
+                                  "end": {
+                                    "line": 18,
+                                    "column": 47
+                                  }
+                                },
+                                "extra": {
+                                  "rawValue": "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$",
+                                  "raw": "\"(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$\""
+                                },
+                                "value": "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$"
+                              }
+                            }
+                          ]
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "start": 660,
+                          "end": 664,
+                          "loc": {
+                            "start": {
+                              "line": 18,
+                              "column": 49
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 53
+                            },
+                            "identifierName": "test"
+                          },
+                          "name": "test"
+                        },
+                        "computed": false
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "start": 665,
+                          "end": 668,
+                          "loc": {
+                            "start": {
+                              "line": 18,
+                              "column": 54
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 57
+                            },
+                            "identifierName": "str"
+                          },
+                          "name": "str"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "directives": []
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 676,
+        "end": 700,
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 20,
+            "column": 24
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 691,
+          "end": 699,
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 15
+            },
+            "end": {
+              "line": 20,
+              "column": 23
+            },
+            "identifierName": "checkURL"
+          },
+          "name": "checkURL"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 676,
+        "end": 700,
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 20,
+            "column": 24
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 109,
+          "end": 674,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 115,
+              "end": 673,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 6
+                },
+                "end": {
+                  "line": 19,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 115,
+                "end": 123,
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 14
+                  },
+                  "identifierName": "checkURL"
+                },
+                "name": "checkURL",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 126,
+                "end": 673,
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 1
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 115,
+                  "end": 123,
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 14
+                    },
+                    "identifierName": "checkURL"
+                  },
+                  "name": "checkURL",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 127,
+                    "end": 130,
+                    "loc": {
+                      "start": {
+                        "line": 8,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 21
+                      },
+                      "identifierName": "str"
+                    },
+                    "name": "str"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 135,
+                  "end": 673,
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 1
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "start": 142,
+                      "end": 670,
+                      "loc": {
+                        "start": {
+                          "line": 9,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 59
+                        }
+                      },
+                      "argument": {
+                        "type": "CallExpression",
+                        "start": 149,
+                        "end": 669,
+                        "loc": {
+                          "start": {
+                            "line": 9,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 58
+                          }
+                        },
+                        "callee": {
+                          "type": "MemberExpression",
+                          "start": 149,
+                          "end": 664,
+                          "loc": {
+                            "start": {
+                              "line": 9,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 53
+                            }
+                          },
+                          "object": {
+                            "type": "NewExpression",
+                            "start": 149,
+                            "end": 659,
+                            "loc": {
+                              "start": {
+                                "line": 9,
+                                "column": 11
+                              },
+                              "end": {
+                                "line": 18,
+                                "column": 48
+                              }
+                            },
+                            "callee": {
+                              "type": "Identifier",
+                              "start": 153,
+                              "end": 159,
+                              "loc": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 21
+                                },
+                                "identifierName": "RegExp"
+                              },
+                              "name": "RegExp"
+                            },
+                            "arguments": [
+                              {
+                                "type": "BinaryExpression",
+                                "start": 160,
+                                "end": 658,
+                                "loc": {
+                                  "start": {
+                                    "line": 9,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "line": 18,
+                                    "column": 47
+                                  }
+                                },
+                                "left": {
+                                  "type": "BinaryExpression",
+                                  "start": 160,
+                                  "end": 607,
+                                  "loc": {
+                                    "start": {
+                                      "line": 9,
+                                      "column": 22
+                                    },
+                                    "end": {
+                                      "line": 17,
+                                      "column": 16
+                                    }
+                                  },
+                                  "left": {
+                                    "type": "BinaryExpression",
+                                    "start": 160,
+                                    "end": 576,
+                                    "loc": {
+                                      "start": {
+                                        "line": 9,
+                                        "column": 22
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 24
+                                      }
+                                    },
+                                    "left": {
+                                      "type": "BinaryExpression",
+                                      "start": 160,
+                                      "end": 509,
+                                      "loc": {
+                                        "start": {
+                                          "line": 9,
+                                          "column": 22
+                                        },
+                                        "end": {
+                                          "line": 15,
+                                          "column": 21
+                                        }
+                                      },
+                                      "left": {
+                                        "type": "BinaryExpression",
+                                        "start": 160,
+                                        "end": 476,
+                                        "loc": {
+                                          "start": {
+                                            "line": 9,
+                                            "column": 22
+                                          },
+                                          "end": {
+                                            "line": 14,
+                                            "column": 45
+                                          }
+                                        },
+                                        "left": {
+                                          "type": "BinaryExpression",
+                                          "start": 160,
+                                          "end": 415,
+                                          "loc": {
+                                            "start": {
+                                              "line": 9,
+                                              "column": 22
+                                            },
+                                            "end": {
+                                              "line": 13,
+                                              "column": 31
+                                            }
+                                          },
+                                          "left": {
+                                            "type": "BinaryExpression",
+                                            "start": 160,
+                                            "end": 361,
+                                            "loc": {
+                                              "start": {
+                                                "line": 9,
+                                                "column": 22
+                                              },
+                                              "end": {
+                                                "line": 12,
+                                                "column": 11
+                                              }
+                                            },
+                                            "left": {
+                                              "type": "BinaryExpression",
+                                              "start": 160,
+                                              "end": 318,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 9,
+                                                  "column": 22
+                                                },
+                                                "end": {
+                                                  "line": 11,
+                                                  "column": 37
+                                                }
+                                              },
+                                              "left": {
+                                                "type": "BinaryExpression",
+                                                "start": 160,
+                                                "end": 264,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 9,
+                                                    "column": 22
+                                                  },
+                                                  "end": {
+                                                    "line": 10,
+                                                    "column": 66
+                                                  }
+                                                },
+                                                "left": {
+                                                  "type": "StringLiteral",
+                                                  "start": 160,
+                                                  "end": 194,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 9,
+                                                      "column": 22
+                                                    },
+                                                    "end": {
+                                                      "line": 9,
+                                                      "column": 56
+                                                    }
+                                                  },
+                                                  "extra": {
+                                                    "rawValue": "^((https|http|ftp|rtsp|mms)?://)",
+                                                    "raw": "'^((https|http|ftp|rtsp|mms)?://)'"
+                                                  },
+                                                  "value": "^((https|http|ftp|rtsp|mms)?://)"
+                                                },
+                                                "operator": "+",
+                                                "right": {
+                                                  "type": "StringLiteral",
+                                                  "start": 206,
+                                                  "end": 264,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 10,
+                                                      "column": 8
+                                                    },
+                                                    "end": {
+                                                      "line": 10,
+                                                      "column": 66
+                                                    }
+                                                  },
+                                                  "extra": {
+                                                    "rawValue": "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?",
+                                                    "raw": "\"?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?\""
+                                                  },
+                                                  "value": "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?"
+                                                }
+                                              },
+                                              "operator": "+",
+                                              "right": {
+                                                "type": "StringLiteral",
+                                                "start": 289,
+                                                "end": 318,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 11,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 11,
+                                                    "column": 37
+                                                  }
+                                                },
+                                                "extra": {
+                                                  "rawValue": "(([0-9]{1,3}.){3}[0-9]{1,3}",
+                                                  "raw": "'(([0-9]{1,3}.){3}[0-9]{1,3}'"
+                                                },
+                                                "value": "(([0-9]{1,3}.){3}[0-9]{1,3}",
+                                                "leadingComments": [
+                                                  {
+                                                    "type": "CommentLine",
+                                                    "value": " ftp的user@",
+                                                    "start": 267,
+                                                    "end": 279,
+                                                    "loc": {
+                                                      "start": {
+                                                        "line": 10,
+                                                        "column": 69
+                                                      },
+                                                      "end": {
+                                                        "line": 10,
+                                                        "column": 81
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "operator": "+",
+                                            "right": {
+                                              "type": "StringLiteral",
+                                              "start": 358,
+                                              "end": 361,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 12,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 12,
+                                                  "column": 11
+                                                }
+                                              },
+                                              "extra": {
+                                                "rawValue": "|",
+                                                "raw": "'|'"
+                                              },
+                                              "value": "|",
+                                              "leadingComments": [
+                                                {
+                                                  "type": "CommentLine",
+                                                  "value": " IP形式的URL- 199.194.52.184",
+                                                  "start": 321,
+                                                  "end": 348,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 11,
+                                                      "column": 40
+                                                    },
+                                                    "end": {
+                                                      "line": 11,
+                                                      "column": 67
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "operator": "+",
+                                          "right": {
+                                            "type": "StringLiteral",
+                                            "start": 392,
+                                            "end": 415,
+                                            "loc": {
+                                              "start": {
+                                                "line": 13,
+                                                "column": 8
+                                              },
+                                              "end": {
+                                                "line": 13,
+                                                "column": 31
+                                              }
+                                            },
+                                            "extra": {
+                                              "rawValue": "([0-9a-z_!~*'()-]+.)*",
+                                              "raw": "\"([0-9a-z_!~*'()-]+.)*\""
+                                            },
+                                            "value": "([0-9a-z_!~*'()-]+.)*",
+                                            "leadingComments": [
+                                              {
+                                                "type": "CommentLine",
+                                                "value": " 允许IP和DOMAIN（域名）",
+                                                "start": 364,
+                                                "end": 382,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 12,
+                                                    "column": 14
+                                                  },
+                                                  "end": {
+                                                    "line": 12,
+                                                    "column": 32
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "operator": "+",
+                                        "right": {
+                                          "type": "StringLiteral",
+                                          "start": 439,
+                                          "end": 476,
+                                          "loc": {
+                                            "start": {
+                                              "line": 14,
+                                              "column": 8
+                                            },
+                                            "end": {
+                                              "line": 14,
+                                              "column": 45
+                                            }
+                                          },
+                                          "extra": {
+                                            "rawValue": "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].",
+                                            "raw": "'([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].'"
+                                          },
+                                          "value": "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].",
+                                          "leadingComments": [
+                                            {
+                                              "type": "CommentLine",
+                                              "value": " 域名- www.",
+                                              "start": 418,
+                                              "end": 429,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 13,
+                                                  "column": 34
+                                                },
+                                                "end": {
+                                                  "line": 13,
+                                                  "column": 45
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "operator": "+",
+                                      "right": {
+                                        "type": "StringLiteral",
+                                        "start": 496,
+                                        "end": 509,
+                                        "loc": {
+                                          "start": {
+                                            "line": 15,
+                                            "column": 8
+                                          },
+                                          "end": {
+                                            "line": 15,
+                                            "column": 21
+                                          }
+                                        },
+                                        "extra": {
+                                          "rawValue": "[a-z]{2,6})",
+                                          "raw": "'[a-z]{2,6})'"
+                                        },
+                                        "value": "[a-z]{2,6})",
+                                        "leadingComments": [
+                                          {
+                                            "type": "CommentLine",
+                                            "value": " 二级域名",
+                                            "start": 479,
+                                            "end": 486,
+                                            "loc": {
+                                              "start": {
+                                                "line": 14,
+                                                "column": 48
+                                              },
+                                              "end": {
+                                                "line": 14,
+                                                "column": 55
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                      "type": "StringLiteral",
+                                      "start": 560,
+                                      "end": 576,
+                                      "loc": {
+                                        "start": {
+                                          "line": 16,
+                                          "column": 8
+                                        },
+                                        "end": {
+                                          "line": 16,
+                                          "column": 24
+                                        }
+                                      },
+                                      "extra": {
+                                        "rawValue": "(:[0-9]{1,4})?",
+                                        "raw": "'(:[0-9]{1,4})?'"
+                                      },
+                                      "value": "(:[0-9]{1,4})?",
+                                      "leadingComments": [
+                                        {
+                                          "type": "CommentLine",
+                                          "value": " first level domain- .com or .museum",
+                                          "start": 512,
+                                          "end": 550,
+                                          "loc": {
+                                            "start": {
+                                              "line": 15,
+                                              "column": 24
+                                            },
+                                            "end": {
+                                              "line": 15,
+                                              "column": 62
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "operator": "+",
+                                  "right": {
+                                    "type": "StringLiteral",
+                                    "start": 599,
+                                    "end": 607,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 8
+                                      },
+                                      "end": {
+                                        "line": 17,
+                                        "column": 16
+                                      }
+                                    },
+                                    "extra": {
+                                      "rawValue": "((/?)|",
+                                      "raw": "'((/?)|'"
+                                    },
+                                    "value": "((/?)|",
+                                    "leadingComments": [
+                                      {
+                                        "type": "CommentLine",
+                                        "value": " 端口- :80",
+                                        "start": 579,
+                                        "end": 589,
+                                        "loc": {
+                                          "start": {
+                                            "line": 16,
+                                            "column": 27
+                                          },
+                                          "end": {
+                                            "line": 16,
+                                            "column": 37
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "operator": "+",
+                                "right": {
+                                  "type": "StringLiteral",
+                                  "start": 619,
+                                  "end": 658,
+                                  "loc": {
+                                    "start": {
+                                      "line": 18,
+                                      "column": 8
+                                    },
+                                    "end": {
+                                      "line": 18,
+                                      "column": 47
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$",
+                                    "raw": "\"(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$\""
+                                  },
+                                  "value": "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$"
+                                }
+                              }
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 660,
+                            "end": 664,
+                            "loc": {
+                              "start": {
+                                "line": 18,
+                                "column": 49
+                              },
+                              "end": {
+                                "line": 18,
+                                "column": 53
+                              },
+                              "identifierName": "test"
+                            },
+                            "name": "test"
+                          },
+                          "computed": false
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "start": 665,
+                            "end": 668,
+                            "loc": {
+                              "start": {
+                                "line": 18,
+                                "column": 54
+                              },
+                              "end": {
+                                "line": 18,
+                                "column": 57
+                              },
+                              "identifierName": "str"
+                            },
+                            "name": "str"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "directives": []
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 判断输入的参数是否是个合格的URL\r\n *\r\n * @function\r\n * @param {String} str 表示 URL 的字符串\r\n * @returns {Boolean}\r\n ",
+              "start": 0,
+              "end": 107,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 7,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 判断输入的参数是否是个合格的URL\r\n *\r\n * @function\r\n * @param {String} str 表示 URL 的字符串\r\n * @returns {Boolean}\r\n ",
+      "start": 0,
+      "end": 107,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " ftp的user@",
+      "start": 267,
+      "end": 279,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 69
+        },
+        "end": {
+          "line": 10,
+          "column": 81
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " IP形式的URL- 199.194.52.184",
+      "start": 321,
+      "end": 348,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 40
+        },
+        "end": {
+          "line": 11,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 允许IP和DOMAIN（域名）",
+      "start": 364,
+      "end": 382,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 14
+        },
+        "end": {
+          "line": 12,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 域名- www.",
+      "start": 418,
+      "end": 429,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 34
+        },
+        "end": {
+          "line": 13,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 二级域名",
+      "start": 479,
+      "end": 486,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 48
+        },
+        "end": {
+          "line": 14,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " first level domain- .com or .museum",
+      "start": 512,
+      "end": 550,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 24
+        },
+        "end": {
+          "line": 15,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 端口- :80",
+      "start": 579,
+      "end": 589,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 27
+        },
+        "end": {
+          "line": 16,
+          "column": 37
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 判断输入的参数是否是个合格的URL\r\n *\r\n * @function\r\n * @param {String} str 表示 URL 的字符串\r\n * @returns {Boolean}\r\n ",
+      "start": 0,
+      "end": 107,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 109,
+      "end": 114,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "checkURL",
+      "start": 115,
+      "end": 123,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 6
+        },
+        "end": {
+          "line": 8,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 124,
+      "end": 125,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 15
+        },
+        "end": {
+          "line": 8,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 126,
+      "end": 127,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 17
+        },
+        "end": {
+          "line": 8,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "str",
+      "start": 127,
+      "end": 130,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 18
+        },
+        "end": {
+          "line": 8,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 130,
+      "end": 131,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 21
+        },
+        "end": {
+          "line": 8,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 132,
+      "end": 134,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 23
+        },
+        "end": {
+          "line": 8,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 135,
+      "end": 136,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 26
+        },
+        "end": {
+          "line": 8,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 142,
+      "end": 148,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 4
+        },
+        "end": {
+          "line": 9,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 149,
+      "end": 152,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 11
+        },
+        "end": {
+          "line": 9,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RegExp",
+      "start": 153,
+      "end": 159,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 15
+        },
+        "end": {
+          "line": 9,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 159,
+      "end": 160,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 21
+        },
+        "end": {
+          "line": 9,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "^((https|http|ftp|rtsp|mms)?://)",
+      "start": 160,
+      "end": 194,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 22
+        },
+        "end": {
+          "line": 9,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 195,
+      "end": 196,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 57
+        },
+        "end": {
+          "line": 9,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?",
+      "start": 206,
+      "end": 264,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 8
+        },
+        "end": {
+          "line": 10,
+          "column": 66
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 265,
+      "end": 266,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 67
+        },
+        "end": {
+          "line": 10,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " ftp的user@",
+      "start": 267,
+      "end": 279,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 69
+        },
+        "end": {
+          "line": 10,
+          "column": 81
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "(([0-9]{1,3}.){3}[0-9]{1,3}",
+      "start": 289,
+      "end": 318,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 8
+        },
+        "end": {
+          "line": 11,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 319,
+      "end": 320,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 38
+        },
+        "end": {
+          "line": 11,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " IP形式的URL- 199.194.52.184",
+      "start": 321,
+      "end": 348,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 40
+        },
+        "end": {
+          "line": 11,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "|",
+      "start": 358,
+      "end": 361,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 362,
+      "end": 363,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 12
+        },
+        "end": {
+          "line": 12,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 允许IP和DOMAIN（域名）",
+      "start": 364,
+      "end": 382,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 14
+        },
+        "end": {
+          "line": 12,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "([0-9a-z_!~*'()-]+.)*",
+      "start": 392,
+      "end": 415,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 13,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 416,
+      "end": 417,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 32
+        },
+        "end": {
+          "line": 13,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 域名- www.",
+      "start": 418,
+      "end": 429,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 34
+        },
+        "end": {
+          "line": 13,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].",
+      "start": 439,
+      "end": 476,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 8
+        },
+        "end": {
+          "line": 14,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 477,
+      "end": 478,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 46
+        },
+        "end": {
+          "line": 14,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 二级域名",
+      "start": 479,
+      "end": 486,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 48
+        },
+        "end": {
+          "line": 14,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "[a-z]{2,6})",
+      "start": 496,
+      "end": 509,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 510,
+      "end": 511,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 22
+        },
+        "end": {
+          "line": 15,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " first level domain- .com or .museum",
+      "start": 512,
+      "end": 550,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 24
+        },
+        "end": {
+          "line": 15,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "(:[0-9]{1,4})?",
+      "start": 560,
+      "end": 576,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 16,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 577,
+      "end": 578,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 25
+        },
+        "end": {
+          "line": 16,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 端口- :80",
+      "start": 579,
+      "end": 589,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 27
+        },
+        "end": {
+          "line": 16,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "((/?)|",
+      "start": 599,
+      "end": 607,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 8
+        },
+        "end": {
+          "line": 17,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 608,
+      "end": 609,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 17
+        },
+        "end": {
+          "line": 17,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$",
+      "start": 619,
+      "end": 658,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 658,
+      "end": 659,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 47
+        },
+        "end": {
+          "line": 18,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 659,
+      "end": 660,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 48
+        },
+        "end": {
+          "line": 18,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "test",
+      "start": 660,
+      "end": 664,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 49
+        },
+        "end": {
+          "line": 18,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 664,
+      "end": 665,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 53
+        },
+        "end": {
+          "line": 18,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "str",
+      "start": 665,
+      "end": 668,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 54
+        },
+        "end": {
+          "line": 18,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 668,
+      "end": 669,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 57
+        },
+        "end": {
+          "line": 18,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 669,
+      "end": 670,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 58
+        },
+        "end": {
+          "line": 18,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 672,
+      "end": 673,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 673,
+      "end": 674,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 1
+        },
+        "end": {
+          "line": 19,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 676,
+      "end": 682,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 683,
+      "end": 690,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 7
+        },
+        "end": {
+          "line": 20,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "checkURL",
+      "start": 691,
+      "end": 699,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 15
+        },
+        "end": {
+          "line": 20,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 699,
+      "end": 700,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 23
+        },
+        "end": {
+          "line": 20,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 702,
+      "end": 702,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

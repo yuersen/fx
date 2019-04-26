@@ -1,24 +1,22 @@
 /**
- * some method callback
- *
- * @function ForEachCallback
- * @param {*} element 当前遍历的数组元素
- * @param {Number} index 当前元素的所在数组中的索引
- * @param {*[]} array 数组本身
- * @returns {Boolean} 返回真值或者假值
- */
-
-/**
  * 按升序为数组中含有效值的每一项执行一次callback 函数，已删除（使用delete方法等情况）或者未初始化的项将被跳过。
  *
  * @function
- * @param  {*[]} arr 待测试的数组
- * @param  {ForEachCallback} callback 用来测试数组的每个元素的函数
- * @param  {*} thisArg? 执行 callback 时使用的 this 值
+ * @memberof Fx
+ * @param  {Any[]} arr 待测试的数组
+ * @param  {Function} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身
+ * @param  {Any} thisArg? 执行 callback 时使用的 this 值
+ * @example
+ * 
+ * Fx.forEach(['F', 'x'], (item, index, arr) => {
+ *  // -> 'F', 0, ['F', 'x']
+ *  // -> 'x', 1, ['F', 'x']
+ *  console.log(item, index, arr);
+ * });
  */
 const forEach = (
   arr: any[],
-  callback: (element: any, index: number, arr: any[]) => boolean,
+  callback: (element: any, index: number, arr: any[]) => void | boolean,
   thisArg?: any
 ): void => {
   const l = arr.length;

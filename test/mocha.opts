@@ -1,9 +1,10 @@
 --require ts-node/register
+--require tsconfig-paths/register
 --require source-map-support/register
 --recursive
 --full-trace
 --bail
 --reporter mochawesome
---reporter-options reportDir=report,reportFilename=fx-report,reportPageTitle=FxTestReport
-# test/*.ts
-test/*.test.ts
+--reporter-options reportDir=./test/report,reportFilename=fx-report,reportPageTitle=FxTestReport
+# test/specs/**/*.spec.ts
+test/specs/dom/*.spec.ts

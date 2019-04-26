@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/string/checkIdCard.ts | fx</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Javascript functions tools"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="fx"><meta property="twitter:description" content="Javascript functions tools"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <!--
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  -->
+  <a href="javscript:;">Fx</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/pxy0809/fx"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/EventEmit.ts~EventEmit.html">EventEmit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/URLSearchParams.ts~URLSearchParams.html">URLSearchParams</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cookie">cookie</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#array">array</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cloneArray">cloneArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-every">every</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-filter">filter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-find">find</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forEach">forEach</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-includes">includes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indexOf">indexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lastIndexOf">lastIndexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shuffle">shuffle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-some">some</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unique">unique</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client">client</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getClintByUserAgent">getClintByUserAgent</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#date">date</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatDate">formatDate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dom">dom</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addClassName">addClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ancestors">ancestors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-append">append</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearClassName">clearClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getClassName">getClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasClassName">hasClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hide">hide</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-html">html</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertAfter">insertAfter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertBefore">insertBefore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertNode">insertNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNode">isNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nextSiblings">nextSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prepend">prepend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-previousSiblings">previousSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelector">querySelector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelectorAll">querySelectorAll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-recursivelyCollect">recursivelyCollect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeChildNodes">removeChildNodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeClassName">removeClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeNode">removeNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-show">show</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-siblings">siblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-text">text</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toggleClassName">toggleClassName</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#function">function</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-memoize">memoize</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#object">object</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isArray">isArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isBoolean">isBoolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDate">isDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isElement">isElement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFunction">isFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNaN">isNaN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNull">isNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isObject">isObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-type">type</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#string">string</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-camelize">camelize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capitalize">capitalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkBankCard">checkBankCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIP">checkIP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIdCard">checkIdCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPhone">checkPhone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkURL">checkURL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRandomString">createRandomString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decodeHtml">decodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-endsWith">endsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getByte">getByte</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guid">guid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasChinese">hasChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padEnd">padEnd</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padStart">padStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWith">startsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trim">trim</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimLeft">trimLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimRight">trimRight</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/string/checkIdCard.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * &#x53C2;&#x6570;&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x7801;&#x662F;&#x5426;&#x5408;&#x6CD5;&#xFF0C;&#x5176;&#x8EAB;&#x4EFD;&#x8BC1;&#x6709;&#x6548;&#x6027;&#x65E0;&#x6CD5;&#x5224;&#x65AD;
+ *
+ * @function
+ * @param {String} str &#x8868;&#x793A;&#x8EAB;&#x4EFD;ID&#x7684;&#x5B57;&#x7B26;&#x4E32;
+ * @returns {Boolean}
+ */
+const checkIdCard = (str: string): boolean =&gt; {
+  const cityCode: { [key: string]: string } = {
+    11: &apos;&#x5317;&#x4EAC;&apos;,
+    12: &apos;&#x5929;&#x6D25;&apos;,
+    13: &apos;&#x6CB3;&#x5317;&apos;,
+    14: &apos;&#x5C71;&#x897F;&apos;,
+    15: &apos;&#x5185;&#x8499;&#x53E4;&apos;,
+    21: &apos;&#x8FBD;&#x5B81;&apos;,
+    22: &apos;&#x5409;&#x6797;&apos;,
+    23: &apos;&#x9ED1;&#x9F99;&#x6C5F; &apos;,
+    31: &apos;&#x4E0A;&#x6D77;&apos;,
+    32: &apos;&#x6C5F;&#x82CF;&apos;,
+    33: &apos;&#x6D59;&#x6C5F;&apos;,
+    34: &apos;&#x5B89;&#x5FBD;&apos;,
+    35: &apos;&#x798F;&#x5EFA;&apos;,
+    36: &apos;&#x6C5F;&#x897F;&apos;,
+    37: &apos;&#x5C71;&#x4E1C;&apos;,
+    41: &apos;&#x6CB3;&#x5357;&apos;,
+    42: &apos;&#x6E56;&#x5317; &apos;,
+    43: &apos;&#x6E56;&#x5357;&apos;,
+    44: &apos;&#x5E7F;&#x4E1C;&apos;,
+    45: &apos;&#x5E7F;&#x897F;&apos;,
+    46: &apos;&#x6D77;&#x5357;&apos;,
+    50: &apos;&#x91CD;&#x5E86;&apos;,
+    51: &apos;&#x56DB;&#x5DDD;&apos;,
+    52: &apos;&#x8D35;&#x5DDE;&apos;,
+    53: &apos;&#x4E91;&#x5357;&apos;,
+    54: &apos;&#x897F;&#x85CF; &apos;,
+    61: &apos;&#x9655;&#x897F;&apos;,
+    62: &apos;&#x7518;&#x8083;&apos;,
+    63: &apos;&#x9752;&#x6D77;&apos;,
+    64: &apos;&#x5B81;&#x590F;&apos;,
+    65: &apos;&#x65B0;&#x7586;&apos;,
+    71: &apos;&#x53F0;&#x6E7E;&apos;,
+    81: &apos;&#x9999;&#x6E2F;&apos;,
+    82: &apos;&#x6FB3;&#x95E8;&apos;,
+    91: &apos;&#x56FD;&#x5916;&apos;
+  };
+  const Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+  const parity = [&apos;1&apos;, &apos;0&apos;, &apos;X&apos;, &apos;9&apos;, &apos;8&apos;, &apos;7&apos;, &apos;6&apos;, &apos;5&apos;, &apos;4&apos;, &apos;3&apos;, &apos;2&apos;];
+  const idcard = str.toUpperCase();
+  const idcards = idcard.split(&apos;&apos;);
+  let year;
+  let month;
+  let day;
+  let birthday;
+
+  // &#x68C0;&#x67E5;&#x53F7;&#x7801;&#x662F;&#x5426;&#x7B26;&#x5408;&#x89C4;&#x8303;&#xFF0C;&#x5305;&#x62EC;&#x957F;&#x5EA6;&#xFF0C;&#x7C7B;&#x578B;
+  // &#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x7801;&#x4E3A;15&#x4F4D;&#x6216;&#x8005;18&#x4F4D;&#xFF0C;15&#x4F4D;&#x65F6;&#x5168;&#x4E3A;&#x6570;&#x5B57;&#xFF0C;18&#x4F4D;&#x524D;17&#x4F4D;&#x4E3A;&#x6570;&#x5B57;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x662F;&#x6821;&#x9A8C;&#x4F4D;&#xFF0C;&#x53EF;&#x80FD;&#x4E3A;&#x6570;&#x5B57;&#x6216;&#x5B57;&#x7B26;X&#x3002;
+  if (!/(^\d{15}$)|(^\d{17}([0-9]|X|x)$)/.test(idcard)) {
+    return false;
+  }
+
+  // &#x53D6;&#x8EAB;&#x4EFD;&#x8BC1;&#x524D;&#x4E24;&#x4F4D;,&#x6821;&#x9A8C;&#x7701;&#x4EFD;
+  if (!cityCode[idcard.substr(0, 2)]) {
+    return false;
+  }
+
+  // &#x6821;&#x9A8C;&#x4F4D;&#x6309;&#x7167;ISO 7064:1983.MOD 11-2&#x7684;&#x89C4;&#x5B9A;&#x751F;&#x6210;&#xFF0C;X&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x6570;&#x5B57;10&#x3002;
+  // &#x4E0B;&#x9762;&#x5206;&#x522B;&#x5206;&#x6790;&#x51FA;&#x751F;&#x65E5;&#x671F;&#x548C;&#x6821;&#x9A8C;&#x4F4D;
+  const len = idcard.length;
+  if (len === 15) {
+    year = idcard.substring(6, 8);
+    month = idcard.substring(8, 10);
+    day = idcard.substring(10, 12);
+    birthday = new Date(year + &apos;/&apos; + month + &apos;/&apos; + day);
+
+    return (
+      (birthday as any).getYear() === parseFloat(year) &amp;&amp;
+      birthday.getMonth() === parseFloat(month) - 1 &amp;&amp;
+      birthday.getDate() === parseFloat(day)
+    );
+  }
+  if (len === 18) {
+    year = idcard.substring(6, 10);
+    month = idcard.substring(10, 12);
+    day = idcard.substring(12, 14);
+    birthday = new Date(year + &apos;/&apos; + month + &apos;/&apos; + day);
+
+    if (
+      birthday.getFullYear() !== parseFloat(year) ||
+      birthday.getMonth() !== parseFloat(month) - 1 ||
+      birthday.getDate() !== parseFloat(day)
+    ) {
+      return false;
+    }
+    // &#x68C0;&#x9A8C;18&#x4F4D;&#x8EAB;&#x4EFD;&#x8BC1;&#x7684;&#x6821;&#x9A8C;&#x7801;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;
+    // &#x6821;&#x9A8C;&#x4F4D;&#x6309;&#x7167;ISO 7064:1983.MOD 11-2&#x7684;&#x89C4;&#x5B9A;&#x751F;&#x6210;&#xFF0C;X&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x6570;&#x5B57;10&#x3002;
+    let sum: number = 0;
+
+    for (let i = 0; i &lt; 17; i++) {
+      sum += Wi[i] * parseInt(idcards[i], 10); // &#x52A0;&#x6743;&#x6C42;&#x548C;
+    }
+    if (idcards[17] === parity[sum % 11]) {
+      return true;
+    }
+    return false;
+  }
+};
+
+export default checkIdCard;
+</code></pre>
+
+</div>
+<!--
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion"></span><img src="./image/esdoc-logo-mini-black.png"/></a>
+</footer>
+-->
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

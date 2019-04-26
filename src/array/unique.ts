@@ -2,8 +2,15 @@
  * 移除数组中重复的元素
  *
  * @function
- * @param  {*[]} arr 被循环遍历的数组
- * @returns {*[]}
+ * @memberof Fx
+ * @param  {Any[]} arr 被循环遍历的数组
+ * @returns {Any[]}
+ * @example
+ *
+ * const list = [1, 2, 3, 1, 4];
+ *
+ * // -> [1, 2, 3, 4]
+ * console.log(Fx.unique(list));
  */
 const unique = (arr: any[]): any[] => {
   const l = arr.length;

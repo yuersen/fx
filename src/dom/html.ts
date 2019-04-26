@@ -2,9 +2,18 @@
  * 获取/设置html片段,IE下tbody、tr的innerHTML都是只读的，不允许写入，而在其他浏览器下则没问题
  *
  * @function
+ * @memberof Fx
  * @param {Element} element 待设置 innerHTML 的元素
  * @param {string} value? 带插入的 html 片段
  * @returns {Element| String}
+ * @example
+ *
+ * const wrap = document.getElementById('wrap');
+ * // -> <div class="content">content</div>
+ * Fx.html(wrap)
+ *
+ * // -> result === wrap
+ * const result = Fx.html(wrap, '<div class="inner">inner</div>')
  */
 const html = (element: Element, value?: string): string | Element => {
   if (!value) {

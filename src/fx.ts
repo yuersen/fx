@@ -13,15 +13,15 @@ export { default as cloneArray } from './array/cloneArray';
 export { default as includes } from './array/includes';
 
 /* DOM */
-export { default as isNode } from './dom/isNode';
-export { default as querySelector } from './dom/querySelector';
-export { default as querySelectorAll } from './dom/querySelectorAll';
+export { default as query } from './dom/query';
+export { default as queryAll } from './dom/queryAll';
 export { default as recursivelyCollect } from './dom/recursivelyCollect';
 export { default as ancestors } from './dom/ancestors';
-export { default as previousSiblings } from './dom/previousSiblings';
+export { default as next } from './dom/next';
+export { default as previous } from './dom/previous';
 export { default as siblings } from './dom/siblings';
 export { default as removeNode } from './dom/removeNode';
-export { default as removeChildNodes } from './dom/removeChildNodes';
+export { default as removeChild } from './dom/removeChild';
 export { default as show } from './dom/show';
 export { default as hide } from './dom/hide';
 export { default as insertNode } from './dom/insertNode';
@@ -36,7 +36,7 @@ export { default as addClassName } from './dom/addClassName';
 export { default as getClassName } from './dom/getClassName';
 export { default as removeClassName } from './dom/removeClassName';
 export { default as toggleClassName } from './dom/toggleClassName';
-export { default as cleanClassName } from './dom/cleanClassName';
+export { default as clearClassName } from './dom/clearClassName';
 
 /* EventEmit */
 export { default as EventEmit } from './EventEmit';
@@ -80,18 +80,13 @@ export { default as checkIdCard } from './string/checkIdCard';
 export { default as createRandomString } from './string/createRandomString';
 
 /* client */
-export { default as client } from './client/client';
-
-/* color */
-export { default as rgb2hex } from './color/rgb2hex';
-export { default as hex2rgb } from './color/hex2rgb';
-export { default as rgb2hsl } from './color/rgb2hsl';
-export { default as rgb2hsv } from './color/rgb2hsv';
-export { default as hsl2rgb } from './color/hsl2rgb';
-export { default as hsl2hsv } from './color/hsl2hsv';
+export { default as getClintByUserAgent } from './client/getClintByUserAgent';
 
 /* cookie */
 export { default as cookie } from './cookie';
 
 /* date */
 export { default as formatDate } from './date/formatDate';
+
+/* function */
+export { default as memoize } from './function/memoize';

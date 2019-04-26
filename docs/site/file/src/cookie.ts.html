@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/cookie.ts | fx</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Javascript functions tools"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="fx"><meta property="twitter:description" content="Javascript functions tools"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <!--
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  -->
+  <a href="javscript:;">Fx</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/pxy0809/fx"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/EventEmit.ts~EventEmit.html">EventEmit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/URLSearchParams.ts~URLSearchParams.html">URLSearchParams</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cookie">cookie</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#array">array</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cloneArray">cloneArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-every">every</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-filter">filter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-find">find</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forEach">forEach</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-includes">includes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indexOf">indexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lastIndexOf">lastIndexOf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shuffle">shuffle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-some">some</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unique">unique</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client">client</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getClintByUserAgent">getClintByUserAgent</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#date">date</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatDate">formatDate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dom">dom</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addClassName">addClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ancestors">ancestors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-append">append</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearClassName">clearClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getClassName">getClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasClassName">hasClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hide">hide</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-html">html</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertAfter">insertAfter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertBefore">insertBefore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-insertNode">insertNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNode">isNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nextSiblings">nextSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prepend">prepend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-previousSiblings">previousSiblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelector">querySelector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-querySelectorAll">querySelectorAll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-recursivelyCollect">recursivelyCollect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeChildNodes">removeChildNodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeClassName">removeClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeNode">removeNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-show">show</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-siblings">siblings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-text">text</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toggleClassName">toggleClassName</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#function">function</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-memoize">memoize</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#object">object</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isArray">isArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isBoolean">isBoolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDate">isDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isElement">isElement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFunction">isFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNaN">isNaN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNull">isNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isObject">isObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-type">type</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#string">string</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-camelize">camelize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capitalize">capitalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkBankCard">checkBankCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIP">checkIP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkIdCard">checkIdCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkPhone">checkPhone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkURL">checkURL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRandomString">createRandomString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decodeHtml">decodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-endsWith">endsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getByte">getByte</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guid">guid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasChinese">hasChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padEnd">padEnd</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-padStart">padStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWith">startsWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trim">trim</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimLeft">trimLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimRight">trimRight</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/cookie.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * cookies extension tool
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
+ * @see https://github.com/madmurphy/cookies.js
+ */
+/**
+ * JSON &#x5BF9;&#x8C61;&#x5B57;&#x7B26;&#x4E32;&#x5316;
+ * @param  {any} val
+ */
+function stringify(val: any) {
+  try {
+    return JSON.stringify(val);
+  } catch (e) {
+    throw new Error(&apos;JSON.stringify does not support&apos;);
+  }
+}
+
+/**
+ * &#x89E3;&#x6790; JSON &#x5B57;&#x7B26;&#x4E32;
+ * @param  {string} val
+ */
+function parseJSON(val: string) {
+  try {
+    return JSON.parse(val);
+  } catch (e) {
+    throw new Error(&apos;JSON.parse does not support&apos;);
+  }
+}
+const cookie = {
+  /**
+   * &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x662F;&#x5426;&#x652F;&#x6301; cookie
+   * @returns boolean
+   */
+  check(): boolean {
+    return !document.cookie || !navigator.cookieEnabled;
+  },
+
+  /**
+   * &#x8BFB;&#x53D6;&#x4E00;&#x4E2A;cookie
+   * @param  {string} key &#x8BFB;&#x53D6;&#x7684;cookie&#x540D;
+   * @returns string
+   */
+  getItem(key: string): string | null {
+    if (!key) {
+      return null;
+    }
+    return (
+      parseJSON(
+        decodeURIComponent(
+          document.cookie.replace(
+            new RegExp(
+              &apos;(?:(?:^|.*;)\\s*&apos; +
+                encodeURIComponent(key).replace(/[\-\.\+\*]/g, &apos;\\$&amp;&apos;) +
+                &apos;\\s*\\=\\s*([^;]*).*$)|^.*$&apos;
+            ),
+            &apos;$1&apos;
+          )
+        )
+      ) || null
+    );
+  },
+
+  /**
+   * &#x521B;&#x5EFA;&#x6216;&#x8986;&#x76D6;&#x4E00;&#x4E2A;cookie
+   * @param  {string} key &#x8981;&#x521B;&#x5EFA;&#x6216;&#x8986;&#x76D6;&#x7684;cookie&#x7684;&#x540D;&#x5B57;
+   * @param  {any} value &#x5B58;&#x50A8;&#x7684;&#x503C;
+   * @param  {string|number|Date} end &#x6709;&#x6548;&#x6700;&#x5927;&#x65E5;&#x671F;
+   * @param  {string} path? &#x6307;&#x5411;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;
+   * @param  {string} domain? &#x6709;&#x6548;&#x57DF;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x57DF;&#x540D;&#x90E8;&#x5206;
+   * @param  {string} secure? cookie&#x53EA;&#x4F1A;&#x88AB;https&#x4F20;&#x8F93; (boolean&#x6216;null)
+   * @returns boolean
+   */
+  setItem(
+    key: string,
+    value: any,
+    end?: string | number | Date,
+    path?: string,
+    domain?: string,
+    secure?: string
+  ) {
+    if (!key || /^(?:expires|max\-age|path|domain|secure)$/i.test(key)) {
+      return this;
+    }
+    let expires = &apos;&apos;;
+    if (end) {
+      switch (end.constructor) {
+        case Number:
+          expires =
+            end === Infinity
+              ? &apos;; expires=Fri, 31 Dec 9999 23:59:59 GMT&apos;
+              : &apos;; max-age=&apos; + end;
+          /*
+					Note: Despite officially defined in RFC 6265, the use of `max-age` is not compatible with any
+					version of Internet Explorer, Edge and some mobile browsers. Therefore passing a number to
+					the end parameter might not work as expected. A possible solution might be to convert the the
+					relative time to an absolute time. For instance, replacing the previous line with:
+					*/
+          /*
+					expires = end === Infinity ? &quot;; expires=Fri, 31 Dec 9999 23:59:59 GMT&quot; : &quot;; expires=&quot; + (new Date(end * 1e3 + Date.now())).toUTCString();
+					*/
+          break;
+        case String:
+          expires = &apos;; expires=&apos; + end;
+          break;
+        case Date:
+          expires = &apos;; expires=&apos; + (end as Date).toUTCString();
+          break;
+      }
+    }
+    document.cookie =
+      encodeURIComponent(key) +
+      &apos;=&apos; +
+      encodeURIComponent(stringify(value)) +
+      expires +
+      (domain ? &apos;; domain=&apos; + domain : &apos;&apos;) +
+      (path ? &apos;; path=&apos; + path : &apos;&apos;) +
+      (secure ? &apos;; secure&apos; : &apos;&apos;);
+    return true;
+  },
+
+  /**
+   * &#x5220;&#x9664;&#x4E00;&#x4E2A;cookie
+   * @param  {string} key &#x8981;&#x79FB;&#x9664;&#x7684;cookie&#x540D;
+   * @param  {string} path? &#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;
+   * @param  {string} domain? &#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x57DF;&#x540D;&#x90E8;&#x5206;
+   */
+  removeItem(key: string, path?: string, domain?: string) {
+    key = key;
+    if (this.hasItem(key)) {
+      document.cookie =
+        encodeURIComponent(key) +
+        &apos;=; expires=Thu, 01 Jan 1970 00:00:00 GMT&apos; +
+        (domain ? &apos;; domain=&apos; + domain : &apos;&apos;) +
+        (path ? &apos;; path=&apos; + path : &apos;&apos;);
+    }
+    return this;
+  },
+
+  /**
+   * &#x68C0;&#x67E5;&#x4E00;&#x4E2A;cookie&#x662F;&#x5426;&#x5B58;&#x5728;
+   * @param {string} key &#x8981;&#x68C0;&#x67E5;&#x7684;cookie&#x540D;
+   * @returns boolean
+   */
+  hasItem(key: string): boolean {
+    if (!key || /^(?:expires|max\-age|path|domain|secure)$/i.test(key)) {
+      return false;
+    }
+    return new RegExp(
+      &apos;(?:^|;\\s*)&apos; +
+        encodeURIComponent(key).replace(/[\-\.\+\*]/g, &apos;\\$&amp;&apos;) +
+        &apos;\\s*\\=&apos;
+    ).test(document.cookie);
+  },
+
+  /**
+   * &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x6240;&#x6709;&#x53EF;&#x8BFB;&#x7684;cookie&#x7684;&#x6570;&#x7EC4;
+   * @returns string[]
+   */
+  keys(): string[] {
+    const keys = document.cookie
+      .replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, &apos;&apos;)
+      .split(/\s*(?:\=[^;]*)?;\s*/);
+    for (let l = keys.length, i = 0; i &lt; l; i++) {
+      keys[i] = decodeURIComponent(keys[i]);
+    }
+    return keys;
+  },
+
+  /**
+   * &#x6E05;&#x7A7A; cookies
+   * @param  {string} path? &#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;
+   * @param  {string} domain? &#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x57DF;&#x540D;&#x90E8;&#x5206;
+   */
+  clear(path?: string, domain?: string) {
+    const keys = this.keys();
+    for (let l = keys.length, i = 0; i &lt; l; i++) {
+      this.removeItem(keys[i], path, domain);
+    }
+  }
+};
+export default cookie;
+</code></pre>
+
+</div>
+<!--
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion"></span><img src="./image/esdoc-logo-mini-black.png"/></a>
+</footer>
+-->
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

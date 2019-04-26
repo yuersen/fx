@@ -1,0 +1,968 @@
+[
+  {
+    "name": "every",
+    "filePath": "src/array/every.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 测试数组的所有元素是否都通过了指定函数的测试\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param  {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param  {Function(element: any, index: number, arr: any[]) => boolean} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * \r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * const allAgeGT20 = Fx.every([12, 30, 40], (element, index, array) => {\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *  return element > 20;\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * });\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * // -> false\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * console.log(allAgeGT20);\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": "const every = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "filter",
+    "filePath": "src/array/filter.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param  {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param  {Function} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Any[]}\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * \r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * const greaterAge = Fx.filter([10, 20, 15, 30], (age, index, arr) => {\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *  return age > 15;\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * });\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * // -> [20, 30]\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * console.log(greaterAge);\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": "const filter = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "find",
+    "filePath": "src/array/find.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param  {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param  {Function} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Any|Undefined}\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * \r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * const name = Fx.find(['fxyu', 'fiyu', 'ftyu'], (name, index, arr) => {\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *  return name.indexOf('fiy') !== -1;\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * });\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * // -> fiyu\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * console.log(name);\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": "const find = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "forEach",
+    "filePath": "src/array/forEach.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 按升序为数组中含有效值的每一项执行一次callback 函数，已删除（使用delete方法等情况）或者未初始化的项将被跳过。\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param  {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param  {Function} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * \r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * Fx.forEach(['F', 'x'], (item, index, arr) => {\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " *  // -> 'F', 0, ['F', 'x']\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *  // -> 'x', 1, ['F', 'x']\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " *  console.log(item, index, arr);\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * });\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": "const forEach = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "map",
+    "filePath": "src/array/map.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 创建一个新数组, 给原数组中的每个元素都按顺序调用一次 callback 函数，已删除（使用delete方法等情况）或者未初始化的项将被跳过\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param  {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param  {Function} callback 遍历数组的回调函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Any[]}\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * \r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * const lists = [1, 2, 3];\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " * // -> [2, 4, 6]\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * console.log(Fx.map(lists, item => item * 2));\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": "const map = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "some",
+    "filePath": "src/array/some.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 测试数组中的某些元素是否通过由提供的函数实现的测试\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @memberof Fx\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {Any[]} arr 待测试的数组\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {Function} callback 遍历数组的回调函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param  {Any} thisArg? 执行 callback 时使用的 this 值\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * const list = [1, 2, 4, 5];\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * // -> false\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * console.log(Fx.some(list, item => item > 6));\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " * // -> true\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": " * console.log(Fx.some(list, item => item > 4));\r"
+      },
+      {
+        "lineNumber": 18,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 19,
+        "line": "const some = (\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "callback",
+      "thisArg"
+    ],
+    "docParams": [
+      "arr",
+      "callback",
+      "thisArg?"
+    ]
+  },
+  {
+    "name": "html",
+    "filePath": "src/dom/html.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 获取/设置html片段,IE下tbody、tr的innerHTML都是只读的，不允许写入，而在其他浏览器下则没问题\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {Element} element 待设置 innerHTML 的元素\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {string} value? 带插入的 html 片段\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @returns {Element| String}\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": "const html = (element: Element, value?: string): string | Element => {\r"
+      }
+    ],
+    "codeParams": [
+      "element",
+      "value"
+    ],
+    "docParams": [
+      "element",
+      "value?"
+    ]
+  },
+  {
+    "name": "isBoolean",
+    "filePath": "src/object/isBoolean.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * 判断当前参数是否为 Boolean\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {*} o 任意类型的数据\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      }
+    ],
+    "codeParams": [
+      "obj"
+    ],
+    "docParams": [
+      "o"
+    ]
+  },
+  {
+    "name": "isDate",
+    "filePath": "src/object/isDate.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * 判断当前参数是否为 Date\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {*} o 任意类型的数据\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      }
+    ],
+    "codeParams": [
+      "obj"
+    ],
+    "docParams": [
+      "o"
+    ]
+  },
+  {
+    "name": "type",
+    "filePath": "src/object/type.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 输出当前参数类型\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {*} o 合法的javascript数据类型\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @returns {string}\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": "const type = (obj: any): string => {\r"
+      }
+    ],
+    "codeParams": [
+      "obj"
+    ],
+    "docParams": [
+      "o"
+    ]
+  },
+  {
+    "name": "createRandomString",
+    "filePath": "src/string/createRandomString.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 生成随机的字符串\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " * @param {Number} len - 生存随机字符串的长度\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @return {String}\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": "const createRandomString = (length: number): string => {\r"
+      }
+    ],
+    "codeParams": [
+      "length"
+    ],
+    "docParams": [
+      "len"
+    ]
+  },
+  {
+    "name": "endsWith",
+    "filePath": "src/string/endsWith.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 判断当前字符串是否是以另外一个给定的子字符串“结尾”的，根据判断结果返回 true 或 false\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {String} str 待检测字符串\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {String} search 要搜索的子字符串\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {Number} position? 检索开始的位置，默认值为 str.length\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": "const endsWith = (str: string, search: string, position?: number): boolean => {\r"
+      }
+    ],
+    "codeParams": [
+      "str",
+      "search",
+      "position"
+    ],
+    "docParams": [
+      "str",
+      "search",
+      "position?"
+    ]
+  },
+  {
+    "name": "padEnd",
+    "filePath": "src/string/padEnd.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 用一个字符串填充当前字符串（如果需要的话则重复填充），返回填充后达到指定长度的字符串。从当前字符串的末尾（右侧）开始填充。\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {String} str 待操作的字符串\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {Number} targetLength 增加长度\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {String} padString? 填充字符串\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {String}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": "const padEnd = (\r"
+      }
+    ],
+    "codeParams": [
+      "str",
+      "targetLength",
+      "padString"
+    ],
+    "docParams": [
+      "str",
+      "targetLength",
+      "padString?"
+    ]
+  },
+  {
+    "name": "padStart",
+    "filePath": "src/string/padStart.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 用另一个字符串填充当前字符串(重复，如果需要的话)，以便产生的字符串达到给定的长度。\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {String} str 待操作的字符串\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {Number} targetLength 当前字符串需要填充到的目标长度\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {String} padString? 填充字符串\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {String}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": "const padStart = (\r"
+      }
+    ],
+    "codeParams": [
+      "str",
+      "targetLength",
+      "padString"
+    ],
+    "docParams": [
+      "str",
+      "targetLength",
+      "padString?"
+    ]
+  },
+  {
+    "name": "startsWith",
+    "filePath": "src/string/startsWith.ts",
+    "lines": [
+      {
+        "lineNumber": 0,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 1,
+        "line": " * 判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * @function\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * @param {String} str 待检测字符串\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {String} search 要搜索的子字符串\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {Number} position? 搜索开始位置，默认值为 0\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @returns {Boolean}\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": "const startsWith = (\r"
+      }
+    ],
+    "codeParams": [
+      "str",
+      "search",
+      "position"
+    ],
+    "docParams": [
+      "str",
+      "search",
+      "position?"
+    ]
+  }
+]

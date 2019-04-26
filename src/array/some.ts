@@ -1,21 +1,21 @@
 /**
- * some method callback
- *
- * @function SomeCallback
- * @param {*} element 当前遍历的数组元素
- * @param {Number} index 当前元素的所在数组中的索引
- * @param {*[]} array 数组本身
- * @returns {Boolean} 返回真值或者假值
- */
-
-/**
  * 测试数组中的某些元素是否通过由提供的函数实现的测试
  *
  * @function
- * @param {*[]} arr 待测试的数组
- * @param  {SomeCallback} callback 用来测试每个元素的函数
- * @param  {*} thisArg? 执行 callback 时使用的 this 值
- * @returns boolean
+ * @memberof Fx
+ * @param {Any[]} arr 待测试的数组
+ * @param {Function} callback 遍历数组的回调函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身
+ * @param  {Any} thisArg? 执行 callback 时使用的 this 值
+ * @returns {Boolean}
+ * @example
+ *
+ * const list = [1, 2, 4, 5];
+ *
+ * // -> false
+ * console.log(Fx.some(list, item => item > 6));
+ *
+ * // -> true
+ * console.log(Fx.some(list, item => item > 4));
  */
 const some = (
   arr: any[],

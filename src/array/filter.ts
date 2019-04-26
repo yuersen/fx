@@ -1,21 +1,19 @@
 /**
- * filter method callback
- *
- * @function FilterCallback
- * @param {*} element 当前遍历的数组元素
- * @param {Number} index 当前元素的所在数组中的索引
- * @param {*[]} array 数组本身
- * @returns {Boolean} 返回真值或者假值
- */
-
-/**
  * 创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素
  *
  * @function
- * @param  {*[]} arr 待测试的数组
- * @param  {FilterCallback} callback 用来测试每个元素的函数
- * @param  {*} thisArg? 执行 callback 时使用的 this 值
- * @returns {*[]}
+ * @memberof Fx
+ * @param  {Any[]} arr 待测试的数组
+ * @param  {Function} callback 用来测试每个元素的函数，接受三个参数：element -> 当前遍历的数组元素，index -> 当前元素的所在数组中的索引，array -> 数组本身
+ * @param  {Any} thisArg? 执行 callback 时使用的 this 值
+ * @returns {Any[]}
+ * @example
+ * 
+ * const greaterAge = Fx.filter([10, 20, 15, 30], (age, index, arr) => {
+ *  return age > 15;
+ * });
+ * // -> [20, 30]
+ * console.log(greaterAge);
  */
 const filter = (
   arr: any[],

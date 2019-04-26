@@ -6,15 +6,32 @@
  * 'afterend'：元素自身的后面。
  *
  * @function
+ * @memberof Fx
  * @param {Element} element 待插入的 html 片段或者 Node 节点的元素
  * @param {Element | String} node html 片段或 Node 节点
- * @param {String} position 插入的位置
+ * @param {String} position 插入的位置，默认在元素内部插入节点
  * @returns {Element}
+ * @example
+ *
+ * const container = document.getElementById('container');
+ * const elem = document.createElement('div');
+ *
+ * // add node
+ * Fx.insertNode(container, elem, 'beforebegin');
+ * Fx.insertNode(container, elem, 'afterbegin');
+ * Fx.insertNode(container, elem, 'beforeend');
+ * Fx.insertNode(container, elem, 'afterend');
+ *
+ * // add html fragment
+ * Fx.insertNode(container, `<div>content</div>`, 'beforebegin');
+ * Fx.insertNode(container, `<div>content</div>`, 'afterbegin');
+ * Fx.insertNode(container, `<div>content</div>`, 'beforeend');
+ * Fx.insertNode(container, `<div>content</div>`, 'afterend');
  */
 const insertNode = (
   element: Element,
   node: Node | string,
-  position: string
+  position: string = 'beforeend'
 ): Element => {
   const nodeType: number = element.nodeType;
   // 1.元素, 9.代表整个文档（根节点）,11.代表轻量级的 Document 对象，能够容纳文档的某个部分

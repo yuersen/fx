@@ -6,7 +6,7 @@
  * @returns {Boolean}
  */
 const checkIdCard = (str: string): boolean => {
-  const cityCode = {
+  const cityCode: { [key: string]: string } = {
     11: '北京',
     12: '天津',
     13: '河北',
@@ -59,7 +59,7 @@ const checkIdCard = (str: string): boolean => {
   }
 
   // 取身份证前两位,校验省份
-  if (!(<any>cityCode)[idcard.substr(0, 2)]) {
+  if (!cityCode[idcard.substr(0, 2)]) {
     return false;
   }
 

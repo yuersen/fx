@@ -1,12 +1,14 @@
 /**
- * 删除元素
+ * 删除指定的元素
  *
  * @function
+ * @memberof Fx
  * @param {Element} element 待删除的元素
- * @returns {Element}
+ * @example
+ *
+ * Fx.removeNode(document.getElementById('container'));
  */
-const removeNode = (element: Element): Element => {
-  element.parentNode.removeChild(element);
-  return element;
+const removeNode = (element: Element): void => {
+  element.parentNode && element.parentNode.removeChild(element);
 };
 export default removeNode;

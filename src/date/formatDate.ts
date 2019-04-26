@@ -4,9 +4,17 @@
  * 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)
  *
  * @function
+ * @memberof Fx
  * @param {Date} date 待操作的 Date 对象
  * @param {String} format 指定格式化的字符串
  * @returns {String}
+ * @example
+ *
+ * const current = new Date('2020/10/06 10:10:10');
+ * // -> 2020-10-06 10:10:10'
+ * console.log(Fx.formatDate(current, 'yyyy-MM-dd HH:mm:ss'));
+ * // -> 2020年10月06日 10时10分10秒
+ * console.log(Fx.formatDate(current, 'yyyy年MM月dd日 hh时mm分ss秒'));
  */
 const formatDate = (
   date: Date,
@@ -20,7 +28,7 @@ const formatDate = (
     'm+': date.getMinutes(), // 分
     's+': date.getSeconds(), // 秒
     'q+': Math.floor((date.getMonth() + 3) / 3), // 季度
-    'S': date.getMilliseconds() // 毫秒
+    S: date.getMilliseconds() // 毫秒
   };
   if (/(y+)/.test(format)) {
     format = format.replace(
