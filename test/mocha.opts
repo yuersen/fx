@@ -7,4 +7,5 @@
 --reporter mochawesome
 --reporter-options reportDir=./test/report,reportFilename=fx-report,reportPageTitle=FxTestReport
 # test/specs/**/*.spec.ts
-test/specs/dom/*.spec.ts
+# test/specs/dom/*.spec.ts
+test/specs/function/*.spec.ts
