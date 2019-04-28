@@ -2,8 +2,12 @@
  * 生成随机的GUID
  *
  * @function
+ * @memberof Fx
  * @see https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
  * @returns {String}
+ * @example
+ *
+ * Fx.guid();
  */
 const guid = (): string => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {

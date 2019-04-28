@@ -2,8 +2,13 @@
  * HTML片段编码转义
  *
  * @function
+ * @memberof Fx
  * @param {String} str 待转义的字符串
  * @returns {String}
+ * @example
+ *
+ * // -> <div>Fx</div>
+ * Fx.decodeHtml('&lt;div&gt;Fx&lt;&#x2F;div&gt;');
  */
 const decodeHtml = (str: string): string => {
   const escapeMap: { [key: string]: string } = {

@@ -1,9 +1,16 @@
 /**
- * 判断输入的参数是否是个合格的URL
+ * 判断输入的参数是否是个合格的 URL
  *
  * @function
+ * @memberof Fx
  * @param {String} str 表示 URL 的字符串
  * @returns {Boolean}
+ * @example
+ * 
+ * // -> true
+ * Fx.checkURL('http://www.fx.com');
+ * // -> false
+ * Fx.checkURL('htp://fx.com');
  */
 const checkURL = (str: string): boolean => {
   return new RegExp(

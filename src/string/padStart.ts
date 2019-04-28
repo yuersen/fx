@@ -2,10 +2,15 @@
  * 用另一个字符串填充当前字符串(重复，如果需要的话)，以便产生的字符串达到给定的长度。
  *
  * @function
+ * @memberof Fx
  * @param {String} str 待操作的字符串
  * @param {Number} targetLength 当前字符串需要填充到的目标长度
  * @param {String} padString? 填充字符串
  * @returns {String}
+ * @example
+ * 
+ * // -> 00Fx
+ * Fx.padStart('Fx', 4, '0');
  */
 const padStart = (
   str: string,

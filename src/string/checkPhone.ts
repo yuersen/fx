@@ -2,8 +2,15 @@
  * 判断输入的参数是否是个合格的手机号码，不能判断号码的有效性，有效性可以通过运营商确定。
  *
  * @function
+ * @memberof Fx
  * @param {String} str 表示手机号码的字符串
  * @returns {Boolean}
+ * @example
+ *
+ * // -> true
+ * Fx.checkPhone('15209862526');
+ * // -> false
+ * Fx.checkPhone('19006052324');
  */
 const checkPhone = (str: string): boolean => {
   /*

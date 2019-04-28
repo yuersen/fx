@@ -2,10 +2,15 @@
  * 用一个字符串填充当前字符串（如果需要的话则重复填充），返回填充后达到指定长度的字符串。从当前字符串的末尾（右侧）开始填充。
  *
  * @function
+ * @memberof Fx
  * @param {String} str 待操作的字符串
  * @param {Number} targetLength 增加长度
  * @param {String} padString? 填充字符串
  * @returns {String}
+ * @example
+ *
+ * // -> Fx00
+ * Fx.padEnd('Fx', 4, '0');
  */
 const padEnd = (
   str: string,
@@ -13,7 +18,6 @@ const padEnd = (
   padString?: string
 ): string => {
   const length = str.length;
-  // floor if number or convert non-number to 0;
   if (!padString) {
     return str;
   }

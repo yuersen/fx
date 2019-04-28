@@ -2,8 +2,15 @@
  * 参数身份证号码是否合法，其身份证有效性无法判断
  *
  * @function
+ * @memberof Fx
  * @param {String} str 表示身份ID的字符串
  * @returns {Boolean}
+ * @example
+ *
+ * // -> true
+ * Fx.checkIdCard('220582197507240826');
+ * // -> false
+ * Fx.checkIdCard('220582197507240885');
  */
 const checkIdCard = (str: string): boolean => {
   const cityCode: { [key: string]: string } = {

@@ -12,4 +12,6 @@
 # function
 # test/specs/function/*.spec.ts
 # object
-test/specs/object/*.spec.ts
+# test/specs/object/*.spec.ts
+# string
+test/specs/string/*.spec.ts

@@ -5,8 +5,18 @@
  *   2.将奇位乘积的个十位全部相加，再加上所有偶数位上的数字。
  *   3.将加法和加上校验位能被 10 整除。
  * bankno为银行卡号 banknoInfo 为显示提示信息的DIV或其他控件
+ *
+ * @function
+ * @memberof Fx
  * @param {String} bankno 银行卡号
  * @returns {Boolean}
+ * @example
+ *
+ * // -> true
+ * Fx.checkBankCard('6222600260001072444');
+ *
+ * // -> false
+ * Fx.checkBankCard('6222600261072420');
  */
 const checkBankCard = (bankno: string): boolean => {
   const lastNumber: string = bankno.substr(bankno.length - 1, 1); // 取出最后一位（与luhm进行比较）
