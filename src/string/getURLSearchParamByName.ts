@@ -2,6 +2,7 @@
  * 解析URL中的参数
  *
  * @function
+ * @see https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters?page=1&tab=votes#tab-top
  * @memberof Fx
  * @param {string} name - 获取参数的名
  * @param {string} url - 待解析的URL
