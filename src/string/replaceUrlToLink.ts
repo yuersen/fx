@@ -10,7 +10,7 @@
 const replaceUrlToLink = (str: string): string => {
   let matched = {};
   // 1.收集需要替换的URL，并使用随机数替换
-  str = str.replace(/((https?|http|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|])/g, (match, capture) => {
+  str = str.replace(/(\b(https?|http|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|])/g, (match, capture) => {
     const random = 'XYZ' + String(Math.random()).slice(2);
     matched[random] = capture;
     return match.replace(capture, random);
